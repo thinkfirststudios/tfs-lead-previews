@@ -1,0 +1,398 @@
+/* ============================================================
+   Haul It All Junk Removal — Laurel, MD
+   Speed and price transparency, expressed structurally. Chunky
+   confident cards, heavy 8px top rules, large numerals, generous
+   padding — industrial-utility rather than soft residential.
+
+   The truck-load pricing scale is the page. Everything above it
+   exists to reach it; everything below it exists to justify it.
+
+   The estate cleanout section deliberately breaks that energy:
+   quieter type, more whitespace, a muted band, no orange, no
+   urgency pills — because the person reading it just lost a parent.
+   ============================================================ */
+
+:root{
+  --orange:#F26522;
+  --orange-2:#D24D12;
+  --char:#1F2225;
+  --steel:#454B52;
+  --concrete:#F2F1EE;
+  --white:#FFFFFF;
+  --green:#2E8B57;
+  /* estate cleanout only */
+  --sage:#7C8B7A;
+  --linen:#F6F1E9;
+
+  --line:#DEDCD7;
+  --body-c:#4A5057;
+
+  --disp:'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --body:'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --g-cta:linear-gradient(135deg,var(--orange) 0%,var(--orange-2) 100%);
+  --g-hero:linear-gradient(135deg,rgba(31,34,37,.75) 0%,rgba(31,34,37,.05) 100%);
+  --g-char:linear-gradient(160deg,var(--char) 0%,#141618 100%);
+
+  --wrap:1220px;
+  --pad:clamp(1.1rem,3.8vw,2.2rem);
+  --sec-y:clamp(3.4rem,7.5vw,5.6rem);
+  --r:8px;
+  --ease:cubic-bezier(.22,.68,.28,1);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%; scroll-behavior:smooth; scroll-padding-top:96px}
+body{
+  margin:0; background:var(--white); color:var(--body-c);
+  font-family:var(--body); font-size:clamp(1.02rem,.98rem + .22vw,1.1rem);
+  line-height:1.74; overflow-x:hidden; padding-bottom:74px;
+}
+img{max-width:100%; display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--disp); font-weight:700; line-height:1.12; margin:0; color:var(--char); letter-spacing:-.02em}
+
+.wrap{width:min(100% - (var(--pad)*2),var(--wrap)); margin-inline:auto}
+.skip{position:absolute; left:-9999px; top:0; background:var(--orange); color:#fff; padding:.85rem 1.3rem; z-index:400; font-weight:700}
+.skip:focus{left:0}
+:focus-visible{outline:3px solid var(--orange); outline-offset:3px}
+
+/* ---------- shared ---------- */
+.eyebrow{font-family:var(--disp); font-size:.8rem; font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:var(--orange); margin:0 0 .8rem}
+.eyebrow.quiet{color:var(--sage)}
+.eyebrow.light{color:#FFB48B}
+.sec-head{max-width:62ch; margin-bottom:clamp(1.9rem,4.5vw,2.9rem)}
+.sec-head.center{margin-inline:auto; text-align:center}
+.sec-head h2{font-size:clamp(2rem,1.5rem + 2.8vw,3.4rem)}
+.on-dark h2,.on-dark h3{color:#fff}
+.lede{margin:1rem 0 0}
+.on-dark .lede{color:rgba(255,255,255,.8)}
+.note{font-size:.9rem; color:#767C83; margin-top:1.3rem}
+.note.center{text-align:center}
+.on-dark .note{color:rgba(255,255,255,.66)}
+.ph{font-size:.68rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; background:rgba(242,101,34,.14); color:#A83C08; border:1px dashed var(--orange); padding:.16rem .5rem; border-radius:4px; white-space:nowrap}
+.confirm{
+  display:inline-block; font-size:.7rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase;
+  background:rgba(242,101,34,.14); color:#A83C08; border:1px dashed var(--orange);
+  padding:.16rem .55rem; border-radius:4px;
+}
+.on-dark .confirm,.hero .confirm{background:rgba(255,180,139,.18); color:#FFC7A6; border-color:rgba(255,180,139,.6)}
+/* the estate section never uses orange — its chips go sage */
+.estate .confirm{background:rgba(124,139,122,.16); color:#4C5A4A; border-color:var(--sage)}
+/* a price slot is louder than an ordinary confirm chip: no plausible-looking
+   figure ever goes here, not even a placeholder one */
+.price-slot{
+  display:inline-block; font-family:var(--disp); font-size:.86rem; font-weight:700;
+  letter-spacing:.08em; text-transform:uppercase;
+  background:rgba(242,101,34,.16); color:#A83C08; border:2px dashed var(--orange);
+  padding:.4rem .8rem; border-radius:var(--r);
+}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:.55rem;
+  font-family:var(--disp); font-size:1.04rem; font-weight:700;
+  text-decoration:none; cursor:pointer; padding:1.05rem 2rem; border:3px solid transparent; border-radius:var(--r);
+  transition:transform .22s var(--ease), filter .22s, background .22s, color .22s, border-color .22s;
+}
+.btn-lg{padding:1.2rem 2.4rem; font-size:1.14rem}
+.btn-block{width:100%}
+.btn svg{width:20px; height:20px; fill:currentColor; flex:none}
+.btn-orange{background:var(--g-cta); color:#fff}
+.btn-orange:hover{transform:translateY(-2px); filter:brightness(1.08)}
+.btn-char{background:var(--char); color:#fff}
+.btn-char:hover{transform:translateY(-2px); background:var(--steel)}
+.btn-outline{background:var(--white); color:var(--char); border-color:var(--line)}
+.btn-outline:hover{border-color:var(--char); transform:translateY(-2px)}
+.btn-light{background:transparent; color:#fff; border-color:rgba(255,255,255,.5)}
+.btn-light:hover{background:#fff; color:var(--char); border-color:#fff}
+/* the estate CTA is deliberately softer than everything else on the page */
+.btn-sage{background:var(--sage); color:#fff; border-color:var(--sage)}
+.btn-sage:hover{background:#6A7869; border-color:#6A7869; transform:translateY(-2px)}
+
+/* ============ TOP BAR ============ */
+.topbar{background:var(--char); color:rgba(255,255,255,.84); font-size:.9rem}
+.top-inner{display:flex; align-items:center; gap:1rem; min-height:44px; flex-wrap:wrap}
+.top-inner p{margin:0}
+.top-tel{color:#fff; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:.4rem}
+.top-tel svg{width:15px; height:15px; fill:var(--orange)}
+.top-tel:hover{color:var(--orange)}
+.status-pill{
+  margin-left:auto !important; display:inline-flex; align-items:center; gap:.5rem;
+  border:1px solid rgba(46,139,87,.6); background:rgba(46,139,87,.16); color:#8FE0B4;
+  padding:.3rem .85rem; border-radius:999px; font-weight:600; font-size:.86rem;
+}
+.status-dot{width:9px; height:9px; border-radius:50%; background:var(--green); flex:none; position:relative}
+.status-dot::after{content:""; position:absolute; inset:-4px; border-radius:50%; border:2px solid var(--green); animation:pulse 2.2s ease-out infinite; opacity:0}
+@keyframes pulse{0%{transform:scale(.7); opacity:.8} 100%{transform:scale(1.6); opacity:0}}
+
+/* ============ HEADER ============ */
+.site-head{position:sticky; top:0; z-index:110; background:rgba(255,255,255,.97); backdrop-filter:blur(10px); border-bottom:3px solid var(--char); transition:box-shadow .3s}
+.site-head.scrolled{box-shadow:0 5px 20px rgba(31,34,37,.1)}
+.head-inner{display:flex; align-items:center; gap:1.1rem; min-height:78px}
+.brand{display:flex; flex-direction:column; text-decoration:none; margin-right:auto; line-height:1.14}
+.brand-name{font-family:var(--disp); font-weight:700; font-size:1.36rem; color:var(--char)}
+.brand-sub{font-size:.64rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--orange); margin-top:.16rem}
+.nav{display:flex; gap:1.25rem}
+.nav a{font-family:var(--disp); font-size:1rem; font-weight:600; text-decoration:none; color:var(--char); position:relative; padding:.32rem 0; white-space:nowrap}
+.nav a::after{content:""; position:absolute; left:0; bottom:0; height:3px; width:0; background:var(--orange); transition:width .28s var(--ease)}
+.nav a:hover::after{width:100%}
+.burger{display:none; flex-direction:column; gap:5px; background:none; border:0; cursor:pointer; padding:.5rem}
+.burger span{width:27px; height:3px; background:var(--char); transition:transform .3s, opacity .3s}
+.burger[aria-expanded="true"] span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+
+/* ============ HERO ============ */
+.hero{position:relative; overflow:hidden; background:var(--char)}
+.hero-img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover}
+.hero-scrim{position:absolute; inset:0; background:var(--g-hero)}
+.hero-inner{position:relative; color:#fff; padding-block:clamp(2.8rem,7vw,4.6rem); max-width:44rem}
+.hero h1{color:#fff; font-size:clamp(2.2rem,1.6rem + 3.4vw,3.8rem)}
+.hero-badge{display:inline-flex; align-items:center; gap:.5rem; background:var(--g-cta); color:#fff; font-family:var(--disp); font-weight:700; font-size:.9rem; letter-spacing:.06em; text-transform:uppercase; padding:.5rem 1.1rem; border-radius:999px; margin-bottom:1.1rem}
+.hero-sub{margin:1.1rem 0 0; color:rgba(255,255,255,.88)}
+.hero-cta{display:flex; flex-wrap:wrap; gap:.8rem; margin-top:1.8rem}
+
+/* ============ THREE STEPS ============ */
+.threestep{padding:clamp(2rem,4.5vw,3rem) 0; background:var(--concrete)}
+.ts-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(1rem,2.6vw,2rem); align-items:start}
+.ts{position:relative; display:grid; grid-template-columns:auto 1fr; gap:1rem; align-items:start}
+.ts-n{width:48px; height:48px; flex:none; border-radius:var(--r); background:var(--g-cta); color:#fff; display:grid; place-items:center; font-family:var(--disp); font-weight:700; font-size:1.3rem}
+.ts h3{font-size:1.16rem; margin-bottom:.2rem}
+.ts p{margin:0; font-size:.96rem}
+.ts:not(:last-child)::after{content:"\2192"; position:absolute; right:-1.1rem; top:.6rem; color:var(--orange); font-size:1.6rem; font-weight:700}
+
+/* ============ ⭐ TRUCK-LOAD PRICING SCALE ============ */
+.pricing{padding:var(--sec-y) 0}
+.truck-fig{margin:0 0 clamp(1.4rem,3vw,2.2rem)}
+.truck-svg{width:100%; height:auto; display:block}
+.truck-fill{transition:width .5s var(--ease)}
+.tier-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(.8rem,2vw,1.3rem)}
+.tier{
+  background:var(--white); border:3px solid var(--line); border-top-width:8px; border-radius:var(--r);
+  padding:clamp(1.2rem,2.8vw,1.7rem); cursor:pointer; text-align:left; font-family:var(--body);
+  transition:border-color .22s, transform .22s var(--ease);
+}
+.tier:hover{transform:translateY(-4px)}
+.tier[aria-pressed="true"]{border-color:var(--orange)}
+.tier-frac{font-family:var(--disp); font-size:clamp(1.8rem,1.4rem + 1.6vw,2.6rem); font-weight:700; color:var(--char); line-height:1}
+.tier h3{font-size:1.04rem; margin:.5rem 0 .7rem}
+.tier dl{margin:.8rem 0 0; display:grid; gap:.45rem}
+.tier dt{font-size:.68rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#767C83}
+.tier dd{margin:0; font-size:.92rem}
+.min-tier{
+  margin-top:clamp(1rem,2.4vw,1.5rem); background:var(--concrete); border-radius:var(--r);
+  padding:clamp(1.1rem,2.6vw,1.5rem); display:flex; align-items:center; gap:1rem; flex-wrap:wrap;
+}
+.min-tier h3{font-size:1.1rem; margin:0; margin-right:auto}
+.price-notes{display:grid; grid-template-columns:1fr 1fr; gap:clamp(1rem,2.4vw,1.6rem); margin-top:clamp(1.4rem,3vw,2rem)}
+.price-note{background:var(--concrete); border-left:8px solid var(--char); border-radius:0 var(--r) var(--r) 0; padding:1.2rem 1.4rem}
+.price-note h3{font-size:1.08rem; margin-bottom:.4rem}
+.price-note p{margin:0; font-size:.96rem}
+
+/* ============ AVAILABILITY BAND ============ */
+.availability{background:var(--char); color:#fff}
+.avail-inner{display:flex; align-items:center; gap:.9rem; padding:1.1rem 0; flex-wrap:wrap}
+.avail-text{margin:0; font-family:var(--disp); font-weight:700; font-size:1.1rem}
+.availability .btn{margin-left:auto}
+
+/* ============ ESTATE — the deliberate tonal break ============ */
+.estate{padding:calc(var(--sec-y) * 1.15) 0; background:var(--linen)}
+.estate h2{color:#3A4438; font-size:clamp(1.9rem,1.4rem + 2.2vw,2.8rem); font-weight:600; letter-spacing:-.01em}
+.estate h3{color:#3A4438; font-weight:600}
+/* quieter typography: more line height, less weight, no urgency */
+.estate p{line-height:1.92; color:#59614F}
+.estate-grid{display:grid; grid-template-columns:1.05fr .95fr; gap:clamp(1.8rem,4.5vw,3.4rem); align-items:center}
+.estate-rule{width:56px; height:2px; background:var(--sage); margin-bottom:1.4rem}
+.estate-list{list-style:none; margin:1.4rem 0 0; padding:0; display:grid; gap:1rem}
+.estate-list li{padding-left:1.6rem; position:relative; line-height:1.85}
+.estate-list li::before{content:""; position:absolute; left:0; top:.78em; width:.55rem; height:.55rem; border-radius:50%; background:var(--sage)}
+.estate-list strong{color:#3A4438; font-weight:600}
+.estate figure{margin:0}
+.estate figure img{width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:var(--r)}
+.estate figcaption{margin-top:.6rem; font-size:.86rem; font-style:italic; color:#7E856F}
+
+/* ============ GARAGE / SERVICES ============ */
+.band{padding:var(--sec-y) 0}
+.band.tint{background:var(--concrete)}
+.band-grid{display:grid; grid-template-columns:1fr 1fr; gap:clamp(1.6rem,4vw,3rem); align-items:center}
+.band-grid.flip .band-media{order:2}
+.band-media{margin:0}
+.band-media img{width:100%; aspect-ratio:3/2; object-fit:cover; border-radius:var(--r)}
+.band-media figcaption{margin-top:.55rem; font-size:.84rem; font-style:italic; color:#767C83}
+.pair{display:grid; grid-template-columns:1fr 1fr; gap:.7rem}
+.pair figure{margin:0; position:relative}
+.pair img{width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:var(--r)}
+.pair-tag{position:absolute; top:.6rem; left:.6rem; font-family:var(--disp); font-size:.72rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; background:rgba(31,34,37,.85); color:#fff; padding:.24rem .6rem; border-radius:4px}
+.pair-tag.after{background:var(--g-cta)}
+.item-list{list-style:none; margin:1.2rem 0 0; padding:0; display:grid; gap:.6rem}
+.item-list li{background:var(--white); border:1px solid var(--line); border-left:6px solid var(--orange); border-radius:0 var(--r) var(--r) 0; padding:.8rem 1.1rem; font-size:.96rem}
+
+.svc-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(.8rem,2vw,1.3rem)}
+.svc{background:var(--white); border:3px solid var(--line); border-top-width:8px; border-radius:var(--r); padding:1.4rem 1.3rem; transition:border-color .22s, transform .22s var(--ease)}
+.svc:hover{border-color:var(--orange); transform:translateY(-4px)}
+.svc h3{font-size:1.06rem; margin-bottom:.3rem}
+.svc p{margin:0; font-size:.92rem}
+
+/* ============ TAKE / CANT TAKE ============ */
+.take{padding:var(--sec-y) 0}
+.take-grid{display:grid; grid-template-columns:1fr 1fr; gap:clamp(1.4rem,3.4vw,2.4rem)}
+.take-col{border-radius:var(--r); padding:clamp(1.3rem,3vw,2rem)}
+.take-col.yes{background:var(--concrete); border-top:8px solid var(--green)}
+.take-col.no{background:#FBEFEA; border-top:8px solid #C0392B}
+.take-col h3{font-size:1.3rem; margin-bottom:.9rem}
+.take-col ul{list-style:none; margin:0; padding:0; display:grid; gap:.5rem}
+.take-col li{display:grid; grid-template-columns:auto 1fr; gap:.6rem; align-items:start; font-size:.97rem}
+.take-col svg{width:20px; height:20px; flex:none; margin-top:.24rem; stroke-width:2.6; fill:none; stroke-linecap:round; stroke-linejoin:round}
+.take-col.yes svg{stroke:var(--green)}
+.take-col.no svg{stroke:#C0392B}
+.hazmat-note{margin-top:1.2rem; background:var(--white); border:2px dashed #C0392B; border-radius:var(--r); padding:1rem 1.2rem; font-size:.94rem}
+
+/* ============ AREA ============ */
+.area{padding:var(--sec-y) 0; background:var(--concrete)}
+.base-note{background:var(--g-char); color:#fff; border-radius:var(--r); padding:clamp(1.2rem,3vw,1.8rem); margin-bottom:1.6rem; text-align:center}
+.base-note h3{color:#fff; font-size:1.3rem}
+.base-note p{margin:.5rem 0 0; color:rgba(255,255,255,.8)}
+.county-grid{display:grid; grid-template-columns:1fr 1fr; gap:clamp(1.4rem,3.4vw,2.4rem)}
+.county{background:var(--white); border:3px solid var(--line); border-top-width:8px; border-radius:var(--r); padding:clamp(1.2rem,3vw,1.8rem)}
+.county h3{font-size:1.2rem; margin-bottom:.8rem}
+.chips{display:flex; flex-wrap:wrap; gap:.45rem; margin:0; padding:0; list-style:none}
+.chips li a{display:inline-block; font-size:.9rem; padding:.48rem 1rem; border:1px solid var(--line); color:var(--char); text-decoration:none; border-radius:var(--r); transition:border-color .2s, color .2s}
+.chips li a:hover{border-color:var(--orange); color:var(--orange-2)}
+
+/* ============ BOOKING FORM ============ */
+.booking{padding:var(--sec-y) 0}
+.b-grid{display:grid; grid-template-columns:.85fr 1.15fr; gap:clamp(1.6rem,4vw,3rem); align-items:start}
+.form{background:var(--white); border:3px solid var(--char); border-radius:var(--r); padding:clamp(1.4rem,3.2vw,2.3rem); display:grid; gap:1rem}
+.form h3{font-size:1.45rem; margin-bottom:.1rem}
+.f-row{display:grid; grid-template-columns:1fr 1fr; gap:1rem}
+.form label{display:grid; gap:.34rem}
+.form label > span{font-family:var(--disp); font-size:.8rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--char)}
+.form input,.form select,.form textarea{
+  width:100%; font-family:var(--body); font-size:1rem; color:var(--char);
+  background:var(--concrete); border:2px solid var(--line); border-radius:var(--r); padding:.85rem .95rem;
+}
+.form input:focus,.form select:focus,.form textarea:focus{border-color:var(--orange); background:var(--white); outline:none}
+.form .invalid{border-color:#C0392B}
+.form input[type="file"]{padding:.55rem; background:var(--white); font-size:.86rem}
+.day-toggle{display:flex; gap:.6rem; flex-wrap:wrap}
+.day-toggle button{
+  font-family:var(--disp); font-size:.94rem; font-weight:700; padding:.7rem 1.3rem; cursor:pointer;
+  border:2px solid var(--line); background:var(--white); color:var(--char); border-radius:var(--r);
+}
+.day-toggle button[aria-pressed="true"]{background:var(--green); border-color:var(--green); color:#fff}
+.consent{display:flex; gap:.6rem; align-items:flex-start; font-size:.88rem; color:#767C83}
+.consent input{width:auto; margin-top:.35rem; accent-color:var(--orange)}
+.form-note{margin:0; font-size:.88rem; color:#767C83; text-align:center}
+.form-status{margin:0; font-family:var(--disp); font-weight:700; color:var(--orange-2); min-height:1.5em; text-align:center}
+.contact-list{list-style:none; margin:1.6rem 0 0; padding:0; display:grid; gap:1.1rem}
+.contact-list li{display:grid; gap:.15rem}
+.c-label{font-family:var(--disp); font-size:.72rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--orange)}
+.c-val{font-size:1.06rem; color:var(--char); text-decoration:none; font-weight:600}
+a.c-val:hover{color:var(--orange-2)}
+
+/* ============ REVIEWS / FAQ ============ */
+.reviews{padding:var(--sec-y) 0; background:var(--concrete)}
+.rev-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(1rem,2.4vw,1.6rem)}
+.rev{margin:0; background:var(--white); border:3px solid var(--line); border-top-width:8px; border-radius:var(--r); padding:clamp(1.3rem,3vw,1.9rem)}
+.rev p{margin:0 0 .9rem}
+.rev footer{font-size:.88rem; color:#767C83}
+
+.faq{padding:var(--sec-y) 0}
+.faq-wrap{max-width:850px; margin-inline:auto}
+.acc{display:grid; gap:.6rem}
+.acc-item{border:3px solid var(--line); border-radius:var(--r); overflow:hidden; background:var(--white)}
+.acc-item h3{margin:0; font-family:var(--body)}
+.acc-btn{width:100%; background:none; border:0; cursor:pointer; text-align:left; font-family:var(--disp); font-size:1.12rem; font-weight:700; color:var(--char); padding:1.15rem 1.3rem; display:flex; align-items:center; justify-content:space-between; gap:1rem}
+.acc-btn:hover{color:var(--orange-2)}
+.acc-ico{position:relative; width:1.5rem; height:1.5rem; flex:none}
+.acc-ico::before,.acc-ico::after{content:""; position:absolute; left:50%; top:50%; background:var(--orange); border-radius:2px; transform:translate(-50%,-50%); transition:transform .3s, opacity .3s}
+.acc-ico::before{width:1.2rem; height:3px}
+.acc-ico::after{width:3px; height:1.2rem}
+.acc-btn[aria-expanded="true"] .acc-ico::after{transform:translate(-50%,-50%) rotate(90deg); opacity:0}
+.acc-panel{padding:0 1.3rem 1.2rem}
+.acc-panel p{margin:0; font-size:.97rem}
+
+/* ============ FINAL ============ */
+.final{padding:var(--sec-y) 0; background:var(--g-cta); color:#fff; text-align:center}
+.final h2{color:#fff; font-size:clamp(2rem,1.5rem + 2.6vw,3.2rem)}
+.final p{margin:1rem auto 1.6rem; max-width:52ch; color:rgba(255,255,255,.92)}
+.final-cta{display:flex; gap:.8rem; justify-content:center; flex-wrap:wrap}
+
+/* ============ FOOTER ============ */
+.site-foot{background:var(--g-char); color:rgba(255,255,255,.7); padding:clamp(2.8rem,6vw,4.4rem) 0 0}
+.foot-grid{display:grid; grid-template-columns:1.6fr 1fr 1fr 1.1fr; gap:2.2rem}
+.site-foot .brand-name{font-family:var(--disp); font-weight:700; font-size:1.4rem; color:#fff; display:block}
+.foot-tag{font-size:.92rem; margin:.6rem 0 0; color:rgba(255,255,255,.58)}
+.foot-col h3{font-family:var(--disp); font-size:.74rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--orange); margin:0 0 .85rem}
+.foot-col p{margin:0 0 .5rem; font-size:.92rem}
+.foot-col a{text-decoration:none}
+.foot-col a:hover{color:var(--orange)}
+.legal{border-top:1px solid rgba(255,255,255,.16); margin-top:2.6rem; padding:1.3rem 0 1.8rem; font-size:.86rem; color:rgba(255,255,255,.56); display:grid; gap:.5rem}
+.legal p{margin:0; max-width:92ch}
+
+/* ============ STICKY BAR ============ */
+.sticky-bar{position:fixed; left:0; right:0; bottom:0; z-index:120; display:grid; grid-template-columns:1fr 1fr 1.2fr; border-top:3px solid var(--orange)}
+.sticky-bar a{display:flex; align-items:center; justify-content:center; gap:.45rem; text-decoration:none; padding:1.15rem .4rem; font-family:var(--disp); font-weight:700; font-size:1rem; color:#fff}
+.sticky-bar svg{width:18px; height:18px; fill:currentColor; flex:none}
+.sb-call{background:var(--char)}
+.sb-text{background:var(--steel)}
+.sb-price{background:var(--g-cta)}
+
+/* ============ REVEAL ============ */
+.reveal{opacity:0; transform:translateY(18px); transition:opacity .6s var(--ease), transform .6s var(--ease)}
+.reveal.in{opacity:1; transform:none}
+.reveal[data-d="1"]{transition-delay:.09s}
+.reveal[data-d="2"]{transition-delay:.18s}
+.reveal[data-d="3"]{transition-delay:.27s}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width:1150px){
+  .nav{gap:1rem}
+  .nav a{font-size:.9rem}
+  .tier-grid,.svc-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:940px){
+  .nav{
+    position:fixed; left:0; right:0; top:78px; flex-direction:column; gap:0;
+    background:var(--white); border-bottom:3px solid var(--char);
+    padding:.4rem var(--pad) 1.3rem; transform:translateY(-200%); transition:transform .32s var(--ease);
+  }
+  .nav.open{transform:none}
+  .nav a{padding:1rem 0; border-bottom:2px solid var(--line); font-size:1.04rem}
+  .burger{display:flex}
+  .ts-grid{grid-template-columns:1fr}
+  .ts:not(:last-child)::after{display:none}
+  .estate-grid,.band-grid,.take-grid,.county-grid,.b-grid,.price-notes{grid-template-columns:1fr}
+  .band-grid.flip .band-media{order:0}
+  .rev-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .availability .btn{margin-left:0}
+}
+@media (max-width:620px){
+  .tier-grid,.svc-grid,.pair{grid-template-columns:1fr}
+  .f-row{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .status-pill{margin-left:0 !important}
+  .sticky-bar a{font-size:.9rem}
+}
+
+/* ============ REDUCED MOTION ============ */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.001ms !important; animation-iteration-count:1 !important;
+    transition-duration:.001ms !important; scroll-behavior:auto !important;
+  }
+  .reveal{opacity:1; transform:none}
+  .status-dot::after{animation:none; opacity:0}
+  .truck-fill{transition:none}
+}
+
+/* ============================================================
+   CASCADE GUARDS
+   ============================================================ */
+.confirm.confirm{font-size:.7rem}
+.ph.ph{font-size:.68rem}
+.note.note{font-size:.9rem}
+.consent.consent{display:flex}

@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MS Accountability | Bookkeeping from $350/month — Washington</title>
+<meta name="description" content="Monthly bookkeeping from $350/month and catch-up projects for small businesses in Washington. Pricing published up front, not hidden behind a consultation.">
+<meta name="robots" content="noindex, nofollow">
+<!--
+  ============================================================================
+  SPEC MOCKUP — MS Accountability. LEAD, NOT A CLIENT. Not signed.
+  REDESIGN pitch — msaccountability.org already exists.
+  [CONFIRM full URL inventory and map a 301 for every existing URL.]
+
+  ⚠️ GATING ITEM — THE CREDENTIAL LINE.
+  [CONFIRM whether Sharon is a CPA, an Enrolled Agent, or a non-credentialed
+  bookkeeper] BEFORE a single line of About or FAQ copy is finalised.
+
+    • "CPA" is a legally protected title in Washington under the Public
+      Accountancy Act (RCW 18.04) and the Washington State Board of
+      Accountancy's rules. Using it without a current licence is a violation.
+    • "Enrolled Agent" / "EA" is a federal designation conferred by the IRS
+      and cannot be claimed without it.
+    • If Sharon is a non-credentialed bookkeeper — a completely legitimate
+      and common practice — this site says "bookkeeper" and "bookkeeping
+      services" and avoids every adjacent implication.
+
+  THIS BUILD IS WRITTEN TO THE MOST CONSERVATIVE CASE. Search it: the words
+  "accountant", "accounting firm", "CPA", "audit" and "represent you" do not
+  appear as descriptions of what she does. If she holds a credential, the
+  copy gets MORE latitude, not less — that is the safe direction to edit in.
+
+  ⛔ ALSO ABSENT BY DESIGN:
+    • Any implication that she prepares or files tax returns, or represents
+      clients before the IRS. Year-end is framed as "clean books handed to
+      your tax preparer". [CONFIRM whether tax prep is offered — and if so,
+      her PTIN and credential status.]
+    • Any savings, outcome or ROI claim. No "we found clients $X".
+    • Any performance claim — client counts, years in business, satisfaction
+      rates. None supplied.
+    • Any certification badge. [CONFIRM current QuickBooks ProAdvisor / Xero
+      Partner certification before displaying a mark — these have their own
+      usage terms.]
+
+  ✅ PRICING: $350/month is REAL and published by the business. It is used
+  here, always as "from $350/month", and always with the qualifier that final
+  pricing depends on transaction volume and complexity and is confirmed after
+  a call. The other two tiers show [CONFIRM PRICE] because their prices and
+  contents are unknown — a plausible-looking invented tier price would be a
+  consumer-protection exposure under Washington's CPA (RCW 19.86), and the
+  same goes for advertising an onboarding discount whose terms have expired.
+  ============================================================================
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=Figtree:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231F4D3D'/%3E%3Cpath d='M8 20l5 5 11-13' fill='none' stroke='%23B8A44C' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "MS Accountability",
+  "description": "Bookkeeping services for small businesses in Washington. Monthly bookkeeping packages and catch-up projects.",
+  "telephone": "+1-360-213-6940",
+  "email": "sharon@msaccountability.org",
+  "url": "https://msaccountability.org",
+  "areaServed": { "@type": "State", "name": "Washington" }
+}
+</script>
+<!--
+  JSON-LD deliberately uses ProfessionalService rather than AccountingService,
+  because the credential is unconfirmed and the schema type is itself a claim.
+  It omits address, openingHours, priceRange, aggregateRating and review.
+-->
+</head>
+<body>
+
+<a class="skip" href="#pricing">Skip to pricing</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-head" id="siteHead">
+  <div class="wrap head-in">
+    <a class="mark" href="index.html">
+      <b>MS Accountability</b>
+      <small>Bookkeeping &middot; Washington</small>
+    </a>
+
+    <nav class="head-nav" aria-label="Primary">
+      <a href="#pricing">Pricing</a>
+      <a href="#monthly">Monthly Bookkeeping</a>
+      <a class="catch" href="catch-up-bookkeeping/index.html">Catch-Up Books</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="btn btn-sm head-tel btn-forest" href="#contact">Book a Call</a>
+
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+    <a href="#pricing">Pricing</a>
+    <a href="#monthly">Monthly Bookkeeping</a>
+    <a class="catch" href="catch-up-bookkeeping/index.html">Catch-Up Books</a>
+    <a href="#about">About</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+    <a href="tel:+13602136940">Call (360) 213-6940</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Small business bookkeeping &middot; Washington</p>
+      <h1>Know where your business actually stands.</h1>
+      <p class="lede">Not a guess at the end of the year. Categorised transactions, reconciled accounts, and statements that arrive on a schedule.</p>
+
+      <div class="price-lead">
+        <span class="from">From</span>
+        <span class="amt">$350</span>
+        <span class="per">/ month</span>
+      </div>
+      <p style="font-size:.95rem;margin-top:-.6rem;max-width:32rem">Published up front, because you shouldn&rsquo;t have to book a call to find out whether you can afford it. <span class="confirm">[CONFIRM what's included at each tier]</span></p>
+
+      <div class="hero-actions">
+        <a class="btn btn-lg" href="#pricing">See Pricing <span class="arw" aria-hidden="true">&rarr;</span></a>
+        <a class="btn btn-lg btn-copper" href="catch-up-bookkeeping/index.html">I&rsquo;m Behind on My Books</a>
+      </div>
+    </div>
+
+    <figure class="hero-shot">
+      <!-- PLACEHOLDER-desk.jpg — calm and uncluttered, deliberately no people -->
+      <img src="https://images.pexels.com/photos/30567393/pexels-photo-30567393.jpeg?auto=compress&cs=tinysrgb&w=1000"
+           alt="A cup of coffee beside a leafy plant on a desk in warm light." width="1000" height="750">
+      <figcaption>Stock placeholder &mdash; replace before launch</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===================== TRUST STRIP ===================== -->
+<div class="trust">
+  <div class="wrap trust-in">
+    <div>
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12l5 5 11-11" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Pricing published, not hidden
+    </div>
+    <div>
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 3v4M16 3v4M4 10h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span><span class="confirm">[CONFIRM software — QuickBooks Online, Xero, other]</span></span>
+    </div>
+    <div>
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      Washington-based <span class="confirm">[CONFIRM service area]</span>
+    </div>
+    <div>
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span><span class="confirm">[CONFIRM credential — CPA, EA, or bookkeeper. Nothing appears here until it is answered.]</span></span>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== ⭐ PRICING ===================== -->
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Pricing</p>
+      <h2>Here are the prices. That&rsquo;s the whole section.</h2>
+      <p>Most bookkeepers make you book a call to find out. You can read ours, decide whether it fits, and only then get in touch.</p>
+    </div>
+
+    <div class="tiers">
+
+      <div class="tier reveal">
+        <div class="tier-head">
+          <h3 class="tier-name">Essentials</h3>
+          <p class="tier-price"><span class="from">From</span> <span class="amt">$350</span> <span class="per">/ month</span></p>
+          <p class="tier-for"><span class="confirm">[CONFIRM who this tier is for — transaction volume or business stage]</span></p>
+        </div>
+        <div class="tier-body">
+          <ul class="tier-list">
+            <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor" opacity=".14"/><path d="M7 12.5l3.5 3.5L17 9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Transactions categorised each month</li>
+            <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor" opacity=".14"/><path d="M7 12.5l3.5 3.5L17 9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Bank and card accounts reconciled</li>
+            <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor" opacity=".14"/><path d="M7 12.5l3.5 3.5L17 9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Monthly financial statements</li>
+            <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor" opacity=".14"/><path d="M7 12.5l3.5 3.5L17 9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Year-end handoff to your tax preparer</li>
+            <li><span class="confirm">[CONFIRM the actual inclusions at this tier]</span></li>
+          </ul>
+          <div class="not-included">
+            <b>Not included at this tier</b>
+            <span class="confirm">[CONFIRM — this line is the differentiator and it needs a real answer, not a soft one]</span>
+          </div>
+          <div class="tier-cta"><a class="btn btn-line" href="#contact" style="width:100%">Start here</a></div>
+        </div>
+      </div>
+
+      <div class="tier featured reveal d1">
+        <span class="tier-flag">Most common</span>
+        <div class="tier-head">
+          <h3 class="tier-name"><span class="confirm">[CONFIRM tier name]</span></h3>
+          <p class="tier-price"><span class="price-slot">[CONFIRM PRICE]</span></p>
+          <p class="tier-for"><span class="confirm">[CONFIRM who this tier is for]</span></p>
+        </div>
+        <div class="tier-body">
+          <ul class="tier-list">
+            <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor" opacity=".14"/><path d="M7 12.5l3.5 3.5L17 9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Everything in Essentials</li>
+            <li><span class="confirm">[CONFIRM what this tier adds]</span></li>
+            <li><span class="confirm">[CONFIRM]</span></li>
+            <li><span class="confirm">[CONFIRM]</span></li>
+          </ul>
+          <div class="not-included">
+            <b>Not included at this tier</b>
+            <span class="confirm">[CONFIRM]</span>
+          </div>
+          <div class="tier-cta"><a class="btn" href="#contact" style="width:100%">Start here <span class="arw" aria-hidden="true">&rarr;</span></a></div>
+        </div>
+      </div>
+
+      <div class="tier reveal d2">
+        <div class="tier-head">
+          <h3 class="tier-name"><span class="confirm">[CONFIRM tier name]</span></h3>
+          <p class="tier-price"><span class="price-slot">[CONFIRM PRICE]</span></p>
+          <p class="tier-for"><span class="confirm">[CONFIRM who this tier is for]</span></p>
+        </div>
+        <div class="tier-body">
+          <ul class="tier-list">
+            <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor" opacity=".14"/><path d="M7 12.5l3.5 3.5L17 9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Everything in the tier below</li>
+            <li><span class="confirm">[CONFIRM what this tier adds]</span></li>
+            <li><span class="confirm">[CONFIRM]</span></li>
+            <li><span class="confirm">[CONFIRM]</span></li>
+          </ul>
+          <div class="not-included">
+            <b>Not included at this tier</b>
+            <span class="confirm">[CONFIRM]</span>
+          </div>
+          <div class="tier-cta"><a class="btn btn-line" href="#contact" style="width:100%">Start here</a></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!--
+      ONBOARDING DISCOUNT — kept in one block on purpose so it can be removed
+      wholesale the moment it stops being current. A stale advertised offer is
+      both a trust problem and a consumer-protection exposure.
+    -->
+    <div class="offer-banner reveal">
+      <div class="ob-text">
+        <h3>Onboarding discount</h3>
+        <p>MS Accountability offers a discount when you come on board. <span class="confirm">[CONFIRM the exact offer, its terms, and whether it is still current — this banner is deleted rather than softened if it has expired]</span></p>
+      </div>
+      <a class="btn btn-forest" href="#contact">Ask about it <span class="arw" aria-hidden="true">&rarr;</span></a>
+    </div>
+
+    <div class="pricing-note reveal">
+      <p><strong>How a business gets matched to a tier.</strong> It comes down to how many transactions run through the accounts each month and how complicated they are &mdash; number of accounts, whether there&rsquo;s inventory, how many revenue streams. <span class="confirm">[CONFIRM the actual qualifier for each tier]</span></p>
+      <p><strong>None of these prices is a final quote.</strong> Pricing depends on transaction volume and complexity, and gets confirmed after a short call. The $350 figure is a genuine starting price, not a teaser &mdash; but a business with four bank accounts and inventory is a different job from a sole trader with one.</p>
+    </div>
+
+    <div class="table-wrap reveal">
+      <table class="cmp">
+        <caption class="vh">Comparison of bookkeeping tiers — inclusions to be confirmed</caption>
+        <thead>
+          <tr>
+            <th scope="col">What you get</th>
+            <th scope="col">Essentials<br><span style="font-weight:400;font-size:.86rem">from $350/mo</span></th>
+            <th scope="col"><span class="confirm">[CONFIRM tier 2]</span></th>
+            <th scope="col"><span class="confirm">[CONFIRM tier 3]</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Transactions categorised</th><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+          <tr><th scope="row">Accounts reconciled</th><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+          <tr><th scope="row">Monthly financial statements</th><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+          <tr><th scope="row">Monthly check-in call</th><td><span class="confirm">[CONFIRM]</span></td><td><span class="confirm">[CONFIRM]</span></td><td><span class="confirm">[CONFIRM]</span></td></tr>
+          <tr><th scope="row">Accounts payable / receivable</th><td><span class="confirm">[CONFIRM]</span></td><td><span class="confirm">[CONFIRM]</span></td><td><span class="confirm">[CONFIRM]</span></td></tr>
+          <tr><th scope="row">Payroll</th><td><span class="confirm">[CONFIRM whether payroll is offered at all — it carries its own compliance considerations]</span></td><td><span class="confirm">[CONFIRM]</span></td><td><span class="confirm">[CONFIRM]</span></td></tr>
+          <tr><th scope="row">Tax return preparation</th><td colspan="3"><span class="confirm">[CONFIRM whether tax preparation is offered. Until confirmed, this site does not imply it — year-end is a handoff to your tax preparer.]</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CATCH-UP ===================== -->
+<section class="catchup" id="catchup">
+  <div class="wrap catch-grid">
+    <div class="reveal">
+      <p class="eyebrow copper">Catch-up bookkeeping</p>
+      <h2>Behind on your books? That&rsquo;s a normal Tuesday here.</h2>
+      <p class="lede">Nobody gets a lecture. Months behind, a year behind, several years behind &mdash; it is a project with a beginning and an end, and it is the most common way people start.</p>
+
+      <p style="font-weight:700;color:#8A4A22;margin-bottom:.4rem">How far behind are you?</p>
+      <div class="behind" role="group" aria-label="How far behind are you?">
+        <label><input type="radio" name="behind" value="1-3"> <span>1&ndash;3 months</span></label>
+        <label><input type="radio" name="behind" value="3-12"> <span>3&ndash;12 months</span></label>
+        <label><input type="radio" name="behind" value="over"> <span>Over a year</span></label>
+        <label><input type="radio" name="behind" value="unknown"> <span>Honestly, I don&rsquo;t know</span></label>
+      </div>
+
+      <div class="behind-out" id="behindOut">
+        <h4 id="behindTitle">Pick one and we&rsquo;ll tell you what it usually involves</h4>
+        <p id="behindText">Every one of these is a normal starting point &mdash; including the last one.</p>
+      </div>
+
+      <p class="mt-2">
+        <a class="btn btn-copper btn-lg" href="catch-up-bookkeeping/index.html">See how catch-up works <span class="arw" aria-hidden="true">&rarr;</span></a>
+      </p>
+    </div>
+
+    <figure class="catch-shot reveal d1">
+      <!-- PLACEHOLDER-receipts.jpg — order emerging from a pile -->
+      <img src="https://images.pexels.com/photos/7680744/pexels-photo-7680744.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Receipts, notes and a calculator spread across a desk being worked through." loading="lazy" width="1000" height="750">
+      <figcaption>Stock placeholder &mdash; replace before launch</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===================== MONTHLY BOOKKEEPING ===================== -->
+<section id="monthly">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Monthly bookkeeping</p>
+      <h2>What the monthly fee actually buys</h2>
+      <p>The most common reason people cancel a bookkeeping service is that they never worked out what it was doing. So here is the month.</p>
+    </div>
+
+    <ul class="month-list reveal">
+      <li>
+        <span class="when">Through the month</span>
+        <div><b>Transactions categorised</b><p>Every transaction that hits the accounts gets coded to the right place, as it happens rather than in a panic in January.</p></div>
+      </li>
+      <li>
+        <span class="when">After month end</span>
+        <div><b>Accounts reconciled</b><p>Your books get matched against the bank and card statements, so the numbers in the software are the numbers that actually happened.</p></div>
+      </li>
+      <li>
+        <span class="when"><span class="confirm">[CONFIRM date]</span></span>
+        <div><b>Statements delivered</b><p>Profit and loss, balance sheet, and whatever else you actually read. <span class="confirm">[CONFIRM which statements and by which date each month]</span></p></div>
+      </li>
+      <li>
+        <span class="when"><span class="confirm">[CONFIRM]</span></span>
+        <div><b>Monthly check-in</b><p><span class="confirm">[CONFIRM whether a check-in call is included, and at which tiers]</span></p></div>
+      </li>
+      <li>
+        <span class="when">Year end</span>
+        <div><b>Handoff to your tax preparer</b><p>Clean books, closed out, in the format your tax preparer wants them &mdash; so their bill reflects an afternoon rather than a fortnight.</p></div>
+      </li>
+    </ul>
+
+    <div class="plain">
+      <b>In plain English</b>
+      <p>&ldquo;Reconciled&rdquo; means someone checked your books against your actual bank statements and made them agree. If nobody does that, the reports look fine and are quietly wrong.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== IS THIS YOU ===================== -->
+<section class="band-mint">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Is this you?</p>
+      <h2>Four situations, four different answers.</h2>
+    </div>
+
+    <div class="scenarios">
+      <a class="scen reveal" href="#pricing">
+        <h3>You&rsquo;re doing books at 11pm on Sundays</h3>
+        <p>It is not that you can&rsquo;t do it. It&rsquo;s that it is costing you the one evening a week you had.</p>
+        <span class="go">See monthly pricing &rarr;</span>
+      </a>
+      <a class="scen reveal d1" href="#monthly">
+        <h3>Your tax preparer keeps sending things back</h3>
+        <p>Usually a sign the books aren&rsquo;t reconciled, or the categories have drifted. Both are fixable.</p>
+        <span class="go">What monthly bookkeeping covers &rarr;</span>
+      </a>
+      <a class="scen reveal d2" href="#monthly">
+        <h3>You don&rsquo;t know if you made money last month</h3>
+        <p>The bank balance isn&rsquo;t the answer to that question, and most owners find that out late.</p>
+        <span class="go">How the statements work &rarr;</span>
+      </a>
+      <a class="scen copper reveal d3" href="catch-up-bookkeeping/index.html">
+        <h3>You&rsquo;re behind and dreading it</h3>
+        <p>The dread is doing more damage than the backlog. It is a finite project.</p>
+        <span class="go">Catch-up bookkeeping &rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ONBOARDING ===================== -->
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Getting started</p>
+      <h2>Four steps, and none of them are a surprise.</h2>
+      <p><span class="confirm">[CONFIRM the named timeline for each step]</span></p>
+    </div>
+
+    <div class="onboard">
+      <div class="ostep reveal"><span class="on">01</span><h4>Intro call</h4><p>What the business is, how many accounts, how far behind (if at all), and which tier fits.</p></div>
+      <div class="ostep reveal d1"><span class="on">02</span><h4>Access</h4><p>Read-only access to <span class="confirm">[CONFIRM software]</span> and the accounts, set up properly. <span class="confirm">[CONFIRM her actual access process]</span></p></div>
+      <div class="ostep reveal d2"><span class="on">03</span><h4>Cleanup or setup</h4><p>Either a catch-up project first, or a clean setup if the books are current.</p></div>
+      <div class="ostep reveal d3"><span class="on">04</span><h4>First monthly close</h4><p>The first full month closed and statements delivered &mdash; the point where the service becomes routine.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SOFTWARE ===================== -->
+<section class="band-white">
+  <div class="wrap soft-grid">
+    <figure class="soft-shot reveal">
+      <!-- PLACEHOLDER-software.jpg — generic, deliberately not a real product UI -->
+      <img src="https://images.pexels.com/photos/6893890/pexels-photo-6893890.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Hands typing on a laptop at a bright desk with a plant nearby." loading="lazy" width="1000" height="750">
+      <figcaption>Stock placeholder &mdash; no real accounting product interface is shown</figcaption>
+    </figure>
+
+    <div class="reveal d1">
+      <p class="eyebrow">Software</p>
+      <h2>Working in the tools you already use</h2>
+      <p>If you are already on a platform, that is usually where the work stays. If you are on spreadsheets, moving is part of the setup.</p>
+      <p><span class="confirm">[CONFIRM which platforms — QuickBooks Online, Xero, Wave, other — and which she prefers to work in]</span></p>
+
+      <div class="badge-row">
+        <span class="badge-slot">Certification badge &mdash; pending proof of current certification</span>
+        <span class="badge-slot">Certification badge &mdash; pending proof of current certification</span>
+      </div>
+      <p style="font-size:.9rem;margin-top:1rem"><span class="confirm">[CONFIRM current ProAdvisor / Partner certification before any badge is displayed — these marks carry their own usage terms and lapse]</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="band-mint" id="about">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <div class="portrait">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8.5" r="4" stroke="currentColor" stroke-width="1.4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        <strong>Sharon&rsquo;s photo goes here</strong>
+        <p>A drawn placeholder &mdash; a stock photo of someone else captioned with her name would be a photograph of a stranger. <span class="confirm">[CONFIRM — her own photo]</span></p>
+      </div>
+    </div>
+
+    <div class="reveal d1">
+      <p class="eyebrow">About</p>
+      <h2>Sharon <span class="confirm">[CONFIRM full name and title]</span></h2>
+      <p class="lede">MS Accountability provides bookkeeping services to small businesses in Washington.</p>
+      <p>That is the entire set of confirmed facts, so it is the entire bio this mockup writes. No tenure, client count or track record appears anywhere on this build, because none was supplied.</p>
+
+      <div class="cred-box">
+        <h4>The credential line &mdash; answer this first</h4>
+        <p><span class="confirm">[CONFIRM whether Sharon is a CPA, an Enrolled Agent, or a non-credentialed bookkeeper]</span></p>
+        <p style="font-size:.94rem">In Washington, &ldquo;CPA&rdquo; is a legally protected title under the Public Accountancy Act &mdash; only a current licensee may use it or hold out as one. &ldquo;Enrolled Agent&rdquo; is a federal IRS designation with the same constraint. Being a non-credentialed bookkeeper is entirely legitimate and extremely common; it simply means the site says &ldquo;bookkeeper&rdquo; and describes bookkeeping confidently on its own terms.</p>
+        <p style="font-size:.94rem"><strong>This whole build is written to that most conservative case.</strong> If Sharon holds a credential, the copy gains latitude rather than losing it &mdash; which is the safe direction to edit in.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHO WE WORK WITH ===================== -->
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Who we work with</p>
+      <h2>Small businesses in Washington</h2>
+      <p>These chips are placeholders. Only the types Sharon actually works with should survive to launch &mdash; a list padded out with everything is the same as no list.</p>
+    </div>
+    <div class="who-chips reveal">
+      <span><span class="confirm">[CONFIRM industry 1]</span></span>
+      <span><span class="confirm">[CONFIRM industry 2]</span></span>
+      <span><span class="confirm">[CONFIRM industry 3]</span></span>
+      <span><span class="confirm">[CONFIRM industry 4]</span></span>
+      <span><span class="confirm">[CONFIRM whether nonprofits are served — the bookkeeping differs]</span></span>
+    </div>
+    <p class="mt-2"><span class="confirm">[CONFIRM whether the practice is remote-only, local-only, or both]</span></p>
+  </div>
+</section>
+
+<!-- ===================== SECURITY ===================== -->
+<section class="band-white">
+  <div class="wrap wrap-narrow">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Security &amp; confidentiality</p>
+      <h2>You&rsquo;re handing someone access to your bank.</h2>
+      <p>That is the real objection behind most of the hesitation, and it deserves an answer rather than a badge.</p>
+    </div>
+
+    <ul class="sec-list reveal">
+      <li><b>Account access</b><span class="confirm">[CONFIRM how access is granted — read-only bank feeds, accountant-user roles, and what she never asks for]</span></li>
+      <li><b>Document exchange</b><span class="confirm">[CONFIRM her actual intake process — a secure portal rather than "email us your bank statements"]</span></li>
+      <li><b>Credentials</b>No financial login credentials are ever collected through a form on this website. That is a build rule, not a policy statement.</li>
+      <li><b>Confidentiality</b><span class="confirm">[CONFIRM what she commits to in writing — no claim is made here until she does]</span></li>
+    </ul>
+
+    <div class="plain">
+      <b>In plain English</b>
+      <p>You should never be asked to email a bank password. Any bookkeeper who asks for one is telling you something useful about how they work.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section class="band-mint">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Client feedback</p>
+      <h2>Reserved, and empty.</h2>
+      <p>No quotes are invented here. On a site whose entire argument is that the prices are honest, a made-up testimonial would undo the point of it.</p>
+    </div>
+    <div class="tst-grid">
+      <div class="tst reveal"><span class="qm" aria-hidden="true">&ldquo;</span><p><span class="confirm">[CONFIRM — a real review, with permission]</span></p></div>
+      <div class="tst reveal d1"><span class="qm" aria-hidden="true">&ldquo;</span><p><span class="confirm">[CONFIRM — catch-up client]</span></p></div>
+      <div class="tst reveal d2"><span class="qm" aria-hidden="true">&ldquo;</span><p><span class="confirm">[CONFIRM — monthly client]</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section id="faq">
+  <div class="wrap-narrow">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Questions</p>
+      <h2>Asked before people call.</h2>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="q1b" aria-expanded="false" aria-controls="q1p">What&rsquo;s included at $350 a month?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="q1p" role="region" aria-labelledby="q1b" hidden>
+          <p>Transactions categorised, accounts reconciled, monthly statements, and a clean year-end handoff to your tax preparer. <span class="confirm">[CONFIRM the exact inclusions]</span> Final pricing depends on transaction volume and complexity and is confirmed after a call.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="q2b" aria-expanded="false" aria-controls="q2p">What if I&rsquo;m behind?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="q2p" role="region" aria-labelledby="q2b" hidden>
+          <p>Then you start with a <a href="catch-up-bookkeeping/index.html">catch-up project</a> and move onto monthly service once the books are current. It is the most common way people start, and being years behind is not unusual.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="q3b" aria-expanded="false" aria-controls="q3p">Do you do taxes?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="q3p" role="region" aria-labelledby="q3b" hidden>
+          <p><span class="confirm">[CONFIRM whether tax preparation or filing is offered — and if so, her PTIN and credential status, because what a preparer may do and claim depends on it]</span></p>
+          <p>Until that is confirmed, this site says what it can say honestly: your books get closed out clean and handed to your tax preparer in the format they want them.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="q4b" aria-expanded="false" aria-controls="q4p">Do you do payroll?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="q4p" role="region" aria-labelledby="q4b" hidden>
+          <p><span class="confirm">[CONFIRM whether payroll is offered — it carries separate compliance considerations and belongs in its own conversation]</span></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="q5b" aria-expanded="false" aria-controls="q5p">What software do I need?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="q5p" role="region" aria-labelledby="q5b" hidden>
+          <p><span class="confirm">[CONFIRM which platforms she works in]</span> If you are currently on spreadsheets, migrating is part of the setup rather than a barrier to starting.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="q6b" aria-expanded="false" aria-controls="q6p">Do you work remotely or locally?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="q6p" role="region" aria-labelledby="q6b" hidden>
+          <p><span class="confirm">[CONFIRM remote-only, local-only, or both — and the specific service area]</span></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="q7b" aria-expanded="false" aria-controls="q7p">How do you get access to my accounts?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="q7p" role="region" aria-labelledby="q7b" hidden>
+          <p>Through the proper accountant-access routes in your software and bank, not by you handing over a password. <span class="confirm">[CONFIRM her actual access and document-intake process]</span> No financial credentials are ever collected through this website.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="q8b" aria-expanded="false" aria-controls="q8p">What&rsquo;s the commitment?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="q8p" role="region" aria-labelledby="q8b" hidden>
+          <p><span class="confirm">[CONFIRM contract terms — month-to-month, minimum term, notice period to cancel]</span> This is the question that decides whether someone signs up, so it is worth answering plainly rather than leaving to the engagement letter.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="q9b" aria-expanded="false" aria-controls="q9p">How does the onboarding discount work?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="q9p" role="region" aria-labelledby="q9b" hidden>
+          <p><span class="confirm">[CONFIRM the exact offer, terms, and whether it is still current. If it has expired, both this answer and the banner above come off the site rather than being reworded.]</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BOOKING + CONTACT ===================== -->
+<section class="booking on-dark" id="contact">
+  <div class="wrap book-grid">
+    <div class="reveal">
+      <p class="eyebrow">Book a call</p>
+      <h2>A short call, and a real number at the end of it.</h2>
+      <p>Fifteen minutes to work out the transaction volume, the tier, and whether a catch-up is needed first.</p>
+
+      <div class="cal-slot mt-2">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 3v4M16 3v4M3 10h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <p><strong style="color:#fff">Scheduling embed goes here.</strong></p>
+        <p><span class="confirm">[CONFIRM scheduling tool — Calendly, Acuity, or other — and whether she wants live booking or a call-back request]</span></p>
+      </div>
+
+      <ul class="book-lines">
+        <li><span class="lbl">Phone</span><a href="tel:+13602136940">(360) 213-6940</a></li>
+        <li><span class="lbl">Email</span><a href="mailto:sharon@msaccountability.org" style="font-size:1.05rem">sharon@msaccountability.org</a></li>
+        <li><span class="lbl">Service area</span><span class="confirm">[CONFIRM specific city / service area]</span></li>
+      </ul>
+    </div>
+
+    <div class="reveal d1">
+      <form class="cform" id="contactForm" action="#" method="post" novalidate>
+        <div class="row2">
+          <div class="field"><label for="cName">Name</label><input type="text" id="cName" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="cBiz">Business name</label><input type="text" id="cBiz" name="business" autocomplete="organization"></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="cEmail">Email</label><input type="email" id="cEmail" name="email" autocomplete="email" required></div>
+          <div class="field"><label for="cPhone">Phone</label><input type="tel" id="cPhone" name="phone" autocomplete="tel"></div>
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="cService">What are you after?</label>
+            <select id="cService" name="service">
+              <option value="">Choose one</option>
+              <option>Monthly bookkeeping</option>
+              <option>Catch-up project</option>
+              <option>Both</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="cBehind">How far behind, if at all?</label>
+            <select id="cBehind" name="behind">
+              <option value="">Not behind</option>
+              <option>1&ndash;3 months</option>
+              <option>3&ndash;12 months</option>
+              <option>Over a year</option>
+              <option>I don&rsquo;t know</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label for="cMsg">Anything else?</label><textarea id="cMsg" name="message"></textarea></div>
+
+        <div><button type="submit" class="btn">Send <span class="arw" aria-hidden="true">&rarr;</span></button></div>
+        <p class="form-status" id="contactStatus" role="status"></p>
+        <p style="font-size:.84rem;margin:0;color:#A9C0B5">Please don&rsquo;t send bank details or login credentials through this form. <span class="confirm">[CONFIRM form endpoint and secure document intake]</span></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <p class="foot-mark">MS Accountability</p>
+        <p>Bookkeeping for small businesses in Washington.</p>
+        <p><a href="tel:+13602136940">(360) 213-6940</a><br>
+        <a href="mailto:sharon@msaccountability.org">sharon@msaccountability.org</a></p>
+        <p style="font-size:.84rem"><span class="confirm">[CONFIRM domain plan — msaccountability.org is a .org on a for-profit business; check whether the .com is available and whether Sharon wants to move. If she does, the .org 301s wholesale and every listing, invoice template and email signature updates with it.]</span></p>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#monthly">Monthly bookkeeping</a></li>
+          <li><a href="catch-up-bookkeeping/index.html">Catch-up bookkeeping</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Book a call</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Details</h4>
+        <ul>
+          <li>Washington <span class="confirm">[CONFIRM service area]</span></li>
+          <li><span class="confirm">[CONFIRM credential line]</span></li>
+          <li><span class="confirm">[CONFIRM WA UBI number if displaying]</span></li>
+          <li><a href="#"><span class="confirm">[CONFIRM privacy policy — required]</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="legal-block">
+      <p><strong>MS Accountability provides bookkeeping services.</strong> Nothing on this site is tax, legal, or financial advice. Consult a qualified tax professional about your situation.</p>
+      <p>Pricing shown is a starting point. Final pricing depends on transaction volume and complexity and is confirmed after a call. No price on this site is a guaranteed final quote.</p>
+      <p class="specnote">SPEC MOCKUP &mdash; built for a redesign pitch. MS Accountability has not signed and this site is not live. The $350/month figure is the business&rsquo;s own published price; every other price, tier name, inclusion, credential and discount term on this build is an unfilled placeholder. All photography is royalty-free stock and the portrait is a drawn placeholder.</p>
+      <p>&copy; <span id="yr">2026</span> MS Accountability. <span class="confirm">[CONFIRM legal business entity name]</span></p>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== STICKY MOBILE BAR ===================== -->
+<nav class="mobar" aria-label="Quick actions">
+  <a href="tel:+13602136940">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 006.5 6.5l1.5-2 4 1.5v3a2 2 0 01-2.2 2A17 17 0 014.5 5.2 2 2 0 016.5 3z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></svg>
+    Call
+  </a>
+  <a href="#pricing">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>
+    See Pricing
+  </a>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>

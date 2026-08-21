@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sample Property — Listing Template | Troy Hall Real Estate</title>
+<meta name="description" content="Property detail template for Troy Hall Real Estate. Sample data only — not a real listing.">
+<meta name="robots" content="noindex, nofollow">
+<!--
+  ============================================================================
+  PROPERTY DETAIL TEMPLATE — Troy Hall Real Estate spec mockup.
+
+  THIS IS NOT A REAL LISTING. Every field on this page is a placeholder: no
+  address, price, bed or bath count, square footage, lot size, year built,
+  HOA figure or MLS number here is real. The page exists to prove the
+  pattern that a live MLS/IDX feed will populate.
+
+  FAIR HOUSING: the description block describes the property and nothing
+  else. No reference to who lives nearby, no "family", no "safe", no school
+  commentary. That constraint is part of the template, not an afterthought —
+  whatever fills this page later has to hold to it.
+
+  The footer licensing block is identical to the home page and must appear on
+  every property page: CalDRE number, responsible broker, Equal Housing.
+  ============================================================================
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%231C1F23'/%3E%3Cpath d='M6 16L16 7l10 9v10H6z' fill='none' stroke='%23B08D4A' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
+<!--
+  No JSON-LD on this page. Schema.org Residence / Offer markup on a page of
+  invented data would publish fake structured listing data — the markup goes
+  in when the MLS feed does.
+-->
+</head>
+<body>
+
+<a class="skip" href="#showing">Skip to the showing request</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-head static-head solid" id="siteHead">
+  <div class="wrap head-in">
+    <a class="mark" href="../../index.html">
+      <b>Troy Hall</b>
+      <small>Real Estate</small>
+    </a>
+
+    <nav class="head-nav" aria-label="Primary">
+      <a href="../../index.html#listings">Listings</a>
+      <a href="../../index.html#sell">Sell</a>
+      <a href="../../index.html#buy">Buy</a>
+      <a href="../../index.html#neighborhoods">Neighborhoods</a>
+      <a href="../../index.html#about">About</a>
+      <a href="../../index.html#contact">Contact</a>
+    </nav>
+
+    <a class="btn btn-sm head-tel" href="tel:+19497592033">(949) 759-2033</a>
+
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+    <a href="../../index.html#listings">Listings</a>
+    <a href="../../index.html#sell">Sell</a>
+    <a href="../../index.html#buy">Buy</a>
+    <a href="../../index.html#neighborhoods">Neighborhoods</a>
+    <a href="../../index.html#about">About</a>
+    <a href="../../index.html#contact">Contact</a>
+    <a href="tel:+19497592033">Call (949) 759-2033</a>
+  </nav>
+</header>
+
+<main>
+
+<div class="pd-head">
+  <div class="wrap">
+    <p class="crumbs"><a href="../../index.html">Home</a> &nbsp;/&nbsp; <a href="../../index.html#listings">Listings</a> &nbsp;/&nbsp; Sample property</p>
+
+    <div class="data-note" style="margin-top:0;margin-bottom:1.6rem">
+      <strong>This is a template, not a listing.</strong> Every field on this page &mdash; address, price, beds, baths, square footage, lot, year built, HOA and MLS number &mdash; is a placeholder. It exists to prove the layout an MLS/IDX feed will fill. <span class="confirm">[CONFIRM MLS/IDX access and vendor]</span>
+    </div>
+
+    <!-- ===================== GALLERY ===================== -->
+    <div class="gallery">
+      <figure class="gal-main">
+        <span class="sample-pill">Sample listing</span>
+        <img id="galMain" src="https://images.pexels.com/photos/19344325/pexels-photo-19344325.jpeg?auto=compress&cs=tinysrgb&w=1400"
+             alt="A close view of a contemporary home elevation with a deep-set window." width="1400" height="875">
+      </figure>
+
+      <div class="gal-thumbs" id="galThumbs" role="group" aria-label="Property photos">
+        <button type="button" aria-current="true" data-full="https://images.pexels.com/photos/19344325/pexels-photo-19344325.jpeg?auto=compress&cs=tinysrgb&w=1400" data-alt="A close view of a contemporary home elevation with a deep-set window.">
+          <img src="https://images.pexels.com/photos/19344325/pexels-photo-19344325.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Exterior" loading="lazy" width="400" height="300">
+        </button>
+        <button type="button" aria-current="false" data-full="https://images.pexels.com/photos/8186477/pexels-photo-8186477.jpeg?auto=compress&cs=tinysrgb&w=1400" data-alt="A kitchen with a central island, wood cabinetry and stone counters.">
+          <img src="https://images.pexels.com/photos/8186477/pexels-photo-8186477.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Kitchen" loading="lazy" width="400" height="300">
+        </button>
+        <button type="button" aria-current="false" data-full="https://images.pexels.com/photos/29012619/pexels-photo-29012619.jpeg?auto=compress&cs=tinysrgb&w=1400" data-alt="A pale living room with a low sofa and tall curtained windows.">
+          <img src="https://images.pexels.com/photos/29012619/pexels-photo-29012619.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Living room" loading="lazy" width="400" height="300">
+        </button>
+        <button type="button" aria-current="false" data-full="https://images.pexels.com/photos/6903157/pexels-photo-6903157.jpeg?auto=compress&cs=tinysrgb&w=1400" data-alt="A bedroom with a made bed, grey linen and pendant lights either side.">
+          <img src="https://images.pexels.com/photos/6903157/pexels-photo-6903157.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Primary bedroom" loading="lazy" width="400" height="300">
+        </button>
+        <button type="button" aria-current="false" data-full="https://images.pexels.com/photos/6957081/pexels-photo-6957081.jpeg?auto=compress&cs=tinysrgb&w=1400" data-alt="A bathroom with a corner tub and tiled surround.">
+          <img src="https://images.pexels.com/photos/6957081/pexels-photo-6957081.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Bathroom" loading="lazy" width="400" height="300">
+        </button>
+        <button type="button" aria-current="false" data-full="https://images.pexels.com/photos/19199129/pexels-photo-19199129.jpeg?auto=compress&cs=tinysrgb&w=1400" data-alt="A covered outdoor terrace with seating and planting.">
+          <img src="https://images.pexels.com/photos/19199129/pexels-photo-19199129.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Outdoor space" loading="lazy" width="400" height="300">
+        </button>
+      </div>
+    </div>
+
+    <div class="pd-title">
+      <div>
+        <span class="status for-sale" style="position:static;display:inline-block;margin-bottom:.8rem">For Sale</span>
+        <h1><span class="confirm">[CONFIRM street address]</span></h1>
+        <p style="margin:0;color:var(--muted)"><span class="confirm">[CONFIRM city, state, ZIP]</span></p>
+      </div>
+      <div class="pd-price"><span class="sample">Sample price</span></div>
+    </div>
+  </div>
+</div>
+
+<section style="padding-top:2.4rem">
+  <div class="wrap pd-body">
+
+    <div>
+      <h2 style="font-size:1.9rem">About this property</h2>
+      <!--
+        FAIR HOUSING: describes the property only. Note what is absent —
+        no characterisation of the area's residents, no "great for families",
+        no school ratings, no "quiet, safe street". Those are steering.
+      -->
+      <p>A contemporary two-storey plan with an open main level, full-height glazing to the rear elevation and a covered terrace off the living space. Kitchen with a full run of cabinetry and a dining area at the window. Primary bedroom on the upper floor with an ensuite bathroom finished in stone.</p>
+      <p style="font-size:.93rem;color:var(--muted)">The paragraph above describes the building and nothing else &mdash; that is deliberate, and it is how every listing description on this site will be written. Fair housing rules apply to marketing copy, and describing the neighbours rather than the house is exactly how agents get into trouble. <span class="confirm">[CONFIRM the real property description]</span></p>
+
+      <h3 style="margin-top:2.4rem">Specifications</h3>
+      <table class="spec-table">
+        <caption class="vh">Property specifications — all values are placeholders</caption>
+        <tbody>
+          <tr><th scope="row">Bedrooms</th><td><span class="sample">TBC</span></td></tr>
+          <tr><th scope="row">Bathrooms</th><td><span class="sample">TBC</span></td></tr>
+          <tr><th scope="row">Interior</th><td><span class="sample">TBC sq ft</span></td></tr>
+          <tr><th scope="row">Lot</th><td><span class="sample">TBC sq ft</span></td></tr>
+          <tr><th scope="row">Year built</th><td><span class="sample">TBC</span></td></tr>
+          <tr><th scope="row">HOA</th><td><span class="confirm">[CONFIRM — dues, and what they cover, or none]</span></td></tr>
+          <tr><th scope="row">MLS #</th><td><span class="confirm">[CONFIRM — populated by the IDX feed]</span></td></tr>
+          <tr><th scope="row">Listed by</th><td>Troy Hall, Realtor<span aria-hidden="true">&reg;</span> &mdash; CalDRE #<span class="confirm">[CONFIRM]</span></td></tr>
+        </tbody>
+      </table>
+
+      <h3 style="margin-top:2.4rem">Features</h3>
+      <ul class="features">
+        <li>Open main-level plan</li>
+        <li>Full-height rear glazing</li>
+        <li>Covered terrace</li>
+        <li>Kitchen dining area</li>
+        <li>Upper-floor primary suite</li>
+        <li>Stone-finished bathrooms</li>
+        <li><span class="confirm">[CONFIRM parking]</span></li>
+        <li><span class="confirm">[CONFIRM heating / cooling]</span></li>
+      </ul>
+
+      <h3 style="margin-top:2.4rem">Location</h3>
+      <div class="map-slot">
+        <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <path d="M24 44s14-13 14-24A14 14 0 1010 20c0 11 14 24 14 24z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+          <circle cx="24" cy="20" r="5" stroke="currentColor" stroke-width="2.4"/>
+        </svg>
+        <p><strong style="color:var(--char)">Map intentionally empty.</strong></p>
+        <p>The embed drops in when there is a real address to pin. A map of an invented location on a page that already looks like a listing is exactly the kind of detail that makes a mockup read as real. <span class="confirm">[CONFIRM address]</span></p>
+      </div>
+    </div>
+
+    <!-- ===================== ASIDE ===================== -->
+    <aside class="pd-aside">
+      <div class="showing-card" id="showing">
+        <h3>Schedule a showing</h3>
+        <p class="sub">Pick a day that suits and Troy will confirm.</p>
+        <form class="cform" id="showingForm" action="#" method="post" novalidate style="gap:.8rem">
+          <div class="field"><label for="sName">Name</label><input type="text" id="sName" name="name" required></div>
+          <div class="field"><label for="sPhone">Phone</label><input type="tel" id="sPhone" name="phone" required></div>
+          <div class="field"><label for="sEmail">Email</label><input type="email" id="sEmail" name="email"></div>
+          <div class="field"><label for="sDate">Preferred date</label><input type="date" id="sDate" name="date"></div>
+          <div class="field">
+            <label for="sTime">Preferred time</label>
+            <select id="sTime" name="time">
+              <option value="">Choose one</option>
+              <option>Morning</option>
+              <option>Afternoon</option>
+              <option>Evening</option>
+              <option>Weekend</option>
+            </select>
+          </div>
+          <div class="field"><label for="sNotes">Notes</label><textarea id="sNotes" name="notes"></textarea></div>
+          <button type="submit" class="btn">Request showing <span class="arw" aria-hidden="true">&rarr;</span></button>
+          <p class="form-status" id="showingStatus" role="status"></p>
+        </form>
+      </div>
+
+      <div class="agent-card">
+        <span class="ph" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8.5" r="4" stroke="currentColor" stroke-width="1.4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </span>
+        <span>
+          <b>Troy Hall, Realtor<span aria-hidden="true">&reg;</span></b>
+          <a href="tel:+19497592033">(949) 759-2033</a>
+          <span style="font-size:.78rem;color:var(--muted)">CalDRE #<span class="confirm">[CONFIRM]</span></span>
+        </span>
+      </div>
+    </aside>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER — same compliance block, every page ===================== -->
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="legal-block" style="margin-top:0;border-top:0;padding-top:0">
+      <div class="broker-line">
+        <span>Troy Hall, Realtor<span aria-hidden="true">&reg;</span> &mdash; CalDRE #<span class="confirm">[CONFIRM CalDRE licence # — required in all California real estate advertising]</span></span>
+        <span>Brokerage: <span class="confirm">[CONFIRM brokerage name]</span> &mdash; CalDRE #<span class="confirm">[CONFIRM brokerage DRE #]</span></span>
+      </div>
+
+      <div class="eho">
+        <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <path d="M24 8L6 22v18h36V22L24 8z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+          <path d="M15 26h18M15 32h18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+        <p><strong style="color:#C3C9D0">Equal Housing Opportunity.</strong> We are pledged to the letter and spirit of U.S. policy for the achievement of equal housing opportunity throughout the Nation. We encourage and support an affirmative advertising and marketing program in which there are no barriers to obtaining housing because of race, color, religion, sex, handicap, familial status, or national origin.</p>
+      </div>
+
+      <div class="foot-legal">
+        <p class="specnote">SPEC MOCKUP &mdash; template page. Not a real listing. Every field is placeholder data and all photography is royalty-free stock.</p>
+        <p>&copy; <span id="yr">2026</span> Troy Hall Real Estate. <span class="confirm">[CONFIRM legal business entity name]</span></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<nav class="mobar" aria-label="Quick actions">
+  <a href="tel:+19497592033">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 006.5 6.5l1.5-2 4 1.5v3a2 2 0 01-2.2 2A17 17 0 014.5 5.2 2 2 0 016.5 3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+    Call
+  </a>
+  <a href="#showing">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 5h14v15H5zM8 3v4M16 3v4M5 10h14" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+    Schedule
+  </a>
+</nav>
+
+<script src="../../script.js"></script>
+</body>
+</html>

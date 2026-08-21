@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CCC Greenwaste LLC | Green Waste Dumping &amp; Mulch, Compost, Topsoil — Virginia</title>
+<meta name="description" content="Clean green waste dumping Monday to Friday, 7AM–4PM, plus mulch, compost and topsoil by the cubic yard — pick up or delivered. CCC Greenwaste LLC, Virginia.">
+<meta name="robots" content="noindex, nofollow">
+<!--
+  ============================================================================
+  SPEC MOCKUP — CCC Greenwaste LLC. LEAD, NOT A CLIENT. Not signed.
+  Built from a Facebook post. Everything unverified is marked [CONFIRM].
+
+  Two verified facts drive this build:
+    • Phone (540) 500-1602
+    • Hours Monday–Friday, 7AM–4PM
+
+  The hours are treated as a promise: the live open/closed indicator is
+  computed from ONE editable config block in script.js (search HOURS) and
+  nothing else in the page hardcodes a time.
+
+  THE CRITICAL GAP: no physical address was captured. This is a business
+  people drive trailers to. Every directions slot renders a visible
+  [CONFIRM address] placeholder rather than a guess, and the map is an
+  empty labelled panel — not a map of somewhere plausible.
+
+  No prices, no permit numbers, no tonnage or diversion statistics appear
+  anywhere on this page. All photography is royalty-free stock PLACEHOLDER.
+  ============================================================================
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%233E2E22'/%3E%3Cpath d='M16 25c0-7 3-11 9-13-1 8-4 12-9 13z' fill='%237CB342'/%3E%3Cpath d='M16 25c0-6-3-9-8-10 1 6 3 9 8 10z' fill='%232D5A27'/%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "CCC Greenwaste LLC",
+  "description": "Clean green waste dumping and bulk mulch, compost and topsoil in Virginia. Delivery available.",
+  "telephone": "+1-540-500-1602",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "07:00",
+      "closes": "16:00"
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Green waste and landscape supply",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Clean green waste dumping" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Mulch" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Compost" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Topsoil" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bulk material delivery" } }
+    ]
+  }
+}
+</script>
+<!--
+  JSON-LD carries telephone and openingHours because both are verified.
+  It deliberately omits address (none captured — do NOT guess a location),
+  priceRange, aggregateRating and review.
+-->
+</head>
+<body>
+
+<a class="skip" href="#materials">Skip to the materials list</a>
+
+<!-- ===================== ⭐ HOURS & STATUS BAR ===================== -->
+<div class="hoursbar">
+  <div class="wrap hours-in">
+    <span class="status" id="status">
+      <span class="dot" aria-hidden="true"></span>
+      <span id="statusText">Mon&ndash;Fri 7AM&ndash;4PM</span>
+    </span>
+    <span class="sep" aria-hidden="true">|</span>
+    <span class="hours-set">Mon&ndash;Fri 7AM&ndash;4PM</span>
+    <span class="sep" aria-hidden="true">|</span>
+    <a href="tel:+15405001602">(540) 500-1602</a>
+    <span class="sep" aria-hidden="true">|</span>
+    <a href="#directions">Directions <span class="confirm">[CONFIRM address]</span></a>
+  </div>
+</div>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="wordmark" href="#top">
+      <b>CCC Greenwaste LLC</b>
+      <small>Green waste in &middot; Mulch, compost &amp; topsoil out</small>
+    </a>
+
+    <nav class="head-nav" aria-label="Primary">
+      <span class="nav-group g-dump">
+        <span class="glab">Dumping</span>
+        <a href="#accepted">Accepted Materials</a>
+        <a href="#dump-pricing">Dump Pricing</a>
+      </span>
+      <span class="nav-group g-supply">
+        <span class="glab">Materials</span>
+        <a href="#materials">Price List</a>
+        <a href="#delivery">Delivery</a>
+      </span>
+      <a href="#directions">Hours &amp; Directions</a>
+    </nav>
+
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+    <p class="mgroup">Dumping</p>
+    <a href="#accepted">Accepted Materials</a>
+    <a href="#dump-pricing">Dump Pricing</a>
+    <p class="mgroup">Materials</p>
+    <a href="#materials">Mulch, Compost &amp; Topsoil</a>
+    <a href="#delivery">Delivery</a>
+    <p class="mgroup">Visiting</p>
+    <a href="#directions">Hours &amp; Directions</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- ===================== ⭐ TWO-PATH HERO ===================== -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-head">
+      <h1>Green waste in. Mulch, compost &amp; topsoil out.</h1>
+      <p>CCC Greenwaste LLC &mdash; <span class="confirm">[CONFIRM county]</span>, Virginia. Open Monday to Friday, 7AM&ndash;4PM.</p>
+    </div>
+
+    <div class="paths">
+
+      <a class="path path-dump" href="#dump" data-path="dump">
+        <!-- PLACEHOLDER-dumping.jpg -->
+        <img src="https://images.pexels.com/photos/28214180/pexels-photo-28214180.jpeg?auto=compress&cs=tinysrgb&w=900"
+             alt="A heap of cut brush, limbs and leafy trimmings tipped onto a green waste pile." width="900" height="700">
+        <span class="path-in">
+          <span class="path-kick">Bringing material in</span>
+          <h2>I need to dump</h2>
+          <p>Clean green waste &mdash; brush, leaves, grass, limbs and trimmings.</p>
+          <span class="sub">Mon&ndash;Fri 7AM&ndash;4PM <span class="confirm">[CONFIRM dump fees]</span></span>
+          <span class="go">See dumping <span class="arw" aria-hidden="true">&rarr;</span></span>
+        </span>
+      </a>
+
+      <a class="path path-supply" href="#supply" data-path="supply">
+        <!-- PLACEHOLDER-materials-pile.jpg -->
+        <img src="https://images.pexels.com/photos/9541900/pexels-photo-9541900.jpeg?auto=compress&cs=tinysrgb&w=900"
+             alt="A tall pile of shredded wood mulch heaped in a materials yard." width="900" height="700">
+        <span class="path-in">
+          <span class="path-kick">Taking material out</span>
+          <h2>I need materials</h2>
+          <p>Mulch, compost and topsoil &mdash; pick it up or have it delivered.</p>
+          <span class="sub"><span class="confirm">[CONFIRM price per cubic yard]</span> Delivery available</span>
+          <span class="go">See materials <span class="arw" aria-hidden="true">&rarr;</span></span>
+        </span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TRUST STRIP ===================== -->
+<div class="trust">
+  <div class="wrap trust-in">
+    <div><span class="pip" aria-hidden="true"></span> Locally owned in Virginia <span class="confirm">[CONFIRM county]</span></div>
+    <div><span class="pip" aria-hidden="true"></span> Clean green waste only</div>
+    <div><span class="pip" aria-hidden="true"></span> Delivery available</div>
+    <div><span class="pip" aria-hidden="true"></span> Open Mon&ndash;Fri 7AM&ndash;4PM</div>
+  </div>
+</div>
+
+<!-- this only appears once a path has been chosen -->
+<p class="reorder-note" id="reorderNote" role="status">
+  <span id="reorderText">Showing your path first.</span>
+  <button type="button" id="resetPath">Show both</button>
+</p>
+
+<div class="tracks">
+
+<!-- =========================================================================
+     THE DUMP TRACK
+     ========================================================================= -->
+<div class="track-dump">
+
+  <section class="track-band track-dump" id="dump">
+    <div class="wrap">
+      <div class="rule reveal"></div>
+      <p class="kick reveal">&mdash; The Dump Track &mdash;</p>
+      <h2 class="reveal">Clean green waste dumping</h2>
+      <p class="sub reveal">Landscapers dump weekly. Homeowners dump twice a year. Both need the same two things: what&rsquo;s accepted, and whether the gate is open.</p>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section style="padding-top:1.5rem">
+    <div class="wrap">
+      <h3 class="reveal">How it works</h3>
+      <div class="steps">
+        <div class="step reveal">
+          <span class="n">1</span>
+          <h4>Check the list</h4>
+          <p>Run your load past the <a href="#accepted">accepted materials list</a>. One wrong item can turn a load away at the gate.</p>
+        </div>
+        <div class="step reveal d1">
+          <span class="n">2</span>
+          <h4>Arrive Mon&ndash;Fri</h4>
+          <p>7AM to 4PM. Check the status light at the top of this page before you load the trailer. <span class="confirm">[CONFIRM Saturday hours]</span></p>
+        </div>
+        <div class="step reveal d2">
+          <span class="n">3</span>
+          <h4>Load assessed</h4>
+          <p><span class="confirm">[CONFIRM — do you weigh loads, or assess by volume?]</span> <span class="confirm">[CONFIRM whether there is a scale on site]</span></p>
+        </div>
+        <div class="step reveal d3">
+          <span class="n">4</span>
+          <h4>Dump and go</h4>
+          <p><span class="confirm">[CONFIRM whether an account or pre-registration is required for contractors]</span> <span class="confirm">[CONFIRM whether homeowners can dump, or contractors only]</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⭐ Accepted / not accepted -->
+  <section id="accepted" style="padding-top:1.5rem">
+    <div class="wrap">
+      <h2 class="reveal">What we take &mdash; and what we don&rsquo;t</h2>
+      <p class="reveal" style="max-width:44rem;color:var(--muted)">The most-read page on any yard&rsquo;s website, and the one worth getting exactly right. A contaminated load costs the yard real money; a rejected load costs you an hour and a round trip.</p>
+
+      <div class="accept-grid">
+        <div class="acol yes reveal">
+          <p class="acol-head"><span class="mark" aria-hidden="true">&check;</span> We accept</p>
+          <ul>
+            <li>Grass clippings</li>
+            <li>Leaves</li>
+            <li>Brush</li>
+            <li>Small limbs <span class="confirm">[CONFIRM diameter limit]</span></li>
+            <li>Tree trimmings</li>
+            <li>Shrubs</li>
+            <li>Garden waste</li>
+            <li>Logs <span class="confirm">[CONFIRM — size limits?]</span></li>
+            <li>Stumps <span class="confirm">[CONFIRM — accepted at all? root balls?]</span></li>
+            <li>Sod <span class="confirm">[CONFIRM — soil attached is usually the problem]</span></li>
+          </ul>
+        </div>
+
+        <div class="acol no reveal d1">
+          <p class="acol-head"><span class="mark" aria-hidden="true">&times;</span> We do NOT accept</p>
+          <ul>
+            <li>Dirt and rock <span class="confirm">[CONFIRM]</span></li>
+            <li>Construction debris</li>
+            <li>Lumber and treated wood</li>
+            <li>Painted wood</li>
+            <li>Trash and household waste</li>
+            <li>Plastic bags</li>
+            <li>Pots and nursery containers <span class="confirm">[CONFIRM]</span></li>
+            <li>Stumps with soil attached <span class="confirm">[CONFIRM]</span></li>
+            <li>Hazardous materials</li>
+            <li>Animal waste <span class="confirm">[CONFIRM]</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="clean-note reveal">
+        <h3>&ldquo;Clean&rdquo; means clean</h3>
+        <p>One bag of trash in one load can contaminate an entire batch of compost &mdash; and in Virginia, &ldquo;clean&rdquo; green waste isn&rsquo;t a marketing word, it&rsquo;s a condition the facility operates under. Plastic doesn&rsquo;t break down; treated wood doesn&rsquo;t belong in soil.</p>
+        <p><strong>Not sure about your load? Call before you drive out.</strong> <a href="tel:+15405001602" style="color:#fff">(540) 500-1602</a> &mdash; a two-minute call beats a wasted trip with a loaded trailer.</p>
+        <p style="margin-bottom:0"><span class="confirm">[CONFIRM the complete accepted and not-accepted lists before this page is published — this section is the one that has to be exactly right]</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dump pricing -->
+  <section id="dump-pricing" style="padding-top:1.5rem">
+    <div class="wrap">
+      <h2 class="reveal">Dump pricing</h2>
+      <p class="reveal" style="max-width:44rem;color:var(--muted)">Every figure below is a placeholder. Nothing on this mockup states a price, because no price has been confirmed &mdash; and a wrong number on a website is worse than no number at all.</p>
+
+      <div class="table-wrap reveal">
+        <table class="grid t-dump">
+          <caption class="vh">Dumping fees by load size &mdash; all pricing to be confirmed</caption>
+          <thead>
+            <tr>
+              <th scope="col">Load</th>
+              <th scope="col">Fee</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="row-name">Pickup truck<span class="row-sub">Level-loaded bed</span></span></td>
+              <td><span class="price-slot">[CONFIRM PRICE]</span></td>
+              <td><span class="confirm">[CONFIRM]</span></td>
+            </tr>
+            <tr>
+              <td><span class="row-name">Small trailer<span class="row-sub">Single axle</span></span></td>
+              <td><span class="price-slot">[CONFIRM PRICE]</span></td>
+              <td><span class="confirm">[CONFIRM]</span></td>
+            </tr>
+            <tr>
+              <td><span class="row-name">Dump trailer<span class="row-sub">Tandem axle</span></span></td>
+              <td><span class="price-slot">[CONFIRM PRICE]</span></td>
+              <td><span class="confirm">[CONFIRM]</span></td>
+            </tr>
+            <tr>
+              <td><span class="row-name">Dump truck<span class="row-sub">Commercial</span></span></td>
+              <td><span class="price-slot">[CONFIRM PRICE]</span></td>
+              <td><span class="confirm">[CONFIRM]</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p style="margin-top:1rem"><span class="confirm">[CONFIRM dumping fees — by load, by cubic yard, or by weight]</span> <span class="confirm">[CONFIRM payment methods — if it's cash only, that has to be on this page and in the sticky bar]</span></p>
+    </div>
+  </section>
+
+  <!-- Contractor accounts -->
+  <section class="accounts on-dark">
+    <div class="wrap">
+      <div class="reveal" style="max-width:46rem">
+        <h2>Contractor &amp; landscaper accounts</h2>
+        <p class="sub">A crew that dumps every week shouldn&rsquo;t be settling up like a first-time visitor every Tuesday afternoon.</p>
+      </div>
+      <div class="acc-grid">
+        <div class="acc-card reveal"><h4>Recurring dumping</h4><p>Standing arrangement for weekly maintenance routes. <span class="confirm">[CONFIRM]</span></p></div>
+        <div class="acc-card reveal d1"><h4>Volume pricing</h4><p><span class="confirm">[CONFIRM volume pricing]</span></p></div>
+        <div class="acc-card reveal d2"><h4>Net terms</h4><p><span class="confirm">[CONFIRM net terms and account setup]</span></p></div>
+        <div class="acc-card reveal d3"><h4>Direct contact</h4><p><span class="confirm">[CONFIRM dedicated contact for account holders]</span></p></div>
+      </div>
+      <p class="center mt-2"><a class="btn" href="tel:+15405001602">Call to set up an account &mdash; (540) 500-1602</a></p>
+    </div>
+  </section>
+
+</div><!-- /track-dump -->
+
+<!-- =========================================================================
+     THE SUPPLY TRACK
+     ========================================================================= -->
+<div class="track-supply">
+
+  <section class="track-band track-supply" id="supply">
+    <div class="wrap">
+      <div class="rule reveal"></div>
+      <p class="kick reveal">&mdash; The Supply Track &mdash;</p>
+      <h2 class="reveal">Mulch, compost &amp; topsoil</h2>
+      <p class="sub reveal">Bulk, by the cubic yard. Pick it up Monday to Friday, or have it delivered.</p>
+    </div>
+  </section>
+
+  <!-- ⭐ Materials price list -->
+  <section id="materials" style="padding-top:1.5rem">
+    <div class="wrap">
+      <h2 class="reveal">Materials price list</h2>
+      <p class="reveal" style="max-width:46rem;color:var(--muted)">Three products, priced by the cubic yard. The texture shots below are stock stand-ins, shot the same way so real product photos can drop straight in.</p>
+
+      <div class="table-wrap reveal">
+        <table class="grid t-supply">
+          <caption class="vh">Bulk materials, price per cubic yard, minimum order and delivery &mdash; all pricing to be confirmed</caption>
+          <thead>
+            <tr>
+              <th scope="col">Material</th>
+              <th scope="col">Price / cubic yard</th>
+              <th scope="col">Minimum order</th>
+              <th scope="col">Delivery</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <!-- PLACEHOLDER-mulch-texture.jpg -->
+                <img class="swatch" src="https://images.pexels.com/photos/11742397/pexels-photo-11742397.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Close-up of dark shredded wood mulch." loading="lazy" width="200" height="200">
+                <span class="row-name">Mulch<span class="row-sub"><span class="confirm">[CONFIRM types and colours — double-shredded hardwood, black, brown, natural?]</span></span></span>
+              </td>
+              <td><span class="price-slot">[CONFIRM PRICE]</span></td>
+              <td><span class="confirm">[CONFIRM minimum]</span></td>
+              <td><span class="confirm">[CONFIRM fee / radius]</span></td>
+            </tr>
+            <tr>
+              <td>
+                <!-- PLACEHOLDER-compost-texture.jpg -->
+                <img class="swatch" src="https://images.pexels.com/photos/30218920/pexels-photo-30218920.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Close-up of dark, crumbly finished compost." loading="lazy" width="200" height="200">
+                <span class="row-name">Compost<span class="row-sub"><span class="confirm">[CONFIRM screened? feedstock source?]</span></span></span>
+              </td>
+              <td><span class="price-slot">[CONFIRM PRICE]</span></td>
+              <td><span class="confirm">[CONFIRM minimum]</span></td>
+              <td><span class="confirm">[CONFIRM fee / radius]</span></td>
+            </tr>
+            <tr>
+              <td>
+                <!-- PLACEHOLDER-topsoil-texture.jpg -->
+                <img class="swatch" src="https://images.pexels.com/photos/12103291/pexels-photo-12103291.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Close-up of screened brown topsoil." loading="lazy" width="200" height="200">
+                <span class="row-name">Topsoil<span class="row-sub"><span class="confirm">[CONFIRM screened topsoil vs. fill dirt]</span></span></span>
+              </td>
+              <td><span class="price-slot">[CONFIRM PRICE]</span></td>
+              <td><span class="confirm">[CONFIRM minimum]</span></td>
+              <td><span class="confirm">[CONFIRM fee / radius]</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p style="margin-top:1rem"><span class="confirm">[CONFIRM whether they load your vehicle or you self-load]</span> <span class="confirm">[CONFIRM bulk only, or bagged available]</span> <span class="confirm">[CONFIRM minimum and maximum order volume]</span></p>
+      <p><span class="confirm">[CONFIRM VDACS soil amendment registration before any compost claim is made — no nutrient analysis, NPK figure, pH, maturity, &ldquo;organic&rdquo; or OMRI claim appears on this page]</span></p>
+
+      <!-- Calculator -->
+      <div class="calc reveal" id="calc">
+        <h3>How many yards do you need?</h3>
+        <p class="lead">The single biggest reason people buy bagged instead of bulk is that they have no idea how much to order. Measure the bed, pick a depth.</p>
+
+        <div class="presets" role="group" aria-label="Common depths">
+          <button type="button" data-depth="2" aria-pressed="false">2&Prime; &mdash; mulch top-dress</button>
+          <button type="button" data-depth="3" aria-pressed="true">3&Prime; &mdash; new bed</button>
+          <button type="button" data-depth="4" aria-pressed="false">4&Prime; &mdash; deep</button>
+        </div>
+
+        <div class="calc-grid">
+          <div class="field">
+            <label for="calcL">Length (feet)</label>
+            <input type="number" id="calcL" min="0" step="0.5" inputmode="decimal" placeholder="e.g. 24">
+          </div>
+          <div class="field">
+            <label for="calcW">Width (feet)</label>
+            <input type="number" id="calcW" min="0" step="0.5" inputmode="decimal" placeholder="e.g. 8">
+          </div>
+          <div class="field">
+            <label for="calcD">Depth (inches)</label>
+            <input type="number" id="calcD" min="0" step="0.5" inputmode="decimal" value="3">
+          </div>
+          <div class="field">
+            <label for="calcM">Material</label>
+            <select id="calcM">
+              <option>Mulch</option>
+              <option>Compost</option>
+              <option>Topsoil</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="calc-out">
+          <div class="calc-num" id="calcOut" aria-live="polite">&mdash;<small>Cubic yards</small></div>
+          <p class="calc-note"><b>Estimate only.</b> Length &times; width &times; depth, converted to cubic yards. It doesn&rsquo;t allow for settling or an uneven base. <span class="confirm">[CONFIRM their own depth guidance per material]</span></p>
+          <a class="btn btn-sm" href="#delivery" id="calcSend">Use this in the delivery form <span class="arw" aria-hidden="true">&rarr;</span></a>
+        </div>
+
+        <p class="coverage">Rule of thumb: <strong style="color:#fff">one cubic yard covers about 100 square feet at 3 inches deep.</strong> That&rsquo;s a bed roughly 10 feet by 10 feet. <span class="confirm">[CONFIRM this matches their own guidance]</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⭐ Delivery request -->
+  <section id="delivery" style="padding-top:1.5rem">
+    <div class="wrap-narrow">
+      <h2 class="reveal">Request a delivery</h2>
+      <p class="reveal" style="color:var(--muted)">Or pick it up yourself, Monday to Friday, 7AM&ndash;4PM.</p>
+
+      <div class="form-card reveal">
+        <form id="deliveryForm" action="#" method="post" novalidate>
+
+          <fieldset class="fset">
+            <legend>What you need</legend>
+            <div class="row2">
+              <div class="field">
+                <label for="dMaterial">Material</label>
+                <select id="dMaterial" name="material" required>
+                  <option value="">Choose one</option>
+                  <option>Mulch</option>
+                  <option>Compost</option>
+                  <option>Topsoil</option>
+                  <option>More than one &mdash; see notes</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="dType">Type <span style="font-weight:400;color:var(--muted)">(if known)</span></label>
+                <select id="dType" name="material_type">
+                  <option value="">Choose one</option>
+                  <option>[CONFIRM type options]</option>
+                  <option>Not sure &mdash; recommend one</option>
+                </select>
+              </div>
+            </div>
+            <div class="row2">
+              <div class="field">
+                <label for="dYards">Cubic yards</label>
+                <input type="number" id="dYards" name="yards" min="0" step="0.1" inputmode="decimal" placeholder="Use the calculator above">
+              </div>
+              <div class="field">
+                <label for="dDate">Preferred delivery date</label>
+                <input type="date" id="dDate" name="preferred_date">
+              </div>
+            </div>
+            <label class="checkline">
+              <input type="checkbox" name="help_estimate" value="yes">
+              <span>Not sure how much I need &mdash; help me figure it out.</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="fset">
+            <legend>Where it goes</legend>
+            <div class="row2">
+              <div class="field">
+                <label for="dAddr">Delivery address</label>
+                <input type="text" id="dAddr" name="address" required>
+              </div>
+              <div class="field">
+                <label for="dZip">ZIP</label>
+                <input type="text" id="dZip" name="zip" inputmode="numeric" required>
+              </div>
+            </div>
+            <div class="row2">
+              <div class="field">
+                <label for="dWhere">Where should we dump it?</label>
+                <select id="dWhere" name="drop_location">
+                  <option value="">Choose one</option>
+                  <option>Driveway</option>
+                  <option>Side yard</option>
+                  <option>Curb</option>
+                  <option>Not sure &mdash; call me</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="dTarp">Driveway protection?</label>
+                <select id="dTarp" name="tarp">
+                  <option value="">Choose one</option>
+                  <option>Yes, please tarp it</option>
+                  <option>No, straight on the drive is fine</option>
+                  <option>Not sure</option>
+                </select>
+              </div>
+            </div>
+            <p style="font-size:.88rem;color:var(--muted);margin:0">A loaded truck needs room to get in, tip and turn around. Overhanging branches, soft ground and narrow gates are all worth mentioning. <span class="confirm">[CONFIRM truck access requirements and GVWR]</span></p>
+          </fieldset>
+
+          <fieldset class="fset">
+            <legend>Your details</legend>
+            <div class="row2">
+              <div class="field"><label for="dName">Name</label><input type="text" id="dName" name="name" required></div>
+              <div class="field"><label for="dPhone">Phone</label><input type="tel" id="dPhone" name="phone" required></div>
+            </div>
+            <div class="field"><label for="dEmail">Email</label><input type="email" id="dEmail" name="email"></div>
+            <div class="field"><label for="dNotes">Notes</label><textarea id="dNotes" name="notes" placeholder="Gate codes, access, dogs, anything we should know."></textarea></div>
+            <p class="sms-consent">By submitting, you agree we may text you about your delivery. Message and data rates may apply. <span class="confirm">[CONFIRM form endpoint and where requests should land]</span></p>
+          </fieldset>
+
+          <div class="submit-row">
+            <button type="submit" class="btn btn-lg">Request Delivery <span class="arw" aria-hidden="true">&rarr;</span></button>
+            <span class="pickup-line">Or call <a href="tel:+15405001602">(540) 500-1602</a></span>
+          </div>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+
+      <p style="margin-top:1rem"><span class="confirm">[CONFIRM delivery radius and delivery fee]</span> <span class="confirm">[CONFIRM delivery minimum]</span></p>
+    </div>
+  </section>
+
+  <!-- Pickup vs delivery -->
+  <section style="padding-top:1.5rem">
+    <div class="wrap">
+      <h2 class="reveal">Pick it up, or have it delivered</h2>
+      <div class="compare">
+        <div class="cmp reveal">
+          <h3>Pick it up</h3>
+          <ul>
+            <li>Monday to Friday, 7AM&ndash;4PM</li>
+            <li>A standard pickup bed holds roughly 2 cubic yards level-loaded &mdash; but weight, not volume, is usually the limit with wet compost or soil <span class="confirm">[CONFIRM their own guidance]</span></li>
+            <li><span class="confirm">[CONFIRM whether they load you or you self-load]</span></li>
+            <li><span class="confirm">[CONFIRM yard rules for customers on site — where to park, whether to stay in the vehicle]</span></li>
+            <li><span class="confirm">[CONFIRM payment methods]</span></li>
+          </ul>
+        </div>
+        <div class="cmp reveal d1">
+          <h3>Have it delivered</h3>
+          <ul>
+            <li>Delivery available <span class="confirm">[CONFIRM radius]</span></li>
+            <li><span class="confirm">[CONFIRM delivery minimum]</span></li>
+            <li><span class="confirm">[CONFIRM delivery fee, and whether it's included in the per-yard price]</span></li>
+            <li>The truck needs room to tip and turn &mdash; tell us about tight drives and low branches</li>
+            <li><span class="confirm">[CONFIRM insured]</span> &mdash; a loaded truck on a residential driveway is real exposure</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /track-supply -->
+</div><!-- /tracks -->
+
+<!-- ===================== THE FULL CIRCLE ===================== -->
+<section class="circle">
+  <div class="wrap">
+    <div class="reveal" style="max-width:46rem">
+      <h2>The full circle</h2>
+      <p>The brush a landscaper dumps on Tuesday is the mulch a homeowner buys on Saturday. That&rsquo;s not a marketing story bolted onto the business &mdash; it <em>is</em> the business, and it&rsquo;s why the two halves of this site exist.</p>
+    </div>
+
+    <div class="loop">
+      <div class="loop-stage reveal">
+        <!-- PLACEHOLDER-greenwaste-in.jpg -->
+        <img src="https://images.pexels.com/photos/29626049/pexels-photo-29626049.jpeg?auto=compress&cs=tinysrgb&w=700" alt="A pile of cut brush and limbs delivered to a green waste yard." loading="lazy" width="700" height="467">
+        <h4>Green waste in</h4>
+        <p>Brush, limbs, leaves and trimmings, dropped Monday to Friday.</p>
+      </div>
+      <div class="loop-arrow" aria-hidden="true">&rarr;</div>
+      <div class="loop-stage reveal d1">
+        <!-- PLACEHOLDER-processing.jpg -->
+        <img src="https://images.pexels.com/photos/29064093/pexels-photo-29064093.jpeg?auto=compress&cs=tinysrgb&w=700" alt="A compost thermometer reading the temperature inside an active compost pile." loading="lazy" width="700" height="467">
+        <h4>Processed</h4>
+        <p>Ground, turned and screened. <span class="confirm">[CONFIRM their actual process and timeline]</span></p>
+      </div>
+      <div class="loop-arrow" aria-hidden="true">&rarr;</div>
+      <div class="loop-stage reveal d2">
+        <!-- PLACEHOLDER-materials-out.jpg -->
+        <img src="https://images.pexels.com/photos/11742397/pexels-photo-11742397.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Finished dark shredded mulch ready for sale." loading="lazy" width="700" height="467">
+        <h4>Materials out</h4>
+        <p>Mulch, compost and topsoil, by the yard, picked up or delivered.</p>
+      </div>
+    </div>
+
+    <div class="loop-caveat reveal">
+      <strong>Before this section ships:</strong> <span class="confirm">[CONFIRM whether CCC Greenwaste actually grinds and composts on site, or brokers finished material in]</span> If they broker it in, this loop is not their story and comes off the page. <strong>No tonnage, yardage or diversion percentage is claimed anywhere on this site</strong> &mdash; those numbers need records behind them, and none were supplied.
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HOURS, DIRECTIONS & WHAT TO EXPECT ===================== -->
+<section class="directions on-dark" id="directions">
+  <div class="wrap">
+    <div class="dir-grid">
+      <div class="reveal">
+        <h2>Hours &amp; directions</h2>
+        <p class="big-hours">Monday &ndash; Friday<span>7AM &ndash; 4PM</span></p>
+        <p style="color:#C6BCAE"><span class="confirm">[CONFIRM Saturday hours — landscaping supply customers ask this constantly]</span> <span class="confirm">[CONFIRM holiday closures]</span></p>
+
+        <ul class="dir-list">
+          <li><b>Address</b> <span class="confirm">[CONFIRM full physical address and GPS pin — this is the single most important missing fact on the whole site]</span></li>
+          <li><b>Gate</b> <span class="confirm">[CONFIRM gate location and whether it's the same entrance for dumping and pickup]</span></li>
+          <li><b>Check in</b> <span class="confirm">[CONFIRM where to check in, and whether to stay in the vehicle]</span></li>
+          <li><b>Turnaround</b> <span class="confirm">[CONFIRM turnaround space for trailers and dump trucks]</span></li>
+          <li><b>Payment</b> <span class="confirm">[CONFIRM payment methods — cash only is common at yards and belongs on this page if so]</span></li>
+          <li><b>Phone</b> <a href="tel:+15405001602" style="color:#fff">(540) 500-1602</a></li>
+        </ul>
+      </div>
+
+      <div class="reveal d1">
+        <div class="map-slot">
+          <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <path d="M24 44s14-13 14-24A14 14 0 1010 20c0 11 14 24 14 24z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+            <circle cx="24" cy="20" r="5" stroke="currentColor" stroke-width="3"/>
+          </svg>
+          <p><strong style="color:#fff">Map intentionally empty.</strong></p>
+          <p>No address was captured in the lead data, and a map of a plausible-looking location is worse than no map. The embed drops in here the moment the address is confirmed.</p>
+          <p><span class="confirm">[CONFIRM address]</span></p>
+        </div>
+
+        <figure class="yard-shot">
+          <!-- PLACEHOLDER-yard-entrance.jpg -->
+          <img src="https://images.pexels.com/photos/31021093/pexels-photo-31021093.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="A gravel track leading between open ground toward a working yard." loading="lazy" width="1000" height="563">
+          <figcaption>Stock placeholder &mdash; replace with a photo of the actual entrance and signage. People are driving here; they need to recognise the turn.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COMMUNITY ===================== -->
+<section>
+  <div class="wrap">
+    <div class="reveal" style="max-width:44rem">
+      <h2>From the yard</h2>
+      <p style="color:var(--muted)">CCC Greenwaste posts regularly and actually talks to people &mdash; that&rsquo;s a real asset most yards don&rsquo;t have. These slots hold the latest updates so the site stays alive between builds. <span class="confirm">[CONFIRM Facebook page URL — embed the live feed here, or keep three static cards]</span></p>
+    </div>
+    <div class="posts">
+      <div class="post-card reveal"><span class="when">Latest post</span><p><span class="confirm">[CONFIRM — pull the most recent Facebook post]</span></p></div>
+      <div class="post-card reveal d1"><span class="when">Update</span><p><span class="confirm">[CONFIRM — pull a recent update]</span></p></div>
+      <div class="post-card reveal d2"><span class="when">Update</span><p><span class="confirm">[CONFIRM — pull a recent update]</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== REVIEWS ===================== -->
+<section style="background:var(--oat)">
+  <div class="wrap">
+    <div class="reveal" style="max-width:44rem">
+      <h2>Reviews</h2>
+      <p style="color:var(--muted)">No star rating, no review count and no quotes appear on this mockup, because none have been verified.</p>
+    </div>
+    <div class="rev-grid">
+      <div class="rev-empty reveal"><span class="qm" aria-hidden="true">&ldquo;</span><p><span class="confirm">[CONFIRM — pull a real review from their Facebook page]</span></p></div>
+      <div class="rev-empty reveal d1"><span class="qm" aria-hidden="true">&ldquo;</span><p><span class="confirm">[CONFIRM — pull a real review from a contractor account]</span></p></div>
+      <div class="rev-empty reveal d2"><span class="qm" aria-hidden="true">&ldquo;</span><p><span class="confirm">[CONFIRM — pull a real review from a delivery customer]</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section>
+  <div class="wrap-narrow">
+    <h2 class="reveal">Questions</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="q1b" aria-expanded="false" aria-controls="q1p">What counts as &ldquo;clean&rdquo; green waste?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="q1p" role="region" aria-labelledby="q1b" hidden>
+          <p>Plant material and nothing else &mdash; no bags, no pots, no trash, no treated or painted wood, no dirt or rock mixed through it. <a href="#accepted">Full list above.</a> <span class="confirm">[CONFIRM]</span></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="q2b" aria-expanded="false" aria-controls="q2p">Do you take stumps or logs?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="q2p" role="region" aria-labelledby="q2b" hidden>
+          <p><span class="confirm">[CONFIRM — logs, stumps, root balls, and any diameter or size limit]</span> Soil attached to a root ball is usually the deciding factor, so this answer needs to be specific.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="q3b" aria-expanded="false" aria-controls="q3p">Can homeowners dump, or is it contractors only?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="q3p" role="region" aria-labelledby="q3b" hidden>
+          <p><span class="confirm">[CONFIRM whether they accept from homeowners]</span> <span class="confirm">[CONFIRM whether pre-registration or an account is required]</span></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="q4b" aria-expanded="false" aria-controls="q4p">What does dumping cost?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="q4p" role="region" aria-labelledby="q4b" hidden>
+          <p><span class="confirm">[CONFIRM dumping fees — by load, by cubic yard, or by weight]</span> No figure is printed on this mockup because none has been confirmed.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="q5b" aria-expanded="false" aria-controls="q5p">How much mulch do I need?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="q5p" role="region" aria-labelledby="q5b" hidden>
+          <p>Use the <a href="#calc">cubic yard calculator</a>. As a rule, one cubic yard covers about 100 square feet at 3 inches deep. <span class="confirm">[CONFIRM their own guidance]</span></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="q6b" aria-expanded="false" aria-controls="q6p">Do you load my truck?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="q6p" role="region" aria-labelledby="q6b" hidden>
+          <p><span class="confirm">[CONFIRM whether they load customer vehicles or customers self-load]</span> <span class="confirm">[CONFIRM yard rules while loading]</span></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="q7b" aria-expanded="false" aria-controls="q7p">What&rsquo;s your delivery minimum and radius?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="q7p" role="region" aria-labelledby="q7b" hidden>
+          <p><span class="confirm">[CONFIRM delivery radius, minimum order and fee]</span></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="q8b" aria-expanded="false" aria-controls="q8p">Do you take dirt?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="q8p" role="region" aria-labelledby="q8b" hidden>
+          <p>Dirt and rock are on the not-accepted list. <span class="confirm">[CONFIRM]</span> Note that this cuts both ways &mdash; they sell topsoil, but that doesn&rsquo;t mean they take soil in.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="q9b" aria-expanded="false" aria-controls="q9p">Are you open Saturdays?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="q9p" role="region" aria-labelledby="q9b" hidden>
+          <p>Confirmed hours are Monday to Friday, 7AM&ndash;4PM. <span class="confirm">[CONFIRM Saturday hours]</span> Weekend hours are the difference between catching homeowner trade and missing it entirely, so this is worth answering plainly.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="q10b" aria-expanded="false" aria-controls="q10p">What forms of payment do you take?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="q10p" role="region" aria-labelledby="q10b" hidden>
+          <p><span class="confirm">[CONFIRM payment methods]</span> If it&rsquo;s cash only, that needs to be on the page, in the sticky bar, and on the sign at the gate.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <p class="foot-mark">CCC Greenwaste LLC</p>
+        <p>Clean green waste dumping, and bulk mulch, compost and topsoil. Virginia. <span class="confirm">[CONFIRM county]</span></p>
+        <a class="foot-tel" href="tel:+15405001602">(540) 500-1602</a>
+        <p class="foot-hours" style="margin-top:.6rem">Mon&ndash;Fri 7AM&ndash;4PM</p>
+        <p><span class="confirm">[CONFIRM email address]</span></p>
+        <p><span class="confirm">[CONFIRM Facebook page URL]</span></p>
+      </div>
+
+      <div>
+        <h4>Dumping</h4>
+        <ul>
+          <li><a href="#accepted">Accepted materials</a></li>
+          <li><a href="#accepted">Not accepted</a></li>
+          <li><a href="#dump-pricing">Dump pricing</a></li>
+          <li><a href="#dump">Contractor accounts</a></li>
+        </ul>
+        <h4 style="margin-top:1.4rem">Materials</h4>
+        <ul>
+          <li><a href="#materials">Mulch</a></li>
+          <li><a href="#materials">Compost</a></li>
+          <li><a href="#materials">Topsoil</a></li>
+          <li><a href="#delivery">Delivery</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Visiting</h4>
+        <ul>
+          <li><span class="confirm">[CONFIRM full physical address]</span></li>
+          <li>Hours: Mon&ndash;Fri 7AM&ndash;4PM</li>
+          <li><span class="confirm">[CONFIRM Saturday hours]</span></li>
+          <li><span class="confirm">[CONFIRM delivery / service area]</span></li>
+          <li><span class="confirm">[CONFIRM VA DEQ permit, permit-by-rule registration or exemption status]</span></li>
+          <li><span class="confirm">[CONFIRM locality BPOL business licence]</span></li>
+          <li><span class="confirm">[CONFIRM insured]</span></li>
+          <li><span class="confirm">[CONFIRM owner / contact name]</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-legal">
+      <p class="specnote">SPEC MOCKUP &mdash; built for a pitch. CCC Greenwaste LLC has not signed and this site is not live. All photography is royalty-free stock placeholder and is not CCC Greenwaste&rsquo;s own yard, equipment or product.</p>
+      <p>No price, permit number, tonnage figure or diversion percentage appears anywhere on this build. The hours are the one operational fact treated as confirmed &mdash; everything else in a dashed amber marker needs an answer before publication.</p>
+      <p>&copy; <span id="yr">2026</span> CCC Greenwaste LLC. <span class="confirm">[CONFIRM legal business entity name and registered locality]</span></p>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== STICKY ACTION BAR =====================
+     Directions gets a permanent slot because people are driving here.
+-->
+<nav class="actionbar" aria-label="Quick actions">
+  <a href="tel:+15405001602">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 006.5 6.5l1.5-2 4 1.5v3a2 2 0 01-2.2 2A17 17 0 014.5 5.2 2 2 0 016.5 3z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+    Call
+  </a>
+  <a href="#directions">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="2"/></svg>
+    Directions
+  </a>
+  <a href="#materials">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 18l6-9 4 5 3-3 5 7z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+    Materials
+  </a>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>

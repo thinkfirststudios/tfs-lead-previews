@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Golden State Life | Term Life Insurance — California, Oregon &amp; Nevada</title>
+<meta name="description" content="Term life insurance guidance for residents of California, Oregon and Nevada. Tell us what you're protecting and a licensed agent reviews your options with you. No obligation.">
+<meta name="robots" content="noindex, nofollow">
+<!--
+  ============================================================================
+  SPEC MOCKUP — Golden State Life. LEAD, NOT A CLIENT. Not signed.
+  REDESIGN pitch — goldenstatelife.com already exists.
+  [CONFIRM full URL inventory and map a 301 for every existing URL.]
+
+  Life insurance advertising is regulated at state level, and CA, OR and NV
+  have all adopted rules along the lines of the NAIC Advertisements of Life
+  Insurance and Annuities model. This build is written to those rules.
+
+  ⛔ EXPLICITLY ABSENT FROM THIS BUILD, AND THEY MUST STAY ABSENT:
+    • Any rate, premium, price, "starting at" figure or sample premium table.
+      Every price question is answered "it depends on age, health, coverage
+      amount and term — a licensed agent gives you real numbers."
+    • "No medical exam guaranteed." Whether an exam is required is a carrier
+      and product decision made in underwriting.
+    • Guaranteed acceptance or approval language of any kind. No "everyone
+      qualifies", no "you can't be turned down", and no green checkmark
+      anywhere that could read as an approval status.
+    • Any instant or binding quote. The flow produces a REQUEST. Coverage is
+      never bound on a website, and the form says so at the point of submit.
+    • Cash value, growth, accumulation or investment-return language. Term
+      life has no cash value.
+    • Countdown timers, scarcity bars, "rates going up", limited enrolment —
+      any urgency device at all.
+    • Fear-based copy or imagery dramatising death, illness or hardship.
+    • Carrier names or logos. [CONFIRM carrier permission — carriers commonly
+      require advertising review and pre-approval of any use of their marks,
+      and often of the whole page the mark appears on.]
+    • Financial strength ratings, government affiliation, or any performance
+      claim: families served, policies placed, years in business, satisfaction
+      rates. None were supplied.
+
+  ✅ REQUIRED AND STRUCTURALLY PRESENT (values [CONFIRM], never invented):
+    • CA DOI licence number — California Insurance Code §1725.5 requires the
+      licence number on advertisements and materials, in a specified minimum
+      type size on print.
+    • Oregon and Nevada producer licence numbers.
+    • True legal entity name and any DBA relationship.
+    • "Licensed in California, Oregon and Nevada. Products and availability
+      vary by state."
+    • "This is an advertisement for insurance." — near the flow and in the
+      footer.
+    • Express consent, unchecked by default, before any call or text follows.
+
+  The assessment GATES ON STATE. A visitor outside CA/OR/NV is routed out
+  politely rather than harvested — soliciting where unlicensed is the
+  violation this page most easily commits by accident.
+
+  Accessibility is treated as a compliance item: real labels, visible focus,
+  AA contrast, keyboard-navigable steps. All imagery is adults-only stock
+  placeholder, warm and unposed, with nothing dramatising loss.
+  ============================================================================
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23152A4A'/%3E%3Cpath d='M16 6l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z' fill='%23D9A518'/%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "InsuranceAgency",
+  "name": "Golden State Life",
+  "description": "Term life insurance guidance for residents of California, Oregon and Nevada.",
+  "telephone": "+1-909-588-6277",
+  "url": "https://goldenstatelife.com",
+  "areaServed": [
+    { "@type": "State", "name": "California" },
+    { "@type": "State", "name": "Oregon" },
+    { "@type": "State", "name": "Nevada" }
+  ]
+}
+</script>
+<!--
+  JSON-LD omits address, openingHours, priceRange, aggregateRating and review.
+  areaServed lists only the three states in the lead data. No licence numbers
+  are asserted in schema — they belong on the page, where they are visible.
+-->
+</head>
+<body>
+
+<a class="skip" href="#assessment">Skip to the coverage assessment</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-head" id="siteHead">
+  <div class="wrap head-in">
+    <a class="mark" href="#top">
+      <b>Golden State Life</b>
+      <small>Term Life &amp; Financial Protection</small>
+    </a>
+
+    <span class="states-tag">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:15px;height:15px"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      Licensed in CA &middot; OR &middot; NV
+    </span>
+
+    <nav class="head-nav" aria-label="Primary">
+      <a href="#term">Term Life</a>
+      <a href="#process">How It Works</a>
+      <a href="#who">Who We Serve</a>
+      <a href="#assessment">Get a Quote</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="btn btn-sm head-tel btn-navy" href="tel:+19095886277">(909) 588-6277</a>
+
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+    <a href="#term">Term Life</a>
+    <a href="#process">How It Works</a>
+    <a href="#who">Who We Serve</a>
+    <a href="#assessment">Get a Quote</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="tel:+19095886277">Call (909) 588-6277</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">California &middot; Oregon &middot; Nevada</p>
+      <h1>The people who depend on you don&rsquo;t stop depending on you.</h1>
+      <p class="lede">Term life insurance is one of the few financial decisions that is genuinely simple once someone explains it properly. That&rsquo;s the part we do.</p>
+
+      <div class="starter">
+        <h2 id="starterHeading">Start here &mdash; three questions</h2>
+        <form class="starter-fields" id="starterForm" action="#assessment" method="get" aria-labelledby="starterHeading">
+          <div class="field">
+            <label for="sCoverage">Coverage amount</label>
+            <select id="sCoverage" name="coverage">
+              <option value="">Not sure yet</option>
+              <option>$100,000</option>
+              <option>$250,000</option>
+              <option>$500,000</option>
+              <option>$750,000</option>
+              <option>$1,000,000</option>
+              <option>More than $1,000,000</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="sTerm">Term length</label>
+            <select id="sTerm" name="term">
+              <option value="">Not sure yet</option>
+              <option>10 years</option>
+              <option>15 years</option>
+              <option>20 years</option>
+              <option>30 years</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="sAge">Age band</label>
+            <select id="sAge" name="age">
+              <option value="">Select</option>
+              <option>Under 30</option>
+              <option>30&ndash;39</option>
+              <option>40&ndash;49</option>
+              <option>50&ndash;59</option>
+              <option>60 or over</option>
+            </select>
+          </div>
+          <div style="grid-column:1/-1">
+            <button type="submit" class="btn btn-lg" style="width:100%">See My Options <span class="arw" aria-hidden="true">&rarr;</span></button>
+          </div>
+        </form>
+        <p style="font-size:.86rem;margin:.9rem 0 0">These three answers start the assessment below. Nothing here produces a price &mdash; a licensed agent prepares your options and talks them through with you.</p>
+      </div>
+    </div>
+
+    <figure class="hero-shot">
+      <!-- PLACEHOLDER-hero.jpg — adults only, warm, unposed. No imagery dramatising loss. -->
+      <img src="https://images.pexels.com/photos/4680376/pexels-photo-4680376.jpeg?auto=compress&cs=tinysrgb&w=1100"
+           alt="Two adults talking over coffee in a bright kitchen at home." width="1100" height="825">
+      <figcaption>Stock placeholder &mdash; replace before launch</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===================== TRUST STRIP ===================== -->
+<div class="trust">
+  <div class="wrap trust-in">
+    <div>
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      Licensed in three states
+    </div>
+    <div>
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      A licensed agent reviews every request
+    </div>
+    <div>
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round" transform="rotate(45 12 12)"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/></svg>
+      No obligation
+    </div>
+    <div>
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 10V7a4 4 0 018 0v3" stroke="currentColor" stroke-width="2"/></svg>
+      <span><span class="confirm">[CONFIRM privacy practices before any data-handling claim is made here]</span></span>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== ⭐ ASSESSMENT ===================== -->
+<section class="assess" id="assessment">
+  <div class="wrap">
+    <div class="sec-head reveal" style="text-align:center;margin-inline:auto">
+      <p class="eyebrow" style="justify-content:center">Coverage assessment</p>
+      <h2>Seven short questions.</h2>
+      <p>At the end, a licensed agent prepares options for you. There is no price on the last screen, because an honest price needs underwriting behind it.</p>
+    </div>
+
+    <div class="assess-card reveal">
+      <div class="dots" id="dots" role="status" aria-live="polite" aria-atomic="true">
+        <span class="dot now"></span><span class="dot"></span><span class="dot"></span>
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        <span class="of" id="stepCount">Step 1 of 7</span>
+      </div>
+
+      <form id="assessForm" action="#" method="post" novalidate>
+
+        <!-- 1 -->
+        <fieldset class="step active" data-step="1" style="border:0;margin:0;padding:0">
+          <h3>Which state do you live in?</h3>
+          <p class="sub">Golden State Life is licensed in California, Oregon and Nevada. Products and availability vary by state.</p>
+          <div class="opts three" role="group" aria-label="State">
+            <label><input type="radio" name="state" value="CA"> <span>California</span></label>
+            <label><input type="radio" name="state" value="OR"> <span>Oregon</span></label>
+            <label><input type="radio" name="state" value="NV"> <span>Nevada</span></label>
+          </div>
+          <div class="opts" style="margin-top:.7rem">
+            <label><input type="radio" name="state" value="OTHER"> <span>Somewhere else</span></label>
+          </div>
+
+          <!-- polite exit for anyone outside the licensed states -->
+          <div class="oos" id="oosPanel" hidden>
+            <h4>We&rsquo;re not licensed in your state</h4>
+            <p>Golden State Life is licensed in California, Oregon and Nevada only, so we can&rsquo;t advise on or sell you a policy elsewhere &mdash; and we&rsquo;d rather say that now than take your details.</p>
+            <p><span class="confirm">[CONFIRM whether they want a referral path for out-of-state visitors, or simply a courteous close]</span></p>
+          </div>
+        </fieldset>
+
+        <!-- 2 -->
+        <fieldset class="step" data-step="2" style="border:0;margin:0;padding:0">
+          <h3>How much coverage are you thinking about?</h3>
+          <p class="sub">A rough idea is fine. The section below this form walks through how people usually arrive at a number.</p>
+          <div class="field">
+            <label for="aCoverage">Coverage amount</label>
+            <select id="aCoverage" name="coverage">
+              <option value="">Not sure yet &mdash; help me work it out</option>
+              <option>$100,000</option>
+              <option>$250,000</option>
+              <option>$500,000</option>
+              <option>$750,000</option>
+              <option>$1,000,000</option>
+              <option>More than $1,000,000</option>
+            </select>
+            <span class="hint">This is the amount of coverage, not a price.</span>
+          </div>
+        </fieldset>
+
+        <!-- 3 -->
+        <fieldset class="step" data-step="3" style="border:0;margin:0;padding:0">
+          <h3>How long do you want it to last?</h3>
+          <p class="sub">Most people match the term to the years their family would be exposed &mdash; a mortgage, or the years until dependants are independent.</p>
+          <div class="opts two" role="group" aria-label="Term length">
+            <label><input type="radio" name="term" value="10"> <span>10 years</span></label>
+            <label><input type="radio" name="term" value="15"> <span>15 years</span></label>
+            <label><input type="radio" name="term" value="20"> <span>20 years</span></label>
+            <label><input type="radio" name="term" value="30"> <span>30 years</span></label>
+            <label><input type="radio" name="term" value="unsure"> <span>Not sure yet</span></label>
+          </div>
+          <p style="font-size:.88rem;margin-top:.9rem"><span class="confirm">[CONFIRM which term lengths their carriers actually offer]</span></p>
+        </fieldset>
+
+        <!-- 4 -->
+        <fieldset class="step" data-step="4" style="border:0;margin:0;padding:0">
+          <h3>What age band are you in?</h3>
+          <p class="sub">Age affects what options are available. We ask the band rather than the date because this is a request, not an application.</p>
+          <div class="opts three" role="group" aria-label="Age band">
+            <label><input type="radio" name="age" value="u30"> <span>Under 30</span></label>
+            <label><input type="radio" name="age" value="30s"> <span>30&ndash;39</span></label>
+            <label><input type="radio" name="age" value="40s"> <span>40&ndash;49</span></label>
+            <label><input type="radio" name="age" value="50s"> <span>50&ndash;59</span></label>
+            <label><input type="radio" name="age" value="60+"> <span>60 or over</span></label>
+          </div>
+        </fieldset>
+
+        <!-- 5 -->
+        <fieldset class="step" data-step="5" style="border:0;margin:0;padding:0">
+          <h3>Who depends on your income?</h3>
+          <p class="sub">This is the question that usually decides the coverage amount.</p>
+          <div class="opts two" role="group" aria-label="Dependants">
+            <label><input type="radio" name="dependents" value="partner"> <span>A partner or spouse</span></label>
+            <label><input type="radio" name="dependents" value="children"> <span>Dependants at home</span></label>
+            <label><input type="radio" name="dependents" value="parents"> <span>A parent or relative</span></label>
+            <label><input type="radio" name="dependents" value="none"> <span>Nobody right now</span></label>
+          </div>
+        </fieldset>
+
+        <!-- 6 -->
+        <fieldset class="step" data-step="6" style="border:0;margin:0;padding:0">
+          <h3>How would you describe your general health?</h3>
+          <p class="sub">Your own words are fine. Nothing here decides anything &mdash; health questions belong to the carrier&rsquo;s underwriting, later.</p>
+          <div class="opts two" role="group" aria-label="General health">
+            <label><input type="radio" name="health" value="excellent"> <span>Excellent</span></label>
+            <label><input type="radio" name="health" value="good"> <span>Good</span></label>
+            <label><input type="radio" name="health" value="fair"> <span>Fair</span></label>
+            <label><input type="radio" name="health" value="prefer"> <span>Rather discuss it on the call</span></label>
+          </div>
+          <p style="font-size:.88rem;margin-top:.9rem"><span class="confirm">[CONFIRM whether to ask about tobacco use at this stage, or leave it to the agent conversation]</span></p>
+        </fieldset>
+
+        <!-- 7 -->
+        <fieldset class="step" data-step="7" style="border:0;margin:0;padding:0">
+          <h3>Where should the agent reach you?</h3>
+
+          <div class="row2" style="display:grid;gap:1rem">
+            <div class="field"><label for="aName">Name</label><input type="text" id="aName" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="aPhone">Phone</label><input type="tel" id="aPhone" name="phone" autocomplete="tel" required></div>
+          </div>
+          <div class="field" style="margin-top:1rem"><label for="aEmail">Email</label><input type="email" id="aEmail" name="email" autocomplete="email"></div>
+
+          <div class="review-panel">
+            <h4>Before you send this</h4>
+            <p><strong>A licensed agent will review this and contact you with options.</strong> This is not an application, and it does not bind coverage. Final rates depend on the carrier&rsquo;s underwriting.</p>
+            <p>Expected response time: <span class="confirm">[CONFIRM their actual response time — no timeframe is promised on this site that they have not committed to]</span></p>
+          </div>
+
+          <label class="consent">
+            <input type="checkbox" name="consent" value="yes" required>
+            <span>I agree that Golden State Life may contact me by phone, text or email about my request. I understand this is a request for information and not an application for insurance. <span class="confirm">[CONFIRM the exact consent wording with counsel — if any TCPA-covered calls or texts follow, express consent language and disclosure are required. This box is never pre-checked.]</span></span>
+          </label>
+        </fieldset>
+
+        <div class="step-nav">
+          <button type="button" class="btn btn-line" id="prevBtn" hidden>Back</button>
+          <span class="spacer"></span>
+          <button type="button" class="btn" id="nextBtn">Continue <span class="arw" aria-hidden="true">&rarr;</span></button>
+          <button type="submit" class="btn" id="submitBtn" hidden>Send to a licensed agent <span class="arw" aria-hidden="true">&rarr;</span></button>
+        </div>
+
+        <p class="form-status" id="assessStatus" role="status"></p>
+      </form>
+    </div>
+
+    <div class="next-steps">
+      <div class="next-step reveal"><span class="n">1</span><h4>You send this</h4><p>Seven answers. No documents, no medical questions, no commitment.</p></div>
+      <div class="next-step reveal d1"><span class="n">2</span><h4>A licensed agent reviews it</h4><p>A real person looks at what you&rsquo;ve described and prepares options, then calls you.</p></div>
+      <div class="next-step reveal d2"><span class="n">3</span><h4>You decide</h4><p>Or you don&rsquo;t. There is no obligation at any point, and nothing has been applied for.</p></div>
+    </div>
+
+    <p class="ad-note"><strong>This is an advertisement for insurance.</strong> Golden State Life is licensed in California, Oregon and Nevada. Products and availability vary by state. <span class="confirm">[CONFIRM legal entity name and whether &ldquo;Golden State Life&rdquo; is a DBA — the required disclosure differs for an agency and an individual producer]</span></p>
+  </div>
+</section>
+
+<!-- ===================== COVERAGE EDUCATOR ===================== -->
+<section>
+  <div class="wrap cover-grid">
+    <div class="reveal">
+      <p class="eyebrow">How much coverage do I need?</p>
+      <h2>There isn&rsquo;t a formula. There is a way people think about it.</h2>
+      <p>Nobody arrives at a number by instinct. Most people work through the same five things, add them up, and then adjust. Here they are.</p>
+
+      <ul class="cover-list">
+        <li><b>Income replacement</b>How many years would the people who depend on you need to be covered for, and at roughly what level?</li>
+        <li><b>Outstanding debts</b>Anything that would otherwise land on someone else &mdash; loans, credit balances, a co-signed obligation.</li>
+        <li><b>Mortgage balance</b>Usually the largest single line, and the one most people match a term length to.</li>
+        <li><b>Childcare and education</b>Where it applies, the costs that would still arrive on schedule.</li>
+        <li><b>Final expenses</b>The immediate costs a family faces, so that nobody is making financial decisions in a difficult week.</li>
+      </ul>
+
+      <div class="review-panel" style="border-left-color:var(--amber)">
+        <h4>Read that as a starting point, not an answer</h4>
+        <p>The right amount depends on your own circumstances &mdash; other coverage you already have, what your household could absorb, and what you actually want to protect. A licensed agent should review it with you before you settle on a figure.</p>
+        <p><span class="confirm">[CONFIRM whether to build a simple coverage calculator here. If built, it outputs a coverage amount to discuss &mdash; never a price.]</span></p>
+      </div>
+    </div>
+
+    <figure class="cover-shot reveal d1">
+      <!-- PLACEHOLDER-paperwork.jpg — adults only -->
+      <img src="https://images.pexels.com/photos/4963010/pexels-photo-4963010.jpeg?auto=compress&cs=tinysrgb&w=900" alt="An adult writing notes beside an open laptop in daylight." loading="lazy" width="900" height="675">
+      <figcaption>Stock placeholder &mdash; replace before launch</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===================== TERM LIFE EXPLAINED ===================== -->
+<section class="band-white" id="term">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Term life, explained</p>
+      <h2>Written for someone who has never bought insurance.</h2>
+    </div>
+
+    <div class="term-grid">
+      <div class="term-card reveal">
+        <h3>What term life is</h3>
+        <p>You choose an amount of coverage and a length of time. If you die during that period, the policy pays the people you named. If you don&rsquo;t, it ends. That is genuinely the whole product.</p>
+        <p>It has no cash value and it is not an investment &mdash; it does not grow, accumulate or return anything. That simplicity is the point of it.</p>
+      </div>
+
+      <div class="term-card reveal d1">
+        <h3>How the term length works</h3>
+        <p>Terms are typically sold in fixed lengths. People generally match the term to the years their household would be exposed &mdash; the remaining mortgage, or the years until dependants are independent.</p>
+        <div class="term-lengths">
+          <span>10 years</span><span>15 years</span><span>20 years</span><span>30 years</span>
+        </div>
+        <p style="margin-top:.9rem;font-size:.9rem"><span class="confirm">[CONFIRM which terms their carriers offer]</span></p>
+      </div>
+
+      <div class="term-card reveal">
+        <h3>Level premiums</h3>
+        <p>On a level term policy the premium is set at the start and stays the same for the whole term. What that amount is depends on your age, your health, the coverage amount, the term, and the carrier&rsquo;s underwriting &mdash; which is exactly why there is no number anywhere on this website.</p>
+      </div>
+
+      <div class="term-card reveal d1">
+        <h3>What happens at the end</h3>
+        <p>The coverage ends. Depending on the policy there may be options to renew, convert to a permanent policy, or simply let it lapse &mdash; each with its own consequences and cost. <span class="confirm">[CONFIRM which conversion and renewal options their carriers offer]</span></p>
+        <p>Permanent coverage &mdash; whole life and similar &mdash; works differently and costs differently. That is a conversation, not a paragraph.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STATE MAP ===================== -->
+<section class="states">
+  <div class="wrap map-grid">
+    <div class="map-wrap reveal">
+      <!--
+        Flat illustrated west-coast motif. Deliberately schematic rather than
+        a real map: an approximate outline used as a licensing cue cannot be
+        mistaken for a coverage-area guarantee.
+      -->
+      <svg viewBox="0 0 300 340" role="img" aria-labelledby="mapTitle mapDesc">
+        <title id="mapTitle">States where Golden State Life is licensed</title>
+        <desc id="mapDesc">A schematic west coast with California, Oregon and Nevada highlighted.</desc>
+
+        <!-- Washington (muted) -->
+        <path class="state-shape" d="M60 20 L150 14 L155 62 L64 68 Z"/>
+        <text class="state-label muted" x="100" y="46">WA</text>
+
+        <!-- Oregon (lit) -->
+        <path class="state-shape lit" d="M64 68 L155 62 L162 124 L70 130 Z"/>
+        <text class="state-label" x="108" y="102">OREGON</text>
+
+        <!-- Idaho (muted) -->
+        <path class="state-shape" d="M155 62 L200 56 L212 140 L162 124 Z"/>
+        <text class="state-label muted" x="180" y="104">ID</text>
+
+        <!-- Nevada (lit) -->
+        <path class="state-shape lit" d="M104 136 L162 130 L196 232 L136 240 Z"/>
+        <text class="state-label" x="150" y="192">NEVADA</text>
+
+        <!-- California (lit) -->
+        <path class="state-shape lit" d="M70 130 L104 136 L136 240 L186 306 L150 320 L96 246 Z"/>
+        <text class="state-label" x="106" y="228" transform="rotate(-14 106 228)">CALIFORNIA</text>
+
+        <!-- Arizona / Utah (muted) -->
+        <path class="state-shape" d="M162 130 L212 140 L226 236 L196 232 Z"/>
+        <text class="state-label muted" x="196" y="192">UT / AZ</text>
+      </svg>
+    </div>
+
+    <div class="reveal d1">
+      <p class="eyebrow">Where we&rsquo;re licensed</p>
+      <h2>Three states, and only three.</h2>
+      <p>An insurance producer can only advise and sell where they hold a licence. If you live outside these three, the assessment above will say so rather than take your details.</p>
+
+      <div class="state-cards">
+        <div class="state-card">
+          <h3>California</h3>
+          <p class="lic-line">CA DOI Licence #<span class="confirm">[CONFIRM California Department of Insurance licence number — required in advertising under Cal. Ins. Code §1725.5]</span></p>
+          <p>Serving residents across California.</p>
+        </div>
+        <div class="state-card">
+          <h3>Oregon</h3>
+          <p class="lic-line">OR Licence #<span class="confirm">[CONFIRM Oregon Division of Financial Regulation producer licence number]</span></p>
+          <p>Serving residents across Oregon.</p>
+        </div>
+        <div class="state-card">
+          <h3>Nevada</h3>
+          <p class="lic-line">NV Licence #<span class="confirm">[CONFIRM Nevada Division of Insurance producer licence number]</span></p>
+          <p>Serving residents across Nevada.</p>
+        </div>
+      </div>
+
+      <p style="margin-top:1.2rem;font-size:.94rem"><strong>Licensed in California, Oregon and Nevada. Products and availability vary by state.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHO WE HELP ===================== -->
+<section id="who">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Who we help</p>
+      <h2>Four situations where this comes up.</h2>
+      <p>None of these are emergencies. They are just the moments when people start thinking about it.</p>
+    </div>
+
+    <div class="who-grid">
+      <div class="who reveal">
+        <div class="who-shot"><img src="https://images.pexels.com/photos/4680376/pexels-photo-4680376.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Two adults talking in a home kitchen." loading="lazy" width="600" height="450"></div>
+        <div class="who-body">
+          <h3>New parents</h3>
+          <p>A household that used to run on two incomes now has someone in it who cannot earn one. That changes the arithmetic.</p>
+        </div>
+      </div>
+
+      <div class="who reveal d1">
+        <div class="who-shot"><img src="https://images.pexels.com/photos/23174617/pexels-photo-23174617.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Two adults standing together outdoors in warm light." loading="lazy" width="600" height="450"></div>
+        <div class="who-body">
+          <h3>Homeowners with a mortgage</h3>
+          <p>The most common reason people match a term length to a number of years: the balance owing, and how long it has left to run.</p>
+        </div>
+      </div>
+
+      <div class="who reveal d2">
+        <div class="who-shot"><img src="https://images.pexels.com/photos/7710091/pexels-photo-7710091.jpeg?auto=compress&cs=tinysrgb&w=600" alt="An adult working at a laptop in a workspace." loading="lazy" width="600" height="450"></div>
+        <div class="who-body">
+          <h3>Small business owners</h3>
+          <p>Where a business depends on one person, or where a loan was personally guaranteed. <span class="confirm">[CONFIRM whether they handle business-related coverage]</span></p>
+        </div>
+      </div>
+
+      <div class="who reveal d3">
+        <div class="who-shot"><img src="https://images.pexels.com/photos/1785893/pexels-photo-1785893.jpeg?auto=compress&cs=tinysrgb&w=600" alt="An open laptop resting on a sofa in a quiet room." loading="lazy" width="600" height="450"></div>
+        <div class="who-body">
+          <h3>People whose work coverage isn&rsquo;t enough</h3>
+          <p>Group coverage through an employer is often a multiple of salary, and it usually ends when the job does. Worth knowing which of those applies to you.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROCESS ===================== -->
+<section class="band-white" id="process">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">The process, end to end</p>
+      <h2>Including the parts other sites leave out.</h2>
+      <p>Setting expectations honestly here is worth more than a smooth funnel. Nobody enjoys finding out about step four after they&rsquo;ve committed to step three.</p>
+    </div>
+
+    <div class="process">
+      <div class="pstep reveal"><span class="pn">01</span><h4>Conversation</h4><p>What you&rsquo;re protecting, and what you already have in place.</p></div>
+      <div class="pstep reveal d1"><span class="pn">02</span><h4>Needs assessment</h4><p>Working out the coverage amount and term that actually fit.</p></div>
+      <div class="pstep reveal d2"><span class="pn">03</span><h4>Options presented</h4><p>Real numbers from carriers, explained side by side. <span class="confirm">[CONFIRM independent vs. captive — this changes the whole positioning]</span></p></div>
+      <div class="pstep reveal d3"><span class="pn">04</span><h4>Application &amp; underwriting</h4><p>The carrier reviews the application. This usually includes health questions, and depending on the carrier and product may include a medical exam.</p></div>
+      <div class="pstep reveal d3"><span class="pn">05</span><h4>Policy issued</h4><p>If the carrier approves it, coverage begins on the terms in the policy. <span class="confirm">[CONFIRM typical timeline]</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRE-FAQ ===================== -->
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Before you call</p>
+      <h2>The three things people are actually worried about.</h2>
+    </div>
+
+    <div class="prefaq">
+      <div class="pf reveal">
+        <h3>&ldquo;Will I get spam calls?&rdquo;</h3>
+        <p>The honest answer to this determines whether anyone fills the form in at all. <span class="confirm">[CONFIRM their contact practices — how many times they call, whether details are shared with anyone beyond the agent and the carrier, and how someone opts out. Whatever the answer is, it goes here in plain language.]</span></p>
+      </div>
+      <div class="pf reveal d1">
+        <h3>&ldquo;Do I have to buy anything?&rdquo;</h3>
+        <p>No. The assessment is a request for information. It is not an application, it does not bind coverage, and there is no point in the conversation where saying &ldquo;not right now&rdquo; is a problem.</p>
+      </div>
+      <div class="pf reveal d2">
+        <h3>&ldquo;Is this going to be expensive?&rdquo;</h3>
+        <p>It depends on your age, your health, how much coverage you want and for how long. That is not an evasion &mdash; it is the entire answer. Anyone quoting you a figure before knowing those four things is guessing, and this site would rather not.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="band-white" id="about">
+  <div class="wrap wrap-narrow">
+    <div class="sec-head reveal">
+      <p class="eyebrow">About</p>
+      <h2>Golden State Life</h2>
+    </div>
+    <div class="reveal">
+      <p class="lede">Golden State Life helps residents of California, Oregon and Nevada arrange term life insurance and financial protection.</p>
+      <p>That sentence is the entire set of confirmed facts from the lead data, so it is the entire About section this mockup writes. Everything that would normally fill this space &mdash; how long they have been doing this, how many families they have worked with, who the agents are &mdash; is left to them.</p>
+
+      <ul class="cover-list">
+        <li><b>Legal entity</b><span class="confirm">[CONFIRM legal entity name, DBA, and whether this is an agency or an individual producer — the required disclosure differs]</span></li>
+        <li><b>Agents</b><span class="confirm">[CONFIRM named agent or agents — none captured in the lead data]</span></li>
+        <li><b>Carrier relationship</b><span class="confirm">[CONFIRM independent (multiple carriers) or captive to one — this changes the positioning of the entire site]</span></li>
+        <li><b>Office</b><span class="confirm">[CONFIRM physical address and hours]</span></li>
+        <li><b>Track record</b><span class="confirm">[CONFIRM — no years in business, families served, policies placed, rating or award appears anywhere on this build]</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CARRIERS ===================== -->
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Carrier partners</p>
+      <h2>Names go here after the carriers say yes.</h2>
+      <p>Carriers commonly require advertising review and pre-approval of any use of their name or logo &mdash; and often of the entire page the logo appears on. So this row stays neutral until that approval exists in writing.</p>
+    </div>
+
+    <div class="carriers reveal">
+      <div class="carrier">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M7 12h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <p>Carrier logo &mdash; pending carrier approval</p>
+      </div>
+      <div class="carrier">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M7 12h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <p>Carrier logo &mdash; pending carrier approval</p>
+      </div>
+      <div class="carrier">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M7 12h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <p>Carrier logo &mdash; pending carrier approval</p>
+      </div>
+      <div class="carrier">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M7 12h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <p>Carrier logo &mdash; pending carrier approval</p>
+      </div>
+    </div>
+
+    <p class="center mt-2" style="font-size:.94rem"><span class="confirm">[CONFIRM which carriers they are appointed with, and written permission from each before any mark appears]</span></p>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section class="band-white">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Client feedback</p>
+      <h2>Reserved, and empty.</h2>
+      <p>Insurance testimonials are subject to state advertising rules: they generally have to be genuine, typical, and not misleading, and some states require disclosure if anything was given in exchange. No quotes are invented here.</p>
+    </div>
+    <div class="tst-grid">
+      <div class="tst reveal"><span class="qm" aria-hidden="true">&ldquo;</span><p><span class="confirm">[CONFIRM — a genuine, typical, non-misleading review, with permission and any required compensation disclosure]</span></p></div>
+      <div class="tst reveal d1"><span class="qm" aria-hidden="true">&ldquo;</span><p><span class="confirm">[CONFIRM — as above]</span></p></div>
+      <div class="tst reveal d2"><span class="qm" aria-hidden="true">&ldquo;</span><p><span class="confirm">[CONFIRM — as above]</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section>
+  <div class="wrap-narrow">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Questions</p>
+      <h2>Asked and answered plainly.</h2>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="f1b" aria-expanded="false" aria-controls="f1p">How much coverage do I need?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="f1p" role="region" aria-labelledby="f1b" hidden>
+          <p>Work through income replacement, debts, the mortgage, childcare and education where they apply, and final expenses &mdash; then adjust for what you already have. The walkthrough is <a href="#top">further up this page</a>. A licensed agent should review the number with you.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="f2b" aria-expanded="false" aria-controls="f2p">What does term life cost?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="f2p" role="region" aria-labelledby="f2b" hidden>
+          <p>It depends on your age, your health, the coverage amount and the term. There is no figure anywhere on this website, and that is deliberate &mdash; a premium quoted without underwriting behind it is a number someone made up. A licensed agent will give you real ones.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="f3b" aria-expanded="false" aria-controls="f3p">Do I need a medical exam?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="f3p" role="region" aria-labelledby="f3b" hidden>
+          <p>Sometimes. Whether an exam is required is a carrier and product decision made during underwriting &mdash; it is not something a website can promise either way. Some products may not require one, subject to underwriting. <span class="confirm">[CONFIRM which specific carriers and products, before this answer names any]</span></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="f4b" aria-expanded="false" aria-controls="f4p">What if I have a health condition?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="f4p" role="region" aria-labelledby="f4b" hidden>
+          <p>It is worth having the conversation. Carriers assess conditions differently from one another, which is one of the practical reasons people work with an agent rather than applying directly. <span class="confirm">[CONFIRM their guidance — no statement about acceptance, approval odds or &ldquo;everyone qualifies&rdquo; appears on this site]</span></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="f5b" aria-expanded="false" aria-controls="f5p">Can I change my coverage later?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="f5p" role="region" aria-labelledby="f5b" hidden>
+          <p>Options vary by policy and carrier &mdash; some allow conversion to permanent coverage, some allow renewal at the end of a term, and buying additional coverage later is its own new application. <span class="confirm">[CONFIRM what their carriers allow]</span></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="f6b" aria-expanded="false" aria-controls="f6p">What happens if I miss a payment?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="f6p" role="region" aria-labelledby="f6b" hidden>
+          <p>Policies generally include a grace period, after which coverage can lapse &mdash; and reinstating it may require new underwriting. The specifics are in the policy. <span class="confirm">[CONFIRM the grace period terms their carriers use]</span></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="f7b" aria-expanded="false" aria-controls="f7p">How long does approval take?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="f7p" role="region" aria-labelledby="f7b" hidden>
+          <p><span class="confirm">[CONFIRM typical underwriting timelines — no timeframe is stated on this site that they have not committed to]</span> It depends on the carrier, the product, and whether an exam is required.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="f8b" aria-expanded="false" aria-controls="f8p">Do you serve my state?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="f8p" role="region" aria-labelledby="f8b" hidden>
+          <p>California, Oregon and Nevada. If you live elsewhere, the assessment will tell you so rather than take your details &mdash; a producer can only advise and sell where they hold a licence.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="contact on-dark" id="contact">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <p class="eyebrow">Contact</p>
+      <h2>Talk to a licensed agent</h2>
+      <p>If you would rather just ask a question than fill in an assessment, that is completely fine.</p>
+
+      <ul class="contact-lines">
+        <li><span class="lbl">Phone</span><a href="tel:+19095886277">(909) 588-6277</a></li>
+        <li><span class="lbl">Email</span><span class="confirm">[CONFIRM email address — none captured]</span></li>
+        <li><span class="lbl">Office</span><span class="confirm">[CONFIRM physical address]</span></li>
+        <li><span class="lbl">Hours</span><span class="confirm">[CONFIRM hours]</span></li>
+        <li><span class="lbl">Licensed in</span><span style="color:#fff;font-weight:700">California &middot; Oregon &middot; Nevada</span></li>
+      </ul>
+    </div>
+
+    <div class="reveal d1">
+      <form class="cform" id="contactForm" action="#" method="post" novalidate>
+        <div class="row2">
+          <div class="field"><label for="cName">Name</label><input type="text" id="cName" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="cPhone">Phone</label><input type="tel" id="cPhone" name="phone" autocomplete="tel" required></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="cEmail">Email</label><input type="email" id="cEmail" name="email" autocomplete="email"></div>
+          <div class="field">
+            <label for="cState">State</label>
+            <select id="cState" name="state">
+              <option value="">Select</option>
+              <option>California</option>
+              <option>Oregon</option>
+              <option>Nevada</option>
+              <option>Somewhere else</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label for="cMsg">Your question</label><textarea id="cMsg" name="message"></textarea></div>
+
+        <label class="consent" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.24)">
+          <input type="checkbox" name="consent" value="yes" required>
+          <span>I agree that Golden State Life may contact me about my question. <span class="confirm">[CONFIRM consent wording with counsel]</span></span>
+        </label>
+
+        <div><button type="submit" class="btn">Send <span class="arw" aria-hidden="true">&rarr;</span></button></div>
+        <p class="form-status" id="contactStatus" role="status"></p>
+        <p style="font-size:.84rem;margin:0;color:#9FB3C9"><strong>This is an advertisement for insurance.</strong> Submitting this form does not apply for or bind coverage.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER — COMPLIANCE BLOCK ===================== -->
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <p class="foot-mark">Golden State Life</p>
+        <p>Term life insurance and financial protection for residents of California, Oregon and Nevada.</p>
+        <p><a href="tel:+19095886277">(909) 588-6277</a><br>
+        <span class="confirm">[CONFIRM email]</span></p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#term">Term life explained</a></li>
+          <li><a href="#assessment">Coverage assessment</a></li>
+          <li><a href="#process">How it works</a></li>
+          <li><a href="#who">Who we serve</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#"><span class="confirm">[CONFIRM privacy policy — required, the assessment collects health self-description and contact details]</span></a></li>
+          <li><a href="#"><span class="confirm">[CONFIRM terms of use]</span></a></li>
+          <li><a href="#"><span class="confirm">[CONFIRM accessibility statement]</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--
+      REQUIRED COMPLIANCE BLOCK. Every value here is [CONFIRM] and none may be
+      invented — a placeholder that merely LOOKS like a licence number is
+      worse than an obviously empty one.
+    -->
+    <div class="legal-block">
+      <div class="lic-grid">
+        <div class="lic-box"><b>California</b>CA DOI Licence #<span class="confirm">[CONFIRM]</span></div>
+        <div class="lic-box"><b>Oregon</b>OR Licence #<span class="confirm">[CONFIRM]</span></div>
+        <div class="lic-box"><b>Nevada</b>NV Licence #<span class="confirm">[CONFIRM]</span></div>
+      </div>
+
+      <div class="disclaimers">
+        <p><strong>This website is an advertisement for insurance.</strong> Golden State Life is licensed in California, Oregon and Nevada. Products and availability vary by state.</p>
+        <p><strong>Legal entity:</strong> <span class="confirm">[CONFIRM true legal name and any DBA relationship — if &ldquo;Golden State Life&rdquo; is a DBA, that relationship must be disclosed]</span></p>
+        <p>Nothing on this site is an offer of coverage, an application, or a binding quote. Completing the assessment does not bind coverage. All coverage is subject to the carrier&rsquo;s underwriting, and final rates are determined by the carrier. Term life insurance has no cash value and is not an investment.</p>
+        <p>No statement on this site should be read as a guarantee of acceptance, approval, or any particular premium. Golden State Life is not affiliated with, or endorsed by, any government agency.</p>
+        <p class="specnote">SPEC MOCKUP &mdash; built for a redesign pitch. Golden State Life has not signed and this site is not live. All photography is royalty-free stock placeholder. Every licence number, entity name, carrier relationship and response time on this build is an unfilled placeholder. <span class="confirm">[CONFIRM whether the finished site must go to carriers and/or state regulators for advertising approval before launch — assume yes and build the timeline around it]</span></p>
+        <p>&copy; <span id="yr">2026</span> <span class="confirm">[CONFIRM legal entity name]</span>. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== STICKY MOBILE BAR ===================== -->
+<nav class="mobar" aria-label="Quick actions">
+  <a href="tel:+19095886277">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 006.5 6.5l1.5-2 4 1.5v3a2 2 0 01-2.2 2A17 17 0 014.5 5.2 2 2 0 016.5 3z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></svg>
+    Call
+  </a>
+  <a href="#assessment">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 4h12v16H6z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M9 9h6M9 13h6M9 17h3" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg>
+    Get My Options
+  </a>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>

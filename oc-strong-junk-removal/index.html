@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OC Strong Junk Removal | Text Us a Photo, Get a Price — Orange County, CA</title>
+<meta name="description" content="Junk, debris, yard waste, shed and playset teardowns across Orange County. Send a photo and get a price — full-service loading, same-day available. No walkthrough needed.">
+<meta name="robots" content="noindex, nofollow">
+<!--
+  ============================================================================
+  SPEC MOCKUP — OC Strong Junk Removal. LEAD, NOT A CLIENT. Not signed.
+  Built from a single Facebook post. Every unverified fact is marked [CONFIRM].
+
+  ARCHITECTURAL CONSTRAINT: no phone number exists in the lead data. There is
+  no click-to-call anywhere on this page — not in the header, not in the
+  footer, not in a sticky bar. Every place a number would sit renders a
+  visible dashed [CONFIRM phone — none captured] chip instead, so the gap is
+  impossible to miss on the discovery call. Do not fill these in with a
+  plausible number; get the real one.
+
+  All photography is royalty-free stock used as a PLACEHOLDER. None of it is
+  OC Strong's work. Replace with real job photos before anything ships.
+  ============================================================================
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23141618'/%3E%3Crect x='6' y='11' width='20' height='13' rx='3' fill='none' stroke='%23A3D62B' stroke-width='2'/%3E%3Ccircle cx='16' cy='17.5' r='4' fill='none' stroke='%23A3D62B' stroke-width='2'/%3E%3Cpath d='M12 11l1.6-3h4.8L20 11' fill='none' stroke='%23A3D62B' stroke-width='2'/%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "OC Strong Junk Removal",
+  "description": "Junk removal, debris and yard waste hauling, and shed, playset and old structure teardowns in Orange County, California. Quotes from a photo.",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Orange County, California"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Junk removal and teardown services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Junk removal" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Debris removal" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Yard waste removal" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Shed teardown and haul-away" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Playset teardown and haul-away" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Old structure teardown and haul-away" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full-service loading and hauling" } }
+    ]
+  }
+}
+</script>
+<!--
+  JSON-LD deliberately omits: telephone (no number captured — do NOT populate
+  with a placeholder), address, openingHours, priceRange, aggregateRating and
+  review. None of those are known and schema is not a place to guess.
+-->
+</head>
+<body>
+
+<a class="skip" href="#uploader">Skip to the photo uploader</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-head" id="siteHead">
+  <div class="wrap head-in">
+    <a class="wordmark" href="#top">
+      OC STRONG
+      <small>Junk Removal &middot; Orange County</small>
+    </a>
+
+    <nav class="head-nav" aria-label="Primary">
+      <a href="#how">How It Works</a>
+      <a href="#take">What We Take</a>
+      <a href="#teardown">Teardowns</a>
+      <a href="#area">Service Area</a>
+    </nav>
+
+    <div class="head-actions">
+      <!-- This is where a phone number belongs. There isn't one. -->
+      <span class="nophone confirm-phone">[CONFIRM phone — none captured]</span>
+      <a class="btn btn-sm" href="#uploader">Send a Photo</a>
+    </div>
+
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+    <a href="#how">How It Works</a>
+    <a href="#take">What We Take</a>
+    <a href="#teardown">Teardowns</a>
+    <a href="#area">Service Area</a>
+    <span class="nophone">[CONFIRM phone — none captured]</span>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- ===================== HERO = THE UPLOADER ===================== -->
+<section class="hero on-dark" id="uploader">
+  <div class="wrap">
+
+    <div class="hero-copy">
+      <span class="hero-flag"><span class="pip"></span>Quotes from a photo</span>
+      <h1>Snap it. Send it. Get a price<span class="dot">.</span></h1>
+      <p>Text us a photo of your junk and we&rsquo;ll quote it &mdash; no walkthrough, no waiting around for a truck.</p>
+    </div>
+
+    <div class="uploader">
+      <!--
+        No-JS fallback: this is a real multipart form. Without JavaScript the
+        follow-up fieldset is revealed by the noscript rule below and the form
+        posts normally. [CONFIRM form endpoint — needs attachment handling.]
+      -->
+      <form id="quoteForm" class="quote-form" action="#" method="post" enctype="multipart/form-data" novalidate>
+
+        <label class="drop" id="drop" for="photoInput">
+          <svg class="cam" viewBox="0 0 64 48" fill="none" aria-hidden="true">
+            <rect x="2" y="10" width="60" height="36" rx="6" stroke="currentColor" stroke-width="3"/>
+            <path d="M20 10l4-8h16l4 8" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+            <circle cx="32" cy="28" r="11" stroke="currentColor" stroke-width="3"/>
+            <circle cx="32" cy="28" r="4.5" fill="currentColor" opacity=".55"/>
+          </svg>
+          <span class="drop-label" id="dropLabel">Take a photo or upload</span>
+          <span class="drop-hint" id="dropHint">
+            Tap to open your camera &middot; or <b>drag photos here</b><br>
+            Add as many as you like. More angles, better quote.
+          </span>
+          <input type="file" id="photoInput" name="photos[]" accept="image/*" capture="environment" multiple
+                 aria-describedby="dropHint">
+        </label>
+
+        <ul class="thumbs" id="thumbs" aria-live="polite"></ul>
+        <p class="compress-note" id="compressNote" hidden></p>
+
+        <fieldset class="follow-up" id="followUp" hidden>
+          <legend>Two more things and we can quote it</legend>
+
+          <div class="fu-row two">
+            <div class="field">
+              <label for="contact">Phone or email <span class="aside">&mdash; this is how the quote comes back to you</span></label>
+              <input type="text" id="contact" name="contact" placeholder="you@example.com or your mobile" required>
+            </div>
+            <div class="field">
+              <label for="city">City</label>
+              <input type="text" id="city" name="city" placeholder="Orange County city" required>
+            </div>
+          </div>
+
+          <div class="fu-row two">
+            <div class="field">
+              <label for="where">Where is it?</label>
+              <select id="where" name="where">
+                <option value="">Choose one</option>
+                <option>In the yard</option>
+                <option>In the garage</option>
+                <option>Inside the house</option>
+                <option>Driveway or curb</option>
+                <option>Mixed / more than one spot</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="sameday">Timing</label>
+              <label class="toggle" for="sameday">
+                <input type="checkbox" id="sameday" name="sameday" value="yes">
+                <span class="track"></span>
+                <span class="tlabel">I&rsquo;m hoping for same-day</span>
+              </label>
+              <span class="aside">Same-day is available when there&rsquo;s a slot open <span class="confirm">[CONFIRM cut-off time]</span></span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="notes">Anything we should know? <span class="aside">(optional)</span></label>
+            <textarea id="notes" name="notes" placeholder="Stairs, a locked gate, a heavy safe, a shed that needs taking apart&hellip;"></textarea>
+          </div>
+
+          <label class="consent">
+            <input type="checkbox" name="gallery_consent" value="yes">
+            <span>OK to use this photo in our before/after gallery. <strong>Optional</strong> &mdash; leave it unchecked and your photos are only ever used to quote your job.</span>
+          </label>
+
+          <p class="sms-consent">By submitting, you agree we may text you about your quote. Message and data rates may apply.</p>
+        </fieldset>
+
+        <div class="submit-row">
+          <button type="submit" class="btn btn-lg">Get My Photo Quote <span class="arw" aria-hidden="true">&rarr;</span></button>
+          <p class="turnaround"><span class="confirm">[CONFIRM quote turnaround]</span> &mdash; we&rsquo;ll send a price back to you.</p>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </div>
+      </form>
+
+      <div class="fallbacks">
+        <p>Prefer not to upload?</p>
+        <div class="fb-row">
+          <a class="btn btn-ghost btn-sm" href="#" rel="noopener">Send the photo on Facebook <span class="arw" aria-hidden="true">&rarr;</span></a>
+          <span class="confirm">[CONFIRM Facebook page URL]</span>
+        </div>
+        <div class="fb-row">
+          <span class="nophone">[CONFIRM phone — none captured]</span>
+        </div>
+        <p style="font-size:.82rem">Texting a photo should be the easiest way to reach OC Strong. Right now there&rsquo;s no number on file to text.</p>
+      </div>
+    </div>
+
+    <figure class="hero-teach">
+      <!-- PLACEHOLDER-hero-phone-photographing.jpg — stock, 16:9 crop -->
+      <img src="https://images.pexels.com/photos/1769106/pexels-photo-1769106.jpeg?auto=compress&cs=tinysrgb&w=1400"
+           alt="A phone held up in one hand, framing a shot on its screen — the same motion used to photograph a pile of junk for a quote."
+           loading="lazy" width="1400" height="800">
+      <figcaption>STOCK PLACEHOLDER &mdash; replace with a real customer photo-quote shot. <span class="confirm">[CONFIRM]</span></figcaption>
+    </figure>
+
+  </div>
+</section>
+
+<!-- ===================== HOW THE PHOTO QUOTE WORKS ===================== -->
+<section class="steps" id="how">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">How the photo quote works</p>
+      <h2>Three steps. No estimator in your driveway.</h2>
+      <p>The only real question about an upload box is what happens after you hit send. Here it is.</p>
+    </div>
+
+    <div class="step-grid">
+
+      <article class="step reveal">
+        <span class="sn">1</span>
+        <svg class="ill" viewBox="0 0 200 108" fill="none" aria-hidden="true">
+          <rect x="58" y="14" width="84" height="80" rx="10" fill="#F5F3EF" stroke="#141618" stroke-width="3"/>
+          <rect x="68" y="26" width="64" height="46" rx="4" fill="#232830"/>
+          <path d="M74 66l12-14 9 10 8-9 15 17H74z" fill="#5A6169"/>
+          <circle cx="116" cy="38" r="5" fill="#A3D62B"/>
+          <circle cx="100" cy="82" r="6" fill="none" stroke="#141618" stroke-width="3"/>
+          <path d="M24 40c-6 0-10 4-10 10s4 10 10 10" stroke="#D62828" stroke-width="3" stroke-linecap="round"/>
+          <path d="M176 40c6 0 10 4 10 10s-4 10-10 10" stroke="#D62828" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <h3>Photograph the pile</h3>
+        <p>No measuring. No counting boxes. No describing a sofa over the phone. Point the camera at it and send.</p>
+      </article>
+
+      <article class="step reveal d1">
+        <span class="sn">2</span>
+        <svg class="ill" viewBox="0 0 200 108" fill="none" aria-hidden="true">
+          <rect x="30" y="22" width="140" height="64" rx="8" fill="#fff" stroke="#141618" stroke-width="3"/>
+          <path d="M30 30l70 34 70-34" stroke="#141618" stroke-width="3" fill="none"/>
+          <rect x="112" y="56" width="66" height="30" rx="6" fill="#A3D62B" stroke="#141618" stroke-width="3"/>
+          <path d="M126 71l7 7 14-16" stroke="#141618" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <text x="156" y="78" font-family="Archivo, sans-serif" font-size="17" font-weight="900" fill="#141618">$</text>
+        </svg>
+        <h3>We send back a price</h3>
+        <p>An actual number, not &ldquo;call for an estimate.&rdquo; <span class="confirm">[CONFIRM whether the photo quote is binding or an estimate]</span> <span class="confirm">[CONFIRM turnaround]</span></p>
+      </article>
+
+      <article class="step reveal d2">
+        <span class="sn">3</span>
+        <svg class="ill" viewBox="0 0 200 108" fill="none" aria-hidden="true">
+          <rect x="18" y="40" width="88" height="40" rx="5" fill="#D62828" stroke="#141618" stroke-width="3"/>
+          <path d="M106 48h34l24 22v10h-58z" fill="#F5F3EF" stroke="#141618" stroke-width="3"/>
+          <rect x="118" y="54" width="20" height="14" rx="2" fill="#232830"/>
+          <circle cx="48" cy="84" r="10" fill="#232830" stroke="#141618" stroke-width="3"/>
+          <circle cx="140" cy="84" r="10" fill="#232830" stroke="#141618" stroke-width="3"/>
+          <path d="M28 34l10-10M48 34l10-10M68 34l10-10" stroke="#A3D62B" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <h3>We show up and load it</h3>
+        <p>Crew does the lifting &mdash; you don&rsquo;t drag anything to the curb. Same-day when we&rsquo;ve got a slot. <span class="confirm">[CONFIRM hours and same-day cut-off]</span></p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHY A PHOTO BEATS A PHONE CALL ===================== -->
+<section class="why on-dark">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Why a photo beats a phone call</p>
+      <h2>A camera describes a garage better than either of us can.</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item reveal">
+        <h3>No guessing game</h3>
+        <p>Nobody has to explain &ldquo;a couch and, like, a bunch of boxes&rdquo; down a phone line and hope the number that comes back is close.</p>
+      </div>
+      <div class="why-item reveal d1">
+        <h3>No appointment to get a number</h3>
+        <p>You don&rsquo;t book a window, wait in, and lose an afternoon just to find out what it costs.</p>
+      </div>
+      <div class="why-item reveal d2">
+        <h3>No truck before you agree</h3>
+        <p>There&rsquo;s no rig sitting in your driveway creating pressure while you decide. You see the price first.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHAT TO PHOTOGRAPH ===================== -->
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">What to photograph</p>
+      <h2>Four things that make your quote accurate.</h2>
+      <p>None of this is fussy. It just means the price we send back is the price that holds up when we arrive.</p>
+    </div>
+
+    <div class="tips-grid">
+
+      <article class="tip reveal">
+        <div class="tip-shot">
+          <!-- PLACEHOLDER-tip-whole-pile.jpg -->
+          <img src="https://images.pexels.com/photos/29626049/pexels-photo-29626049.jpeg?auto=compress&cs=tinysrgb&w=800"
+               alt="A large pile of cut branches and brush sitting in an open yard, entirely within the frame." loading="lazy" width="800" height="600">
+          <svg class="vf" viewBox="0 0 100 75" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M2 14V2h14M84 2h14v12M98 61v12H84M16 73H2V61"/>
+          </svg>
+        </div>
+        <div class="tip-body">
+          <h3>Get the whole pile in frame</h3>
+          <p>One wide shot beats five close-ups. If it doesn&rsquo;t fit, step back rather than cropping the edges off.</p>
+        </div>
+      </article>
+
+      <article class="tip reveal d1">
+        <div class="tip-shot">
+          <!-- PLACEHOLDER-tip-scale.jpg -->
+          <img src="https://images.pexels.com/photos/4246086/pexels-photo-4246086.jpeg?auto=compress&cs=tinysrgb&w=800"
+               alt="Two adults carrying a large cardboard box up a staircase, the doorway behind them giving a sense of scale." loading="lazy" width="800" height="600">
+          <svg class="vf" viewBox="0 0 100 75" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M2 14V2h14M84 2h14v12M98 61v12H84M16 73H2V61"/>
+          </svg>
+        </div>
+        <div class="tip-body">
+          <h3>Include something for scale</h3>
+          <p>A door, a car, a person standing beside it. Piles are almost impossible to size from a photo without one.</p>
+        </div>
+      </article>
+
+      <article class="tip reveal d2">
+        <div class="tip-shot">
+          <!-- PLACEHOLDER-tip-step-back.jpg -->
+          <img src="https://images.pexels.com/photos/30630960/pexels-photo-30630960.jpeg?auto=compress&cs=tinysrgb&w=800"
+               alt="A cluttered room photographed from several feet back so the furniture and boxes are all visible at once." loading="lazy" width="800" height="600">
+          <svg class="vf" viewBox="0 0 100 75" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M2 14V2h14M84 2h14v12M98 61v12H84M16 73H2V61"/>
+          </svg>
+        </div>
+        <div class="tip-body">
+          <h3>Shoot from a few feet back</h3>
+          <p>Close-ups hide the depth of a pile. Distance shows us how much is actually behind the front row.</p>
+        </div>
+      </article>
+
+      <article class="tip reveal d3">
+        <div class="tip-shot">
+          <!-- PLACEHOLDER-tip-path-out.jpg -->
+          <img src="https://images.pexels.com/photos/7434587/pexels-photo-7434587.jpeg?auto=compress&cs=tinysrgb&w=800"
+               alt="A narrow exterior stairway and alley beside a house, showing the route a crew would have to carry items along." loading="lazy" width="800" height="600">
+          <svg class="vf" viewBox="0 0 100 75" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M2 14V2h14M84 2h14v12M98 61v12H84M16 73H2V61"/>
+          </svg>
+        </div>
+        <div class="tip-body">
+          <h3>Show the path out</h3>
+          <p>Stairs, a side gate, a long driveway. The route matters as much as the pile &mdash; it&rsquo;s where the labour goes.</p>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="center mt-2"><a class="txtlink" href="#uploader">Ready &mdash; send your photos <span class="arw" aria-hidden="true">&rarr;</span></a></p>
+  </div>
+</section>
+
+<!-- ===================== FULL-SERVICE LOADING ===================== -->
+<section class="fullservice">
+  <div class="wrap fs-grid">
+    <figure class="fs-shot reveal">
+      <!-- PLACEHOLDER-full-service-loading.jpg — 4:3 -->
+      <img src="https://images.pexels.com/photos/7203883/pexels-photo-7203883.jpeg?auto=compress&cs=tinysrgb&w=1000"
+           alt="Two adults lifting and stacking boxes and household items in a room during a clear-out." loading="lazy" width="1000" height="750">
+      <figcaption>STOCK PLACEHOLDER &mdash; replace with a real OC Strong crew photo.</figcaption>
+    </figure>
+
+    <div class="reveal d1">
+      <p class="eyebrow">Full-service loading</p>
+      <h2>You don&rsquo;t move it. That&rsquo;s the job.</h2>
+      <p>A dumpster rental drops a box on your driveway and leaves the work to you. Curbside haulers only take what you&rsquo;ve already dragged out. OC Strong loads it.</p>
+      <ul class="fs-list">
+        <li>
+          <svg class="ck" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#A3D62B"/><path d="M7 12.5l3.5 3.5L17 9" stroke="#141618" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Out of the garage, the side yard, the back bedroom &mdash; wherever it currently sits.</span>
+        </li>
+        <li>
+          <svg class="ck" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#A3D62B"/><path d="M7 12.5l3.5 3.5L17 9" stroke="#141618" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Sweep-up after the load <span class="confirm">[CONFIRM whether clean-up is included]</span></span>
+        </li>
+        <li>
+          <svg class="ck" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#A3D62B"/><path d="M7 12.5l3.5 3.5L17 9" stroke="#141618" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>You don&rsquo;t need to be home for it <span class="confirm">[CONFIRM access and payment process when nobody&rsquo;s there]</span></span>
+        </li>
+        <li>
+          <svg class="ck" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#A3D62B"/><path d="M7 12.5l3.5 3.5L17 9" stroke="#141618" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Residential and commercial <span class="confirm">[CONFIRM residential vs. commercial]</span></span>
+        </li>
+      </ul>
+      <p class="mt-2"><a class="txtlink" href="#uploader">Photograph it and we&rsquo;ll price it <span class="arw" aria-hidden="true">&rarr;</span></a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TEARDOWN SPECIALTY ===================== -->
+<section class="teardown on-dark" id="teardown">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Sheds, playsets &amp; old structures</p>
+      <h2>Most haulers take what&rsquo;s already loose. We take the structure apart first.</h2>
+      <p>That&rsquo;s the difference between a junk removal company and one that can clear a backyard. Photograph the shed from two angles and we&rsquo;ll quote the teardown.</p>
+    </div>
+
+    <div class="td-trio">
+      <figure class="td-shot reveal">
+        <span class="tag">Before</span>
+        <!-- PLACEHOLDER-shed-before.jpg — 3:2 -->
+        <img src="https://images.pexels.com/photos/12541077/pexels-photo-12541077.jpeg?auto=compress&cs=tinysrgb&w=800"
+             alt="A small wooden backyard outbuilding with a pitched roof standing on a lawn." loading="lazy" width="800" height="533">
+        <figcaption>Stock placeholder &mdash; a wooden backyard shed before teardown.</figcaption>
+      </figure>
+
+      <figure class="td-shot reveal d1">
+        <div class="noshot">
+          <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <path d="M8 52V26l24-14 24 14v26" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M18 52V34h12v18M40 40h10M40 48h10" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+          <p><strong>Playset photo intentionally omitted</strong>
+          Every stock swing-set and playset photo we could source shows children. This site does not use images of minors. Replace with a real OC Strong teardown photo of an empty playset. <span class="confirm">[CONFIRM]</span></p>
+        </div>
+        <figcaption>Deliberate placeholder &mdash; not a missing image.</figcaption>
+      </figure>
+
+      <figure class="td-shot reveal d2">
+        <span class="tag">After</span>
+        <!-- PLACEHOLDER-cleared-ground.jpg — 3:2 -->
+        <img src="https://images.pexels.com/photos/11018246/pexels-photo-11018246.jpeg?auto=compress&cs=tinysrgb&w=800"
+             alt="A bare, level patch of cleared ground between buildings where a structure previously stood." loading="lazy" width="800" height="533">
+        <figcaption>Stock placeholder &mdash; cleared, level ground after removal.</figcaption>
+      </figure>
+    </div>
+
+    <div class="td-cols">
+      <div class="reveal">
+        <h3>What we&rsquo;ll take apart</h3>
+        <ul class="td-scope">
+          <li><b>Wood sheds</b> <span class="confirm">[CONFIRM size limits]</span></li>
+          <li><b>Metal sheds</b> <span class="confirm">[CONFIRM size limits]</span></li>
+          <li><b>Swing sets &amp; playsets</b> <span class="confirm">[CONFIRM]</span></li>
+          <li><b>Decks</b> <span class="confirm">[CONFIRM]</span></li>
+          <li><b>Fences</b> <span class="confirm">[CONFIRM]</span></li>
+          <li><b>Patio covers</b> <span class="confirm">[CONFIRM]</span></li>
+          <li><b>Pergolas</b> <span class="confirm">[CONFIRM]</span></li>
+          <li><b>Other old structures</b> <span class="confirm">[CONFIRM teardown scope]</span></li>
+        </ul>
+        <p style="margin-top:1rem;font-size:.92rem;color:#B9BFC7">Dismantled and hauled in one visit &mdash; the structure and the debris both leave together.</p>
+      </div>
+
+      <div class="reveal d1">
+        <div class="permit-note">
+          <h3>Licensing &amp; permits &mdash; to be confirmed before any of this copy is published</h3>
+          <p>Taking down a shed, deck, patio cover or other structure can constitute demolition work in California. Work over $500 in combined labour and materials requires a contractor&rsquo;s licence, and California Business &amp; Professions Code &sect;7030.5 requires the licence number to appear in all advertising, including this website.</p>
+          <p><span class="confirm">[CONFIRM CSLB licence number and classification — C-21 Building Moving/Demolition, or a B classification]</span></p>
+          <p><span class="confirm">[CONFIRM whether a demolition permit is required for the structure size, and who pulls it — OC Strong or the homeowner]</span> Most Orange County cities require a permit above a threshold size. This site will never imply a permit isn&rsquo;t needed.</p>
+          <p><span class="confirm">[CONFIRM asbestos survey process and EPA RRP lead-safe certification for pre-1978 / pre-1980 structures]</span></p>
+        </div>
+      </div>
+    </div>
+
+    <p class="center mt-2"><a class="btn" href="#uploader">Photograph the structure &mdash; get a teardown price <span class="arw" aria-hidden="true">&rarr;</span></a></p>
+  </div>
+</section>
+
+<!-- ===================== JUNK / DEBRIS / YARD WASTE GRID ===================== -->
+<section id="take">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Junk, debris &amp; yard waste</p>
+      <h2>If it fits in a truck and it isn&rsquo;t hazardous, photograph it.</h2>
+    </div>
+
+    <div class="junk-grid">
+
+      <a class="jcard reveal" href="#uploader">
+        <!-- PLACEHOLDER-furniture.jpg -->
+        <img src="https://images.pexels.com/photos/30630960/pexels-photo-30630960.jpeg?auto=compress&cs=tinysrgb&w=800" alt="An upturned armchair and assorted household clutter filling a room." loading="lazy" width="800" height="600">
+        <span class="scrim"></span>
+        <span class="jbody">
+          <h3>Furniture</h3>
+          <span class="jgo">Photograph it <span class="arw" aria-hidden="true">&rarr;</span></span>
+        </span>
+      </a>
+
+      <a class="jcard reveal d1" href="#uploader">
+        <!-- PLACEHOLDER-appliances.jpg -->
+        <img src="https://images.pexels.com/photos/9574651/pexels-photo-9574651.jpeg?auto=compress&cs=tinysrgb&w=800" alt="An old freestanding kitchen range against a bare wall, ready for disposal." loading="lazy" width="800" height="600">
+        <span class="scrim"></span>
+        <span class="jbody">
+          <span class="confirm">[CONFIRM freon handling — EPA Section 608]</span>
+          <h3>Appliances</h3>
+          <span class="jgo">Photograph it <span class="arw" aria-hidden="true">&rarr;</span></span>
+        </span>
+      </a>
+
+      <a class="jcard reveal d2" href="#uploader">
+        <!-- PLACEHOLDER-mattress.jpg -->
+        <img src="https://images.pexels.com/photos/15588234/pexels-photo-15588234.jpeg?auto=compress&cs=tinysrgb&w=800" alt="A discarded mattress on the floor of an empty, disused room." loading="lazy" width="800" height="600">
+        <span class="scrim"></span>
+        <span class="jbody">
+          <span class="confirm">[CONFIRM mattress disposal route]</span>
+          <h3>Mattresses</h3>
+          <span class="jgo">Photograph it <span class="arw" aria-hidden="true">&rarr;</span></span>
+        </span>
+      </a>
+
+      <a class="jcard reveal" href="#uploader">
+        <!-- PLACEHOLDER-ewaste.jpg -->
+        <img src="https://images.pexels.com/photos/15243523/pexels-photo-15243523.jpeg?auto=compress&cs=tinysrgb&w=800" alt="A heap of discarded monitors, computer towers and office electronics stacked for recycling." loading="lazy" width="800" height="600">
+        <span class="scrim"></span>
+        <span class="jbody">
+          <span class="confirm">[CONFIRM e-waste routing — CA Electronic Waste Recycling Act]</span>
+          <h3>E-waste</h3>
+          <span class="jgo">Photograph it <span class="arw" aria-hidden="true">&rarr;</span></span>
+        </span>
+      </a>
+
+      <a class="jcard reveal d1" href="#uploader">
+        <!-- PLACEHOLDER-construction-debris.jpg -->
+        <img src="https://images.pexels.com/photos/31249540/pexels-photo-31249540.jpeg?auto=compress&cs=tinysrgb&w=800" alt="A heap of broken masonry, timber and construction rubble on a cleared site." loading="lazy" width="800" height="600">
+        <span class="scrim"></span>
+        <span class="jbody">
+          <span class="confirm">[CONFIRM C&amp;D diversion documentation]</span>
+          <h3>Construction debris</h3>
+          <span class="jgo">Photograph it <span class="arw" aria-hidden="true">&rarr;</span></span>
+        </span>
+      </a>
+
+      <a class="jcard reveal d2" href="#uploader">
+        <!-- PLACEHOLDER-garage-cleanout.jpg -->
+        <img src="https://images.pexels.com/photos/6895381/pexels-photo-6895381.jpeg?auto=compress&cs=tinysrgb&w=800" alt="A pair of closed garage doors on a residential building." loading="lazy" width="800" height="600">
+        <span class="scrim"></span>
+        <span class="jbody">
+          <h3>Garage cleanouts</h3>
+          <span class="jgo">Photograph it <span class="arw" aria-hidden="true">&rarr;</span></span>
+        </span>
+      </a>
+
+      <a class="jcard reveal" href="#uploader">
+        <!-- PLACEHOLDER-tree-trimmings.jpg -->
+        <img src="https://images.pexels.com/photos/29626049/pexels-photo-29626049.jpeg?auto=compress&cs=tinysrgb&w=800" alt="A large pile of cut tree branches and brush in an open yard." loading="lazy" width="800" height="600">
+        <span class="scrim"></span>
+        <span class="jbody">
+          <h3>Tree trimmings &amp; brush</h3>
+          <span class="jgo">Photograph it <span class="arw" aria-hidden="true">&rarr;</span></span>
+        </span>
+      </a>
+
+      <a class="jcard reveal d1" href="#uploader">
+        <!-- PLACEHOLDER-green-waste.jpg -->
+        <img src="https://images.pexels.com/photos/17500797/pexels-photo-17500797.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Filled green garden waste sacks standing on a lawn beside a wall." loading="lazy" width="800" height="600">
+        <span class="scrim"></span>
+        <span class="jbody">
+          <h3>Green waste &amp; palm fronds</h3>
+          <span class="jgo">Photograph it <span class="arw" aria-hidden="true">&rarr;</span></span>
+        </span>
+      </a>
+
+      <a class="jcard drawn reveal d2" href="#uploader">
+        <span class="sketch" aria-hidden="true">
+          <svg viewBox="0 0 120 120" fill="none">
+            <ellipse cx="60" cy="46" rx="44" ry="18" stroke="currentColor" stroke-width="4"/>
+            <path d="M16 46v26c0 10 20 18 44 18s44-8 44-18V46" stroke="currentColor" stroke-width="4"/>
+            <path d="M40 34c0-6 8-6 8-12M60 32c0-6 8-6 8-12M80 34c0-6 8-6 8-12" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="scrim"></span>
+        <span class="jbody">
+          <span class="confirm">[CONFIRM hot tub removal — no verified stock photo used]</span>
+          <h3>Hot tubs</h3>
+          <span class="jgo">Photograph it <span class="arw" aria-hidden="true">&rarr;</span></span>
+        </span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROOF GALLERY ===================== -->
+<section class="proof">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Proof</p>
+      <h2>A company that quotes from photos had better show photos.</h2>
+      <p>Every pair below is stock, placed so the layout is real. These slots are reserved for OC Strong&rsquo;s own before-and-after job shots.</p>
+    </div>
+
+    <div class="pairs">
+
+      <article class="pair reveal">
+        <div class="pair-shots">
+          <figure><span class="ba">Before</span><img src="https://images.pexels.com/photos/30630960/pexels-photo-30630960.jpeg?auto=compress&cs=tinysrgb&w=700" alt="A room crowded with furniture and boxes before a clear-out." loading="lazy" width="700" height="525"></figure>
+          <figure><span class="ba">After</span><img src="https://images.pexels.com/photos/3935327/pexels-photo-3935327.jpeg?auto=compress&cs=tinysrgb&w=700" alt="The same style of room, emptied down to bare floorboards." loading="lazy" width="700" height="525"></figure>
+        </div>
+        <div class="pair-body">
+          <h3>Full house clear-out</h3>
+          <p><span class="confirm">[CONFIRM job details]</span></p>
+          <p class="stocknote">Stock placeholder &mdash; replace with real job photos</p>
+        </div>
+      </article>
+
+      <article class="pair reveal d1">
+        <div class="pair-shots">
+          <figure><span class="ba">Before</span><img src="https://images.pexels.com/photos/12541077/pexels-photo-12541077.jpeg?auto=compress&cs=tinysrgb&w=700" alt="A wooden backyard shed standing on a lawn." loading="lazy" width="700" height="525"></figure>
+          <figure><span class="ba">After</span><img src="https://images.pexels.com/photos/11018246/pexels-photo-11018246.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Bare, level ground where a structure has been removed." loading="lazy" width="700" height="525"></figure>
+        </div>
+        <div class="pair-body">
+          <h3>Shed teardown</h3>
+          <p><span class="confirm">[CONFIRM job details]</span></p>
+          <p class="stocknote">Stock placeholder &mdash; replace with real job photos</p>
+        </div>
+      </article>
+
+      <article class="pair reveal">
+        <div class="pair-shots">
+          <figure><span class="ba">Before</span><img src="https://images.pexels.com/photos/29626049/pexels-photo-29626049.jpeg?auto=compress&cs=tinysrgb&w=700" alt="A pile of cut branches and brush covering part of a yard." loading="lazy" width="700" height="525"></figure>
+          <figure><span class="ba">After</span><img src="https://images.pexels.com/photos/35383651/pexels-photo-35383651.jpeg?auto=compress&cs=tinysrgb&w=700" alt="An open stretch of clear green ground." loading="lazy" width="700" height="525"></figure>
+        </div>
+        <div class="pair-body">
+          <h3>Green waste haul</h3>
+          <p><span class="confirm">[CONFIRM job details]</span></p>
+          <p class="stocknote">Stock placeholder &mdash; replace with real job photos</p>
+        </div>
+      </article>
+
+      <article class="pair reveal d1">
+        <div class="pair-shots">
+          <figure><span class="ba">Before</span><img src="https://images.pexels.com/photos/31249540/pexels-photo-31249540.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Construction rubble and broken timber heaped on a site." loading="lazy" width="700" height="525"></figure>
+          <figure><span class="ba">After</span><img src="https://images.pexels.com/photos/6895381/pexels-photo-6895381.jpeg?auto=compress&cs=tinysrgb&w=700" alt="A clear, swept frontage with the garage doors closed." loading="lazy" width="700" height="525"></figure>
+        </div>
+        <div class="pair-body">
+          <h3>Debris removal</h3>
+          <p><span class="confirm">[CONFIRM job details]</span></p>
+          <p class="stocknote">Stock placeholder &mdash; replace with real job photos</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== AVAILABILITY BAND ===================== -->
+<section class="avail">
+  <div class="wrap avail-in">
+    <span class="dot" aria-hidden="true"></span>
+    <!-- EDIT: availability text — one string, no dates, no day names -->
+    <span class="avail-text" id="availText">Same-day slots available &mdash; send a photo to check.</span>
+    <!-- /EDIT -->
+    <a class="btn btn-sm" href="#uploader">Check today <span class="arw" aria-hidden="true">&rarr;</span></a>
+  </div>
+</section>
+
+<!-- ===================== WHAT WE TAKE / CAN'T TAKE ===================== -->
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">The two lists</p>
+      <h2>What goes in the truck &mdash; and what legally can&rsquo;t.</h2>
+    </div>
+
+    <div class="takes">
+      <div class="take-col yes reveal">
+        <h3>We take</h3>
+        <ul>
+          <li>Household junk and general debris</li>
+          <li>Furniture, sofas, tables, bed frames</li>
+          <li>Mattresses <span class="confirm">[CONFIRM]</span></li>
+          <li>Appliances <span class="confirm">[CONFIRM freon handling]</span></li>
+          <li>Electronics and e-waste <span class="confirm">[CONFIRM]</span></li>
+          <li>Construction and demolition debris <span class="confirm">[CONFIRM]</span></li>
+          <li>Yard waste, brush, palm fronds, tree trimmings</li>
+          <li>Garage, shed and storage-unit cleanouts</li>
+          <li>Sheds, playsets and old structures &mdash; dismantled</li>
+          <li>Hot tubs <span class="confirm">[CONFIRM]</span></li>
+        </ul>
+      </div>
+
+      <div class="take-col no reveal d1">
+        <h3>We can&rsquo;t take</h3>
+        <p style="font-size:.9rem;color:#5A6169;margin-bottom:.9rem">These aren&rsquo;t preferences. A standard junk hauler isn&rsquo;t permitted to carry them.</p>
+        <ul>
+          <li>Paint, solvents and thinners</li>
+          <li>Fuel, oil and automotive fluids</li>
+          <li>Household and pool chemicals</li>
+          <li>Asbestos and asbestos-containing material</li>
+          <li>Propane tanks and pressurised cylinders</li>
+          <li>Batteries</li>
+          <li>Medical and biohazard waste</li>
+          <li>Tires <span class="confirm">[CONFIRM]</span></li>
+          <li><span class="confirm">[CONFIRM anything else they will not take]</span></li>
+        </ul>
+        <p class="hazlink">Orange County runs household hazardous waste collection centres for most of the above. <span class="confirm">[CONFIRM correct OC HHW programme and link]</span></p>
+      </div>
+    </div>
+
+    <div class="notsure reveal">
+      <span>Not sure which list it&rsquo;s on? Photograph it and ask.</span>
+      <a class="btn btn-sm" href="#uploader">Send a photo <span class="arw" aria-hidden="true">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== WHERE IT GOES ===================== -->
+<section class="goes">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Where it goes</p>
+      <h2>Off your property is only half the answer.</h2>
+    </div>
+
+    <div class="goes-grid">
+      <div class="goes-card reveal">
+        <h3>Donation</h3>
+        <p>Usable furniture and household goods routed to local charities rather than the landfill. <span class="confirm">[CONFIRM donation partners]</span></p>
+      </div>
+      <div class="goes-card reveal d1">
+        <h3>Recycling</h3>
+        <p>Metal, green waste, e-waste and clean C&amp;D separated at the yard. <span class="confirm">[CONFIRM recycling practices and facilities used]</span></p>
+      </div>
+      <div class="goes-card reveal d2">
+        <h3>No percentage claimed</h3>
+        <p><strong>This page states no diversion rate.</strong> That number is on nearly every hauler&rsquo;s website and almost none of them can evidence it. If OC Strong has documented figures, they belong here. Until then, the honest version wins. <span class="confirm">[CONFIRM — do not publish a diversion percentage without documentation]</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICE AREA ===================== -->
+<section id="area">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Service area</p>
+      <h2>Orange County, California.</h2>
+      <p>Each city below becomes its own page once the list is confirmed. <span class="confirm">[CONFIRM full city list and travel radius]</span></p>
+    </div>
+
+    <div class="city-grid reveal">
+      <div class="city"><span>Anaheim</span> <span class="pin" aria-hidden="true">&#9679;</span></div>
+      <div class="city"><span>Santa Ana</span> <span class="pin" aria-hidden="true">&#9679;</span></div>
+      <div class="city"><span>Irvine</span> <span class="pin" aria-hidden="true">&#9679;</span></div>
+      <div class="city"><span>Huntington Beach</span> <span class="pin" aria-hidden="true">&#9679;</span></div>
+      <div class="city"><span>Garden Grove</span> <span class="pin" aria-hidden="true">&#9679;</span></div>
+      <div class="city"><span>Orange</span> <span class="pin" aria-hidden="true">&#9679;</span></div>
+      <div class="city"><span>Fullerton</span> <span class="pin" aria-hidden="true">&#9679;</span></div>
+      <div class="city"><span>Costa Mesa</span> <span class="pin" aria-hidden="true">&#9679;</span></div>
+      <div class="city"><span>Mission Viejo</span> <span class="pin" aria-hidden="true">&#9679;</span></div>
+      <div class="city"><span>Westminster</span> <span class="pin" aria-hidden="true">&#9679;</span></div>
+      <div class="city"><span>Tustin</span> <span class="pin" aria-hidden="true">&#9679;</span></div>
+      <div class="city"><span>Lake Forest</span> <span class="pin" aria-hidden="true">&#9679;</span></div>
+    </div>
+    <p style="margin-top:1rem"><span class="confirm">[CONFIRM which of these cities OC Strong actually serves — this list is a placeholder drawn from Orange County's largest cities, not from the lead data]</span></p>
+  </div>
+</section>
+
+<!-- ===================== REVIEWS ===================== -->
+<section class="proof">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Reviews</p>
+      <h2>Reserved &mdash; and deliberately empty.</h2>
+      <p>No star rating, no review count and no quotes appear on this mockup, because none have been verified. These three cards fill from OC Strong&rsquo;s real reviews.</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="rev-empty reveal"><span class="quotemark" aria-hidden="true">&ldquo;</span><p><span class="confirm">[CONFIRM — pull a real review from their Facebook page]</span></p></div>
+      <div class="rev-empty reveal d1"><span class="quotemark" aria-hidden="true">&ldquo;</span><p><span class="confirm">[CONFIRM — pull a real review from their Facebook page]</span></p></div>
+      <div class="rev-empty reveal d2"><span class="quotemark" aria-hidden="true">&ldquo;</span><p><span class="confirm">[CONFIRM — pull a real review from their Facebook page]</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section>
+  <div class="wrap-narrow">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Questions</p>
+      <h2>About the photo quote.</h2>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="f1b" aria-expanded="false" aria-controls="f1p">How accurate is a price from a photo?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="f1p" role="region" aria-labelledby="f1b" hidden>
+          <p>A wide shot with something in it for scale gets close. What throws it off is depth &mdash; a pile that&rsquo;s three rows deep looks like one row from the front. That&rsquo;s why we ask for a step-back shot and the path out. <span class="confirm">[CONFIRM accuracy policy in their own words]</span></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="f2b" aria-expanded="false" aria-controls="f2p">Is the price locked in?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="f2p" role="region" aria-labelledby="f2b" hidden>
+          <p><span class="confirm">[CONFIRM whether the photo quote is binding or an estimate]</span> This answer has to be exact before the site goes live &mdash; a &ldquo;guaranteed price&rdquo; is a contractual claim, and this page will not make one on OC Strong&rsquo;s behalf.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="f3b" aria-expanded="false" aria-controls="f3p">What if the pile is bigger than the photo showed?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="f3p" role="region" aria-labelledby="f3b" hidden>
+          <p><span class="confirm">[CONFIRM what happens on arrival when the load is larger than quoted — re-quote on the spot, proceed at the quoted price, or walk away with no charge?]</span> This is the single question that decides whether a homeowner trusts a photo quote. It deserves a straight answer in their own words.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="f4b" aria-expanded="false" aria-controls="f4p">Do I have to be home?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="f4p" role="region" aria-labelledby="f4b" hidden>
+          <p><span class="confirm">[CONFIRM unattended-job policy, access arrangements and how payment is handled]</span></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="f5b" aria-expanded="false" aria-controls="f5p">Do you take the shed apart too?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="f5p" role="region" aria-labelledby="f5b" hidden>
+          <p>Yes &mdash; teardown and haul-away in one visit is the specialty. Size limits, permits and licensing all need confirming first: <span class="confirm">[CONFIRM teardown scope and size limits]</span> <span class="confirm">[CONFIRM CSLB licence]</span> <span class="confirm">[CONFIRM who pulls the demolition permit]</span></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="f6b" aria-expanded="false" aria-controls="f6p">What can&rsquo;t you take?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="f6p" role="region" aria-labelledby="f6b" hidden>
+          <p>Paint, solvents, fuel, oil, chemicals, asbestos, propane tanks, batteries and medical waste &mdash; a standard junk hauler isn&rsquo;t permitted to carry any of them. The full list is <a href="#take">further up the page</a>. Not sure? Photograph it and ask.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="f7b" aria-expanded="false" aria-controls="f7p">How fast can you come out?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="f7p" role="region" aria-labelledby="f7b" hidden>
+          <p>Same-day is available when there&rsquo;s a slot. <span class="confirm">[CONFIRM hours, same-day cut-off time and typical lead time]</span> No response-time promise is printed on this page until those are confirmed.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 style="margin:0"><button class="acc-btn" id="f8b" aria-expanded="false" aria-controls="f8p">What areas do you serve?<span class="pm" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="f8p" role="region" aria-labelledby="f8b" hidden>
+          <p>Orange County, California. <span class="confirm">[CONFIRM full city list and travel radius]</span> <span class="confirm">[CONFIRM whether there&rsquo;s a minimum charge or travel fee outside the core area]</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CLOSING UPLOADER ===================== -->
+<section class="closing on-dark" id="closing">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow" style="justify-content:center">Same box, bottom of the page</p>
+      <h2>Snap it. Send it. Get a price.</h2>
+      <p>You made it this far, so here it is again &mdash; no scrolling back up.</p>
+    </div>
+
+    <div class="uploader">
+      <form id="quoteForm2" class="quote-form" action="#" method="post" enctype="multipart/form-data" novalidate>
+        <label class="drop" id="drop2" for="photoInput2">
+          <svg class="cam" viewBox="0 0 64 48" fill="none" aria-hidden="true">
+            <rect x="2" y="10" width="60" height="36" rx="6" stroke="currentColor" stroke-width="3"/>
+            <path d="M20 10l4-8h16l4 8" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+            <circle cx="32" cy="28" r="11" stroke="currentColor" stroke-width="3"/>
+            <circle cx="32" cy="28" r="4.5" fill="currentColor" opacity=".55"/>
+          </svg>
+          <span class="drop-label">Take a photo or upload</span>
+          <span class="drop-hint" id="dropHint2">Tap to open your camera &middot; or <b>drag photos here</b></span>
+          <input type="file" id="photoInput2" name="photos[]" accept="image/*" capture="environment" multiple aria-describedby="dropHint2">
+        </label>
+
+        <ul class="thumbs" id="thumbs2" aria-live="polite"></ul>
+        <p class="compress-note" id="compressNote2" hidden></p>
+
+        <fieldset class="follow-up" id="followUp2" hidden>
+          <legend>Two more things and we can quote it</legend>
+          <div class="fu-row two">
+            <div class="field">
+              <label for="contact2">Phone or email <span class="aside">&mdash; this is how the quote comes back to you</span></label>
+              <input type="text" id="contact2" name="contact" placeholder="you@example.com or your mobile" required>
+            </div>
+            <div class="field">
+              <label for="city2">City</label>
+              <input type="text" id="city2" name="city" placeholder="Orange County city" required>
+            </div>
+          </div>
+          <label class="consent">
+            <input type="checkbox" name="gallery_consent" value="yes">
+            <span>OK to use this photo in our before/after gallery. <strong>Optional</strong> &mdash; unchecked by default.</span>
+          </label>
+          <p class="sms-consent">By submitting, you agree we may text you about your quote. Message and data rates may apply.</p>
+        </fieldset>
+
+        <div class="submit-row">
+          <button type="submit" class="btn btn-lg">Get My Photo Quote <span class="arw" aria-hidden="true">&rarr;</span></button>
+          <p class="turnaround"><span class="confirm">[CONFIRM quote turnaround]</span> &mdash; we&rsquo;ll send a price back to you.</p>
+          <p class="form-status" id="formStatus2" role="status"></p>
+        </div>
+      </form>
+
+      <div class="fallbacks">
+        <div class="fb-row">
+          <a class="btn btn-ghost btn-sm" href="#" rel="noopener">Message us on Facebook <span class="arw" aria-hidden="true">&rarr;</span></a>
+          <span class="confirm">[CONFIRM Facebook page URL]</span>
+        </div>
+        <div class="fb-row">
+          <span class="nophone">[CONFIRM phone — none captured]</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRIVACY NOTICE ===================== -->
+<section class="privacy">
+  <div class="wrap-narrow">
+    <div class="privacy-box reveal">
+      <h3>What happens to the photos you send</h3>
+      <ul>
+        <li>They&rsquo;re used to price your job. That&rsquo;s the whole purpose.</li>
+        <li>They are <strong>not</strong> published, posted or used in marketing unless you tick the gallery box on the form. It is unchecked by default and it stays that way unless you choose otherwise.</li>
+        <li>Your contact details are used to send the quote and to arrange the job.</li>
+        <li>You can ask for your photos and details to be deleted at any time. <span class="confirm">[CONFIRM deletion request contact]</span></li>
+      </ul>
+      <p><span class="confirm">[CONFIRM full privacy policy — California CCPA/CPRA notice required, plus retention period and whether images are stored by any third-party form provider]</span></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <p class="foot-mark">OC STRONG JUNK REMOVAL</p>
+        <p>Junk, debris and yard waste hauling, plus shed, playset and old-structure teardowns across Orange County, California.</p>
+        <p><span class="nophone">[CONFIRM phone — none captured]</span></p>
+        <p><span class="confirm">[CONFIRM email address]</span></p>
+        <p><span class="confirm">[CONFIRM Facebook page URL]</span></p>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#take">Junk removal</a></li>
+          <li><a href="#take">Debris removal</a></li>
+          <li><a href="#take">Yard waste</a></li>
+          <li><a href="#teardown">Shed teardown</a></li>
+          <li><a href="#teardown">Playset teardown</a></li>
+          <li><a href="#teardown">Old structures</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Details</h4>
+        <ul>
+          <li>Orange County, CA <span class="confirm">[CONFIRM city list]</span></li>
+          <li>Hours: <span class="confirm">[CONFIRM hours]</span></li>
+          <li><span class="confirm">[CONFIRM CSLB licence #]</span></li>
+          <li><span class="confirm">[CONFIRM insured]</span></li>
+          <li><span class="confirm">[CONFIRM owner / contact name]</span></li>
+          <li><span class="confirm">[CONFIRM years in business]</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-legal">
+      <p class="specnote">SPEC MOCKUP &mdash; built for a pitch. OC Strong Junk Removal has not signed and this site is not live. All photography is royalty-free stock placeholder and is not OC Strong&rsquo;s own work.</p>
+      <p>No phone number was captured in the lead data, so this build contains no click-to-call anywhere. Every dashed amber chip above marks something to confirm before publication.</p>
+      <p>&copy; <span id="yr">2026</span> OC Strong Junk Removal. <span class="confirm">[CONFIRM legal business entity name]</span></p>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== STICKY MINI-UPLOADER =====================
+     This replaces the click-to-call bar every competitor runs, because
+     there is no confirmed number to call. The moment a number is
+     confirmed, this should become a split bar: "Text a photo" (sms:)
+     alongside the web uploader.
+-->
+<div class="sticky-up" id="stickyUp" aria-hidden="true">
+  <div class="su-in">
+    <svg class="su-cam" viewBox="0 0 64 48" fill="none" aria-hidden="true">
+      <rect x="2" y="10" width="60" height="36" rx="6" stroke="currentColor" stroke-width="4"/>
+      <path d="M20 10l4-8h16l4 8" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+      <circle cx="32" cy="28" r="10" stroke="currentColor" stroke-width="4"/>
+    </svg>
+    <div class="su-text">
+      <b>Send a photo, get a price</b>
+      <a href="#" id="suFb">Or message us on Facebook</a>
+    </div>
+    <a class="btn" href="#uploader" id="suBtn">Open camera</a>
+  </div>
+</div>
+
+<noscript>
+  <style>
+    .follow-up[hidden] { display: grid !important; }
+    .drop-hint b { display: none; }
+  </style>
+</noscript>
+
+<script src="script.js"></script>
+</body>
+</html>
