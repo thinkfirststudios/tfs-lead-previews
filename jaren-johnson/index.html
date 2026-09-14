@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js');</script>
+<!-- SPEC MOCKUP — identity, market and brokerage UNCONFIRMED. Title/meta ship as visible placeholders. -->
+<title>[CONFIRM NAME] | [CONFIRM TOWN] Realtor — [CONFIRM BROKERAGE]</title>
+<meta name="description" content="[CONFIRM] — one-line description naming the confirmed market and brokerage, written after the discovery call.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<!-- JSON-LD: every field except telephone is a placeholder. No sameAs (no profiles exist). No aggregateRating. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": "[CONFIRM NAME]",
+  "telephone": "+1-551-419-8400",
+  "email": "[CONFIRM]",
+  "url": "[CONFIRM domain — do not register before name is confirmed]",
+  "address": "[CONFIRM]",
+  "areaServed": "[CONFIRM]",
+  "parentOrganization": "[CONFIRM brokerage]"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "[CONFIRM domain]/"
+    }
+  ]
+}
+</script>
+</head>
+<body><a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-house" viewBox="0 0 32 32"><path d="M4 15.5 16 5l12 10.5"/><path d="M7.5 13v14h17V13"/><path d="M13 27v-7.5h6V27"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+  <symbol id="i-bed" viewBox="0 0 24 24"><path d="M3 18V7"/><path d="M3 14h18v4"/><path d="M21 14v-3a3 3 0 0 0-3-3h-7v6"/><circle cx="7" cy="11" r="2"/></symbol>
+  <symbol id="i-bath" viewBox="0 0 24 24"><path d="M4 12h16v3a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M6 12V6a2 2 0 0 1 4 0"/><path d="M7 20l-1 2M17 20l1 2"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6"/></symbol>
+  <symbol id="i-longarrow" viewBox="0 0 64 14"><path d="M1 7h61M55 1l7 6-7 6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+  <symbol id="i-person" viewBox="0 0 64 64"><circle cx="32" cy="24" r="11"/><path d="M12 56c2-11 10-17 20-17s18 6 20 17"/><rect x="2" y="2" width="60" height="60" rx="10"/></symbol>
+  <symbol id="i-quote" viewBox="0 0 24 24"><path d="M9 7H5v6h4v4H5M19 7h-4v6h4v4h-4" /></symbol>
+</svg>
+<header class="hdr">
+  <div class="wrap hdr__bar">
+    <!-- Wordmark ships as a neutral placeholder: identity unconfirmed (CRM name and email do not match) -->
+    <a class="brand" href="index.html" aria-label="Home — name to be confirmed">
+      <svg aria-hidden="true"><use href="#i-house"/></svg>
+      <span class="tbd tbd--dark">[CONFIRM NAME]</span>
+    </a>
+    <nav class="nav" aria-label="Primary"><a href="index.html" aria-current="page">Home</a><a href="index.html#search">Search</a><a href="buy/index.html">Buying</a><a href="sell/index.html">Selling</a><a href="areas/index.html">Areas</a><a href="about/index.html">About</a><a href="contact/index.html">Contact</a></nav>
+    <div class="hdr__right">
+      <!-- Brokerage lockup slot — REQUIRED in NJ advertising; reserved and empty -->
+      <div class="broker-slot" aria-label="Brokerage logo slot"><span class="tbd tbd--dark">[CONFIRM brokerage — required in NJ advertising]</span></div>
+      <a class="btn btn--ghost btn--primary hdr__cta" href="index.html#search">Start a search</a>
+      <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mnav"><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mnav" id="mnav" aria-label="Mobile"><a href="index.html">Home</a><a href="index.html#search">Search</a><a href="buy/index.html">Buying</a><a href="sell/index.html">Selling</a><a href="areas/index.html">Areas</a><a href="about/index.html">About</a><a href="contact/index.html">Contact</a><a href="faq/index.html">FAQ</a>
+  <div class="broker-slot"><span class="tbd tbd--dark">[CONFIRM brokerage — required in NJ advertising]</span></div>
+</nav>
+<main id="main">
+<section class="hero on-dark" aria-labelledby="hero-h">
+  <div class="hero__media">
+    <!-- PLACEHOLDER-hero-house-dusk.jpg -->
+    <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=2000&q=80&auto=format&fit=crop" data-placeholder="PLACEHOLDER-hero-house-dusk.jpg" alt="Modern two-storey home at dusk with lit windows" fetchpriority="high">
+  </div>
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="hero__wash" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero__inner">
+      <p class="hero__market reveal">Real estate agent · <span class="tbd tbd--dark">[CONFIRM market]</span> <span class="tbd tbd--dark">[CONFIRM brokerage]</span></p>
+      <h1 id="hero-h" class="reveal">Finding the right home shouldn't be guesswork</h1>
+      <p class="hero__sub reveal">Start with the area, the kind of home and the budget. A person follows up to shortlist homes and set up viewings, then sees the purchase through to closing.</p>
+      <form class="pill-field reveal" action="contact/index.html" method="get" data-hero-pill role="search">
+        <label class="sr-only" for="hero-q">Describe the home you're after</label>
+        <input id="hero-q" name="note" type="text" placeholder="Describe the home you're after">
+        <button type="submit" aria-label="Go to search"><svg aria-hidden="true"><use href="#i-longarrow"/></svg></button>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- ⭐ FLOATING SEARCH BAR — front-end only, NOT a live MLS feed. Routes to a scoped enquiry. [CONFIRM MLS / IDX access and vendor] -->
+<section class="search" id="search" aria-label="Home search">
+  <div class="wrap">
+    <form class="sbar reveal" action="contact/index.html" method="get" data-search>
+      <div class="sfield">
+        <label for="s-area">Town or Area <svg class="icon" aria-hidden="true"><use href="#i-chev"/></svg></label>
+        <!-- Ships EMPTY on purpose: do not populate with guessed Bergen/Hudson towns -->
+        <select id="s-area" name="area">
+          <option value="">[CONFIRM service areas]</option>
+        </select>
+      </div>
+      <button class="sbar__more-toggle" type="button" aria-expanded="false" aria-controls="s-more">More filters <svg class="icon" aria-hidden="true"><use href="#i-chev"/></svg></button>
+      <div class="sbar__more" id="s-more">
+        <div class="sfield">
+          <label for="s-type">Property Type <svg class="icon" aria-hidden="true"><use href="#i-chev"/></svg></label>
+          <select id="s-type" name="type">
+            <option value="">Any type</option>
+            <option>Single-family home</option>
+            <option>Townhouse</option>
+            <option>Condo / co-op</option>
+            <option>Multi-family</option>
+          </select>
+        </div>
+        <div class="sfield">
+          <label for="s-price">Price <svg class="icon" aria-hidden="true"><use href="#i-chev"/></svg></label>
+          <select id="s-price" name="price">
+            <option value="">Any price</option>
+            <option value="[CONFIRM price brackets]">[CONFIRM price brackets for market]</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn sbar__go" type="submit"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>Search</button>
+    </form>
+    <p class="search__note">Search is a working front-end that sends your criteria to a person, not a live listings feed. <span class="tbd">[CONFIRM MLS / IDX access and vendor — NJMLS, GSMLS or Hudson County MLS depending on market]</span></p>
+  </div>
+</section>
+<section class="section section--wash" aria-labelledby="mv-h">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="deco" aria-hidden="true"></span>
+      <h2 id="mv-h">Most Viewed</h2>
+      <p>How homes will be presented once a listings feed or real listings are in place. Every card below is a layout sample.</p>
+    </div>
+    <!-- MANDATORY ribbon — may not be removed for the pitch screenshot -->
+    <div class="demo-ribbon" role="note">DEMONSTRATION — SAMPLE LAYOUT, NOT ACTIVE LISTINGS<small>No addresses, prices or room counts shown are real. <span class="tbd tbd--dark">[CONFIRM listing source before any card goes live]</span></small></div>
+    <div class="carousel" data-carousel tabindex="0" aria-roledescription="carousel" aria-label="Demonstration property cards">
+      <div class="car-track" data-stagger="90">
+        <article class="pcard reveal" aria-label="Demonstration card 1 of 3 — not an active listing">
+          <div class="pcard__media">
+            <span class="pcard__chip">SAMPLE</span>
+            <!-- PLACEHOLDER-demo-01.jpg -->
+            <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=900&q=80&auto=format&fit=crop" data-placeholder="PLACEHOLDER-demo-01.jpg" alt="Two-storey shingle-sided colonial with a covered front porch and a deep front lawn" loading="lazy" width="900" height="675">
+            <span class="pcard__type">Colonial</span>
+          </div>
+          <div class="pcard__meta">
+            <span>Sample address <span class="tbd">[CONFIRM]</span></span>
+            <span class="pcard__icons">
+              <span title="Bedrooms — sample, not a listing"><svg class="icon" aria-hidden="true"><use href="#i-bed"/></svg>—<span class="sr-only">bedrooms not shown</span></span>
+              <span title="Bathrooms — sample, not a listing"><svg class="icon" aria-hidden="true"><use href="#i-bath"/></svg>—<span class="sr-only">bathrooms not shown</span></span>
+            </span>
+          </div>
+          <h3>Sample Colonial</h3>
+          <p class="pcard__price">Price <span class="tbd">[CONFIRM]</span></p>
+        </article>
+        <article class="pcard reveal" aria-label="Demonstration card 2 of 3 — not an active listing">
+          <div class="pcard__media">
+            <span class="pcard__chip">SAMPLE</span>
+            <!-- PLACEHOLDER-demo-02.jpg -->
+            <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=900&q=80&auto=format&fit=crop" data-placeholder="PLACEHOLDER-demo-02.jpg" alt="Brick and siding home with a two-car garage and a planted front yard" loading="lazy" width="900" height="675">
+            <span class="pcard__type">Two-car garage</span>
+          </div>
+          <div class="pcard__meta">
+            <span>Sample address <span class="tbd">[CONFIRM]</span></span>
+            <span class="pcard__icons">
+              <span title="Bedrooms — sample, not a listing"><svg class="icon" aria-hidden="true"><use href="#i-bed"/></svg>—<span class="sr-only">bedrooms not shown</span></span>
+              <span title="Bathrooms — sample, not a listing"><svg class="icon" aria-hidden="true"><use href="#i-bath"/></svg>—<span class="sr-only">bathrooms not shown</span></span>
+            </span>
+          </div>
+          <h3>Sample Split-Level</h3>
+          <p class="pcard__price">Price <span class="tbd">[CONFIRM]</span></p>
+        </article>
+        <article class="pcard reveal" aria-label="Demonstration card 3 of 3 — not an active listing">
+          <div class="pcard__media">
+            <span class="pcard__chip">SAMPLE</span>
+            <!-- PLACEHOLDER-demo-03.jpg -->
+            <img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=900&q=80&auto=format&fit=crop" data-placeholder="PLACEHOLDER-demo-03.jpg" alt="Row of attached and detached homes with small planted frontages" loading="lazy" width="900" height="675">
+            <span class="pcard__type">Townhouse</span>
+          </div>
+          <div class="pcard__meta">
+            <span>Sample address <span class="tbd">[CONFIRM]</span></span>
+            <span class="pcard__icons">
+              <span title="Bedrooms — sample, not a listing"><svg class="icon" aria-hidden="true"><use href="#i-bed"/></svg>—<span class="sr-only">bedrooms not shown</span></span>
+              <span title="Bathrooms — sample, not a listing"><svg class="icon" aria-hidden="true"><use href="#i-bath"/></svg>—<span class="sr-only">bathrooms not shown</span></span>
+            </span>
+          </div>
+          <h3>Sample Townhouse End Unit</h3>
+          <p class="pcard__price">Price <span class="tbd">[CONFIRM]</span></p>
+        </article>
+      </div>
+      <div class="car-dots" role="group" aria-label="Choose card">
+        <button type="button" aria-label="Card 1"></button><button type="button" aria-label="Card 2" aria-current="true"></button><button type="button" aria-label="Card 3"></button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" aria-labelledby="ex-h">
+  <div class="wrap split">
+    <div class="split__media reveal">
+      <!-- PLACEHOLDER-split-interior.jpg -->
+      <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1100&q=80&auto=format&fit=crop&h=1375" data-placeholder="PLACEHOLDER-split-interior.jpg" alt="Bright open-plan living area with large windows and natural light" loading="lazy">
+      <div class="glyph-tile" aria-hidden="true"><svg><use href="#i-house"/></svg></div>
+    </div>
+    <div>
+      <span class="eyebrow reveal">How it works</span>
+      <h2 id="ex-h" class="reveal">The Easiest Method To Find a House</h2>
+      <p class="reveal">A typical New Jersey purchase follows the same broad path. Here is what it looks like in plain terms.</p>
+      <ol class="steps" data-stagger="120">
+        <li class="step reveal"><span class="step__n">1</span><div><h3>Tell me what you're after</h3><p>Area, type of home, budget and timing. The search above is the quickest way to start.</p></div></li>
+        <li class="step reveal"><span class="step__n">2</span><div><h3>I shortlist and arrange the viewings</h3><p>Homes that fit the brief are narrowed down and tours are booked around your schedule.</p></div></li>
+        <li class="step reveal"><span class="step__n">3</span><div><h3>We handle offer, inspection, attorney review and closing</h3><p>From the first offer through the home inspection, New Jersey's attorney review period and the closing table. <span class="tbd">[CONFIRM whether NJ attorney review is described here]</span></p></div></li>
+      </ol>
+      <p class="disclaimer">General information about how residential transactions typically work in New Jersey — not legal advice. <span class="tbd">[CONFIRM market + state]</span></p>
+    </div>
+  </div>
+</section>
+<section class="section" style="padding-top:0" aria-label="Buying and selling">
+  <div class="wrap">
+    <div class="paths" data-stagger="110">
+      <a class="path reveal" href="buy/index.html">
+        <!-- PLACEHOLDER-buying.jpg (people-free substitute: empty, sunlit living room) -->
+        <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200&q=80&auto=format&fit=crop&h=800" data-placeholder="PLACEHOLDER-buying.jpg" alt="Sunlit living room with herringbone wood floor and tall windows" loading="lazy">
+        <div class="path__body"><span class="eyebrow" style="color:var(--sky)">Buying</span><h3>A plain-language path through a purchase</h3><p>Pre-approval, touring, offers, attorney review, inspection and closing — explained step by step.</p><span class="link-arrow">Read the buying guide <svg class="icon arrow" aria-hidden="true"><use href="#i-arrow"/></svg></span></div>
+      </a>
+      <a class="path reveal" href="sell/index.html">
+        <!-- PLACEHOLDER-selling.jpg -->
+        <img src="https://images.unsplash.com/photo-1598228723793-52759bba239c?w=1200&q=80&auto=format&fit=crop&h=800" data-placeholder="PLACEHOLDER-selling.jpg" alt="Brick-front two-storey home with dormers, shrubs and a wide lawn" loading="lazy">
+        <div class="path__body"><span class="eyebrow" style="color:var(--sky)">Selling</span><h3>Preparing, pricing and marketing a home</h3><p>How homes are readied, priced against local comparables, marketed and negotiated to closing.</p><span class="link-arrow">Read the selling guide <svg class="icon arrow" aria-hidden="true"><use href="#i-arrow"/></svg></span></div>
+      </a>
+    </div>
+  </div>
+</section>
+<section class="section" style="padding-top:0" aria-labelledby="worth-h">
+  <div class="wrap">
+    <div class="band on-dark reveal">
+      <span class="eyebrow" style="color:var(--sky)">Selling</span>
+      <h2 id="worth-h">What's my home worth?</h2>
+      <p style="max-width:560px">Enter the address and a person follows up with a look at recent comparable sales. There is no automated estimate here.</p>
+      <form class="band__form" action="contact/index.html" method="get">
+        <label class="sr-only" for="w-addr">Property address</label>
+        <input id="w-addr" name="address" type="text" placeholder="Property address" autocomplete="street-address" required>
+        <button class="btn btn--light" type="submit">Request a follow-up <svg class="icon arrow" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      </form>
+    </div>
+  </div>
+</section>
+<section class="section" id="about" aria-labelledby="about-h">
+  <div class="wrap about">
+    <!-- AGENT PHOTO: intentionally empty. Never a stock person. 4:5 -->
+    <div class="portrait-slot reveal" role="img" aria-label="Agent photo placeholder — to be supplied">
+      <div><svg aria-hidden="true"><use href="#i-person"/></svg><strong>[AGENT PHOTO — Alex will supply]</strong><span class="tbd">4:5 portrait · real photography only</span></div>
+    </div>
+    <div class="bio">
+      <span class="eyebrow reveal">About</span>
+      <h2 id="about-h" class="reveal">Jaren Johnson <span class="tbd">[CONFIRM NAME — CRM email does not match this name]</span></h2>
+      <p class="reveal">Real estate agent · <span class="tbd">[CONFIRM brokerage]</span> · <span class="tbd">[CONFIRM market]</span> · NJ Lic. #<span class="tbd">[CONFIRM]</span></p>
+      <div class="bio-grid" data-stagger="100"><div class="bio-block reveal"><h3>Who I am</h3><span class="tbd">[CONFIRM bio]</span><div class="bio-lines" aria-hidden="true"><i></i><i></i><i></i></div></div><div class="bio-block reveal"><h3>How I work</h3><span class="tbd">[CONFIRM bio]</span><div class="bio-lines" aria-hidden="true"><i></i><i></i><i></i></div></div><div class="bio-block reveal"><h3>Where I work</h3><span class="tbd">[CONFIRM bio]</span><div class="bio-lines" aria-hidden="true"><i></i><i></i><i></i></div></div><div class="bio-block reveal"><h3>How long I've been doing this</h3><span class="tbd">[CONFIRM bio]</span><div class="bio-lines" aria-hidden="true"><i></i><i></i><i></i></div></div></div>
+    </div>
+  </div>
+</section>
+<section class="section--sky" style="padding-block:40px" aria-label="Credentials">
+  <div class="wrap"><!-- Nothing animates here: nothing is confirmed --><dl class="creds" style="margin:0"><div class="cred"><dt>NJ licence number</dt><dd><span class="tbd">[CONFIRM]</span></dd></div><div class="cred"><dt>Brokerage</dt><dd><span class="tbd">[CONFIRM]</span></dd></div><div class="cred"><dt>Board / MLS membership</dt><dd><span class="tbd">[CONFIRM]</span></dd></div><div class="cred"><dt>Years licensed</dt><dd><span class="tbd">[CONFIRM]</span></dd></div><div class="cred"><dt>Designations</dt><dd><span class="tbd">[CONFIRM]</span></dd></div><div class="cred"><dt>Languages</dt><dd><span class="tbd">[CONFIRM]</span></dd></div></dl></div>
+</section>
+<section class="section" aria-labelledby="ar-h">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="deco" aria-hidden="true"></span><h2 id="ar-h">Areas</h2><p>Town-by-town guides to housing stock, commute and what buyers practically encounter. <span class="tbd">[CONFIRM service areas — none populated until market is confirmed]</span></p></div>
+    <div class="areas" data-stagger="90"><a class="acard reveal" href="areas/town-template/index.html"><!-- PLACEHOLDER-area-01.jpg --><img src="https://images.unsplash.com/photo-1592595896551-12b371d546d5?w=900&q=80&auto=format&fit=crop&h=675" data-placeholder="PLACEHOLDER-area-01.jpg" alt="Suburban street with sidewalks, mature trees and lawns" loading="lazy"><div class="acard__body"><h3><span class="tbd tbd--dark">[CONFIRM service area]</span></h3><p>Housing stock · commute · what buyers encounter</p></div></a><a class="acard reveal" href="areas/town-template/index.html"><!-- PLACEHOLDER-area-02.jpg --><img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?w=900&q=80&auto=format&fit=crop&h=675" data-placeholder="PLACEHOLDER-area-02.jpg" alt="Tree-lined residential road with a steep-roofed home at sunrise" loading="lazy"><div class="acard__body"><h3><span class="tbd tbd--dark">[CONFIRM service area]</span></h3><p>Housing stock · commute · what buyers encounter</p></div></a><a class="acard reveal" href="areas/town-template/index.html"><!-- PLACEHOLDER-area-03.jpg --><img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=900&q=80&auto=format&fit=crop&h=675" data-placeholder="PLACEHOLDER-area-03.jpg" alt="Craftsman-style house with a front porch and autumn trees" loading="lazy"><div class="acard__body"><h3><span class="tbd tbd--dark">[CONFIRM service area]</span></h3><p>Housing stock · commute · what buyers encounter</p></div></a></div>
+    <p style="text-align:center;margin-top:28px"><a class="link-arrow" href="areas/index.html">All areas <svg class="icon arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+  </div>
+</section>
+<section class="section section--wash" aria-labelledby="t-h">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="deco" aria-hidden="true"></span><h2 id="t-h">Client Reviews</h2><p>Real, attributable reviews with documented permission only.</p></div>
+    <div class="tgrid" data-stagger="100"><div class="tcard reveal"><svg class="icon tcard__q" aria-hidden="true"><use href="#i-quote"/></svg><p style="margin:0"><span class="tbd">[COLLECT REAL REVIEWS — none found on any platform]</span></p><div class="tcard__who"><i aria-hidden="true"></i><span>Reviewer name &amp; permission <span class="tbd">[COLLECT]</span></span></div></div><div class="tcard reveal"><svg class="icon tcard__q" aria-hidden="true"><use href="#i-quote"/></svg><p style="margin:0"><span class="tbd">[COLLECT REAL REVIEWS — none found on any platform]</span></p><div class="tcard__who"><i aria-hidden="true"></i><span>Reviewer name &amp; permission <span class="tbd">[COLLECT]</span></span></div></div><div class="tcard reveal"><svg class="icon tcard__q" aria-hidden="true"><use href="#i-quote"/></svg><p style="margin:0"><span class="tbd">[COLLECT REAL REVIEWS — none found on any platform]</span></p><div class="tcard__who"><i aria-hidden="true"></i><span>Reviewer name &amp; permission <span class="tbd">[COLLECT]</span></span></div></div></div>
+    <p class="build-note"><span><strong>No reviews exist on any platform.</strong> This is structure only — no composite or illustrative quotes, no stock portraits, no aggregateRating schema. A review-collection workflow is worth setting up after signing.</span></p>
+  </div>
+</section>
+<section class="section" id="contact" aria-labelledby="c-h">
+  <div class="wrap contact">
+    <div>
+      <span class="eyebrow reveal">Contact</span>
+      <h2 id="c-h" class="h2 reveal">Start a conversation</h2>
+      <p class="reveal">Tell me what you're looking for, or what you're thinking of selling. A person reads every message.</p>
+      <div class="cinfo" data-stagger="90">
+        <a class="crow reveal" href="tel:+15514198400"><span class="crow__ic"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span><span><small>Call or text</small><strong>(551) 419-8400</strong></span></a>
+        <a class="crow reveal" href="#enquiry"><span class="crow__ic"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span><span><small>Email</small><strong><span class="tbd">[CONFIRM correct destination mailbox]</span></strong></span></a>
+        <div class="crow reveal"><span class="crow__ic"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg></span><span><small>Office</small><strong><span class="tbd">[CONFIRM office address]</span></strong></span></div>
+      </div>
+    </div>
+    <form class="form reveal" id="enquiry" action="#" method="post" data-demo-form>
+      <!-- Destination: [CONFIRM correct destination mailbox]. NOT wired to the CRM gmail address until mailbox ownership is established. -->
+      <div class="row">
+        <div class="f"><label for="c-name">Name</label><input id="c-name" name="name" autocomplete="name" required></div>
+        <div class="f"><label for="c-phone">Phone</label><input id="c-phone" name="phone" type="tel" autocomplete="tel"></div>
+      </div>
+      <div class="row">
+        <div class="f"><label for="c-email">Email</label><input id="c-email" name="email" type="email" autocomplete="email" required></div>
+        <div class="f"><label for="c-town">Town</label><input id="c-town" name="town" placeholder="Where are you looking or selling?"></div>
+      </div>
+      <fieldset class="f"><legend>I'm…</legend>
+        <div class="chips">
+          <label><input type="radio" name="intent" value="Buying" checked><span>Buying</span></label>
+          <label><input type="radio" name="intent" value="Selling"><span>Selling</span></label>
+          <label><input type="radio" name="intent" value="Just looking"><span>Just looking</span></label>
+        </div>
+      </fieldset>
+      <div class="f"><label for="c-msg">Message</label><textarea id="c-msg" name="message"></textarea></div>
+      <button class="btn btn--primary btn--block" type="submit">Send message <svg class="icon arrow" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+<section class="section section--wash" id="faq" aria-labelledby="faq-h">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="deco" aria-hidden="true"></span><h2 id="faq-h" class="h2">Frequently Asked Questions</h2><p>General information about New Jersey residential transactions — not legal advice.</p></div>
+    <div class="faq" data-stagger="70"><details class="reveal"><summary>How does attorney review work in New Jersey?</summary><div class="ans"><p>Residential sale contracts in New Jersey that are prepared by licensees generally include an attorney-review period after signing, during which either party's attorney can review the contract and, within that window, cancel it. The length and conditions of that period are set out in the contract itself. <span class="tbd">[CONFIRM period + wording]</span></p></div></details><details class="reveal"><summary>What does a buyer's agent actually do?</summary><div class="ans"><p>A buyer's agent helps define the search, arranges viewings, gathers information on comparable sales, prepares and negotiates the offer, and coordinates the steps between contract and closing with the lender, inspector and attorneys.</p></div></details><details class="reveal"><summary>Who pays the agent?</summary><div class="ans"><p>Compensation is agreed in writing and can vary from one transaction to the next. It is discussed and documented before you work together. <span class="tbd">[CONFIRM]</span></p></div></details><details class="reveal"><summary>How long does a New Jersey sale take?</summary><div class="ans"><p>It depends on financing, inspection findings, attorney review, title work and the parties' own schedules. Your agent, lender and attorney can give a realistic timeline for your situation. <span class="tbd">[CONFIRM]</span></p></div></details><details class="reveal"><summary>What should I bring to a first conversation?</summary><div class="ans"><p>A rough budget, the areas you are considering, must-haves versus nice-to-haves, your timing, and — if you are buying with a mortgage — any pre-approval you already have.</p></div></details><details class="reveal"><summary>What happens at inspection?</summary><div class="ans"><p>A licensed home inspector examines the property's visible systems and structure and produces a written report. Buyers then decide, with advice, whether to proceed, request repairs or credits, or rely on any contract contingency.</p></div></details><details class="reveal"><summary>What is a pre-approval, and what is it not?</summary><div class="ans"><p>A pre-approval is a lender's conditional review of your income, assets and credit indicating what it may lend. It is not a final loan commitment; the property, appraisal and final underwriting still have to be approved.</p></div></details><details class="reveal"><summary>How do I start?</summary><div class="ans"><p>Use the search bar at the top of the page, or send a message through the contact form. A person follows up to talk through what you are looking for.</p></div></details></div>
+  </div>
+</section>
+<section class="section" aria-labelledby="bl-h">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="eyebrow">Build notes — remove before launch</span><h2 id="bl-h" class="h2">Before this goes live</h2><p>This is a spec mockup. The structure is ready; these facts are not.</p></div>
+    <ul class="blockers" data-stagger="80"><li class="reveal"><span><strong>Identity.</strong> CRM name (Jaren Johnson) and email ([CRM email withheld]) do not match. Nothing publishes under an unconfirmed name. <span class="tbd">[CONFIRM]</span></span></li><li class="reveal"><span><strong>Market / state.</strong> "Northern New Jersey" is inferred from area code 551 only. If the state differs, all compliance changes. <span class="tbd">[CONFIRM]</span></span></li><li class="reveal"><span><strong>Brokerage.</strong> Unknown. NJ requires the brokerage name in advertising; franchise brand rules may override this palette. <span class="tbd">[CONFIRM]</span></span></li><li class="reveal"><span><strong>Licence.</strong> NJ licence number and brokerage licence unknown. Never publish an unverified number. <span class="tbd">[CONFIRM]</span></span></li><li class="reveal"><span><strong>Contact routing.</strong> Correct destination mailbox, office address and domain all unconfirmed. <span class="tbd">[CONFIRM]</span></span></li><li class="reveal"><span><strong>Listings feed.</strong> MLS / IDX access, vendor and required attribution unknown — search routes to an enquiry until then. <span class="tbd">[CONFIRM]</span></span></li></ul>
+  </div>
+</section>
+</main>
+<footer class="ftr on-dark">
+  <div class="wrap">
+    <div class="ftr__top">
+      <div>
+        <a class="brand" href="index.html"><svg aria-hidden="true"><use href="#i-house"/></svg><span class="tbd tbd--dark">[CONFIRM NAME]</span></a>
+        <p style="margin-top:14px;max-width:360px">Home search and representation for buyers and sellers in <span class="tbd tbd--dark">[CONFIRM market]</span>.</p>
+        <div class="socials" aria-label="Social profiles"><i></i><i></i><i></i><i></i><span class="tbd tbd--dark">[CONFIRM — none found]</span></div>
+      </div>
+      <div>
+        <h4>Get In Touch</h4>
+        <ul class="ftr__list">
+          <li><a href="tel:+15514198400">(551) 419-8400</a></li>
+          <li>Email <span class="tbd tbd--dark">[CONFIRM correct destination mailbox]</span></li>
+          <li>Office address <span class="tbd tbd--dark">[CONFIRM]</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="ftr__list">
+          <li><a href="index.html#search">Search</a></li>
+          <li><a href="buy/index.html">Buying</a></li>
+          <li><a href="sell/index.html">Selling</a></li>
+          <li><a href="areas/index.html">Areas</a></li>
+          <li><a href="about/index.html">About</a></li>
+          <li><a href="faq/index.html">FAQ</a></li>
+          <li><a href="contact/index.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr__legal">
+      <div>
+        <p style="margin:0 0 6px">Brokerage name &amp; NJ brokerage licence <span class="tbd tbd--dark">[CONFIRM — required in New Jersey advertising, blocks launch]</span></p>
+        <p style="margin:0 0 6px">NJ Lic. #<span class="tbd tbd--dark">[CONFIRM]</span> &nbsp;·&nbsp; Realtor mark <span class="tbd tbd--dark">[CONFIRM NAR membership]</span></p>
+        <p style="margin:0">&copy; <span data-year>2026</span> <span class="tbd tbd--dark">[CONFIRM NAME]</span>. Transaction information on this site is general information, not legal advice.</p>
+      </div>
+      <div class="eho"><svg viewBox="0 0 64 64" role="img" aria-label="Equal Housing Opportunity logo"><path d="M6 30 32 8l26 22"/><path d="M13 25v31h38V25"/><path d="M22 36h20M22 45h20" stroke-width="4"/></svg><p style="margin:0"><strong style="color:#fff">Equal Housing Opportunity.</strong> All real estate advertised is subject to the federal Fair Housing Act and New Jersey law against discrimination. <span class="tbd tbd--dark">[CONFIRM statement wording with brokerage]</span></p></div>
+    </div>
+  </div>
+</footer>
+<div class="mcta" role="navigation" aria-label="Quick actions">
+  <a class="mcta__call" href="tel:+15514198400"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Call (551) 419-8400</a>
+  <a class="mcta__search" href="index.html#search"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>Start a Search</a>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

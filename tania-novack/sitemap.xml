@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mockup sitemap: reciprocal hreflang (en-US, ru, x-default). Add Morris, Warren and per-town pages once [CONFIRM towns] is resolved. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://tanianovack.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tanianovack.com/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tanianovack.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tanianovack.com/"/>
+  </url>
+  <url>
+    <loc>https://tanianovack.com/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tanianovack.com/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tanianovack.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tanianovack.com/"/>
+  </url>
+  <url>
+    <loc>https://tanianovack.com/seniors/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tanianovack.com/seniors/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tanianovack.com/ru/seniors/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tanianovack.com/seniors/"/>
+  </url>
+  <url>
+    <loc>https://tanianovack.com/ru/seniors/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tanianovack.com/seniors/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tanianovack.com/ru/seniors/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tanianovack.com/seniors/"/>
+  </url>
+  <url>
+    <loc>https://tanianovack.com/areas/sussex/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tanianovack.com/areas/sussex/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tanianovack.com/ru/areas/sussex/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tanianovack.com/areas/sussex/"/>
+  </url>
+  <url>
+    <loc>https://tanianovack.com/ru/areas/sussex/</loc>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://tanianovack.com/areas/sussex/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tanianovack.com/ru/areas/sussex/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tanianovack.com/areas/sussex/"/>
+  </url>
+</urlset>

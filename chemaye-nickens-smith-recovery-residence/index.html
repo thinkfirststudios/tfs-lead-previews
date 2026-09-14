@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SPEC MOCKUP — not a live site. Lead: Chemaye Nickens-Smith. Built for SOBER LIVING / RECOVERY RESIDENCE.
+       UNRESOLVED: her CRM notes say both "sober living home" and "assisted living homes". If she means assisted living, this entire build is void. -->
+  <title>[CONFIRM house name] | Recovery Residence in Bowie, Maryland</title>
+  <meta name="description" content="Structured, substance-free housing for adults in recovery in Bowie, Maryland. [CONFIRM gender of house]. House rules, costs and current bed availability. Call [CONFIRM intake line].">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+
+  <!-- Schema: LocalBusiness (NOT MedicalBusiness / MedicalClinic). No Review / AggregateRating. [CONFIRM most accurate type] -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "[CONFIRM house name]",
+    "description": "Structured, substance-free housing for adults in recovery in Bowie, Maryland. Housing only — not treatment.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "[CONFIRM exact address and whether it is published]",
+      "addressLocality": "Bowie",
+      "addressRegion": "MD",
+      "addressCountry": "US"
+    },
+    "areaServed": "Prince George's County, Maryland",
+    "telephone": "[CONFIRM intake line]",
+    "email": "[CONFIRM house email at new domain]",
+    "url": "[CONFIRM domain]",
+    "founder": { "@type": "Person", "name": "Chemaye Nickens-Smith" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "[CONFIRM domain]/" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Is this treatment?", "acceptedAnswer": { "@type": "Answer", "text": "No. This is a recovery residence: substance-free housing with house rules. There is no detox, clinical care, therapy, medical supervision or medication management at the house." } },
+      { "@type": "Question", "name": "Who can live here?", "acceptedAnswer": { "@type": "Answer", "text": "Adults in recovery who agree to the house rules. [CONFIRM eligibility and exclusion criteria]" } },
+      { "@type": "Question", "name": "Is it a men's or women's house?", "acceptedAnswer": { "@type": "Answer", "text": "[CONFIRM gender of house]" } },
+      { "@type": "Question", "name": "How much does it cost?", "acceptedAnswer": { "@type": "Answer", "text": "[CONFIRM weekly or monthly fee and deposit]" } },
+      { "@type": "Question", "name": "Is MAT allowed?", "acceptedAnswer": { "@type": "Answer", "text": "[CONFIRM MAT policy]" } },
+      { "@type": "Question", "name": "What happens if someone relapses?", "acceptedAnswer": { "@type": "Answer", "text": "[CONFIRM relapse policy]" } }
+    ]
+  }
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- Mockup notice: static strip, not sticky, not a pop-up -->
+<div class="mockup-strip">
+  <div class="container">
+    <p><strong>Spec mockup.</strong> Built for a <strong>sober living / recovery residence</strong>. Her notes also say &ldquo;assisted living&rdquo; &mdash; <span class="confirm">[CONFIRM WHICH SHE ACTUALLY MEANS &mdash; if assisted living, this build is void]</span> Stock photographs stand in for a house that is not open yet. <a href="#mockup-notes">Mockup notes</a></p>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="wordmark" href="./" aria-label="Home — working wordmark, house name to be confirmed">
+      <span class="wordmark__name">[House Name] <span class="confirm">[CONFIRM house name]</span></span>
+      <span class="wordmark__sub">Recovery Residence &middot; Bowie, MD</span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Main">
+      <ul>
+        <li><a href="#the-house">The House</a></li>
+        <li><a href="#house-rules">House Rules</a></li>
+        <li><a href="#intake">Intake</a></li>
+        <li><a href="professionals/">For Professionals</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Phone stays visible in the bar at all widths; becomes tel: once the intake line is confirmed -->
+    <a class="header-phone" href="#contact">
+      <small>Intake line</small>
+      <span class="confirm">[CONFIRM intake line]</span>
+    </a>
+
+    <a class="btn btn--primary header-cta" href="#availability">Check Availability</a>
+
+    <details class="nav-menu">
+      <summary aria-label="Menu">Menu</summary>
+      <ul>
+        <li><a href="#the-house">The House</a></li>
+        <li><a href="#house-rules">House Rules</a></li>
+        <li><a href="#intake">Intake</a></li>
+        <li><a href="professionals/">For Professionals</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#availability">Check Availability</a></li>
+      </ul>
+    </details>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= 2. HERO — the house ================= -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__media" data-placeholder="PLACEHOLDER-hero-house.jpg">
+      <!-- PLACEHOLDER-hero-house.jpg — stock stand-in. Replace with the real house once photographed. -->
+      <img
+        src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=1600&q=70&auto=format&fit=crop"
+        srcset="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=65&auto=format&fit=crop 800w,
+                https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=1600&q=70&auto=format&fit=crop 1600w,
+                https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=2200&q=70&auto=format&fit=crop 2200w"
+        sizes="100vw"
+        alt="Front porch and entry of a well-kept suburban house in morning light"
+        width="1600" height="900" fetchpriority="high">
+      <span class="img-label" aria-hidden="true">PLACEHOLDER-hero-house.jpg</span>
+    </div>
+    <div class="container hero__copy">
+      <h1 id="hero-title">A recovery residence<br>in Bowie, Maryland.</h1>
+      <p class="hero__sub">Substance-free housing for adults in recovery. <span class="confirm">[CONFIRM gender of house &mdash; men&rsquo;s / women&rsquo;s / co-ed]</span> &middot; 3 bedrooms &middot; opening <span class="confirm">[CONFIRM target opening date]</span></p>
+
+      <!-- ================= 3. THE THREE DOORS ================= -->
+      <div class="doors">
+        <a class="door" href="family/">
+          <h2>For a Family Member</h2>
+          <p>What this house is, what it costs, and who to call.</p>
+          <span class="door__go">Start here <span aria-hidden="true">&rarr;</span></span>
+        </a>
+        <a class="door" href="residents/">
+          <h2>For Yourself</h2>
+          <p>The rules, the rooms, and how to apply.</p>
+          <span class="door__go">Start here <span aria-hidden="true">&rarr;</span></span>
+        </a>
+        <a class="door" href="professionals/">
+          <h2>For Referring Professionals</h2>
+          <p>Availability, criteria, intake and a direct contact.</p>
+          <span class="door__go">Start here <span aria-hidden="true">&rarr;</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 4. BED AVAILABILITY + INTAKE ENQUIRY (1 of 2) ================= -->
+  <section class="band band--forest on-dark" id="availability" aria-labelledby="avail-title">
+    <div class="container avail">
+      <div class="avail__intro">
+        <span class="eyebrow">Bed availability</span>
+        <h2 id="avail-title">Is there a bed?</h2>
+        <p>This status is dated so you know how current it is. If it is out of date, call &mdash; a person will tell you the real answer.</p>
+        <p>Enquiries are welcome before the house opens.</p>
+        <!-- OPERATIONAL COMMITMENT: this status must be updated by her from a phone in under 30 seconds.
+             [CONFIRM she will actually keep this current — a stale widget is worse than none.] -->
+      </div>
+
+      <div class="panel">
+        <div class="status" role="status" aria-live="polite">
+          <p class="status__label">Current status</p>
+          <p class="status__now"><span class="status__dot" aria-hidden="true"></span> Not yet open &mdash; taking enquiries</p>
+          <p class="status__meta">Last updated: <span class="confirm">[CONFIRM date &mdash; set by house manager]</span> &middot; Beds: <span class="confirm">[CONFIRM bed count]</span></p>
+          <ul class="status__states" aria-label="Possible states">
+            <li>Beds available</li>
+            <li>Waitlist</li>
+            <li>Full</li>
+            <li aria-current="true">Not yet open</li>
+          </ul>
+        </div>
+
+        <p class="status__label">Intake line</p>
+        <a class="intake-line" href="#contact"><span class="confirm">[CONFIRM intake line]</span></a>
+
+        <h3>Send an enquiry</h3>
+        <form class="form" data-mock-form action="#" method="post">
+          <fieldset>
+            <legend>Who is enquiring?</legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="who" value="self"><span>Myself</span></label>
+              <label class="choice"><input type="radio" name="who" value="family"><span>A family member</span></label>
+              <label class="choice"><input type="radio" name="who" value="professional"><span>A referring professional</span></label>
+            </div>
+          </fieldset>
+          <div class="form-row">
+            <div><label for="a-name">Name</label><input id="a-name" name="name" type="text" autocomplete="name"></div>
+            <div><label for="a-phone">Phone</label><input id="a-phone" name="phone" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="form-row">
+            <div><label for="a-email">Email</label><input id="a-email" name="email" type="email" autocomplete="email"></div>
+            <div>
+              <label for="a-pref">Best way to reach you</label>
+              <select id="a-pref" name="contact_pref">
+                <option>Phone call</option>
+                <option>Text message</option>
+                <option>Email</option>
+              </select>
+            </div>
+          </div>
+          <div><label for="a-date">Earliest date a bed is needed</label><input id="a-date" name="date_needed" type="date"></div>
+          <div>
+            <label for="a-msg">Anything else <span class="hint">(optional)</span></label>
+            <textarea id="a-msg" name="message"></textarea>
+          </div>
+          <p class="form-note">Please don&rsquo;t include medical, diagnosis, substance or insurance details here. We only need a way to reach you. <strong>What happens next:</strong> a person calls or writes back within <span class="confirm">[CONFIRM turnaround]</span>.</p>
+          <div><button class="btn btn--clay" type="submit">Send enquiry</button></div>
+          <p class="form-status" tabindex="-1" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 5. WHAT THIS IS — AND WHAT IT ISN'T ================= -->
+  <section class="band band--greige" id="what-this-is" aria-labelledby="isnt-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Plainly</span>
+        <h2 id="isnt-title">What this is, and what it isn&rsquo;t.</h2>
+      </div>
+      <div class="isnt">
+        <div class="card reveal">
+          <h3>This is housing.</h3>
+          <p>A recovery residence is a shared home for adults in recovery. It is safe, structured and substance-free.</p>
+          <ul>
+            <li>A furnished bedroom in an ordinary house.</li>
+            <li>Written house rules that everyone agrees to.</li>
+            <li>A house manager <span class="confirm">[CONFIRM staffing model &mdash; on-site or not, overnight coverage]</span></li>
+            <li>A shared kitchen, living room and chores.</li>
+          </ul>
+        </div>
+        <div class="card isnt__not reveal">
+          <h3>This is not treatment.</h3>
+          <p>There is none of the following at the house:</p>
+          <ul>
+            <li>No detox.</li>
+            <li>No clinical care.</li>
+            <li>No therapy or counselling.</li>
+            <li>No medical supervision.</li>
+            <li>No medication management.</li>
+          </ul>
+          <p><span class="confirm">[CONFIRM licensure &mdash; if she holds any clinical licence, this section and the whole compliance posture change]</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 6. THE HOUSE — gallery ================= -->
+  <section class="band band--oatmeal" id="the-house" aria-labelledby="house-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">The house</span>
+        <h2 id="house-title">Where you would live.</h2>
+        <p>Three bedrooms, a shared kitchen and living room, a porch, and a quiet street.</p>
+      </div>
+
+      <div class="gallery">
+        <!-- PLACEHOLDER-house-01.jpg -->
+        <figure class="reveal" data-placeholder="PLACEHOLDER-house-01.jpg">
+          <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=1200&q=70&auto=format&fit=crop" alt="Bedroom with a made bed, a small side table and a lamp" width="1200" height="900" loading="lazy">
+          <span class="img-label" aria-hidden="true">PLACEHOLDER-house-01.jpg</span>
+          <figcaption>Bedroom: a made bed, side table and reading lamp.</figcaption>
+        </figure>
+        <!-- PLACEHOLDER-house-02.jpg -->
+        <figure class="reveal" data-placeholder="PLACEHOLDER-house-02.jpg">
+          <img src="https://images.unsplash.com/photo-1727706572437-4fcda0cbd66f?w=1200&q=70&auto=format&fit=crop" alt="Second bedroom with two single beds, a desk and a window" width="1200" height="900" loading="lazy">
+          <span class="img-label" aria-hidden="true">PLACEHOLDER-house-02.jpg</span>
+          <figcaption>Second bedroom: two beds and a desk.</figcaption>
+        </figure>
+        <!-- PLACEHOLDER-house-03.jpg -->
+        <figure class="reveal" data-placeholder="PLACEHOLDER-house-03.jpg">
+          <img src="https://images.unsplash.com/photo-1519643381401-22c77e60520e?w=1200&q=70&auto=format&fit=crop" alt="Kitchen table set with several places beside a bright window" width="1200" height="900" loading="lazy">
+          <span class="img-label" aria-hidden="true">PLACEHOLDER-house-03.jpg</span>
+          <figcaption>Kitchen table, set for several.</figcaption>
+        </figure>
+        <!-- PLACEHOLDER-house-04.jpg -->
+        <figure class="reveal" data-placeholder="PLACEHOLDER-house-04.jpg">
+          <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=70&auto=format&fit=crop" alt="Living room with a sofa, a bookshelf and houseplants in daylight" width="1200" height="900" loading="lazy">
+          <span class="img-label" aria-hidden="true">PLACEHOLDER-house-04.jpg</span>
+          <figcaption>Living room: sofa, bookshelf, plants.</figcaption>
+        </figure>
+        <!-- PLACEHOLDER-house-05.jpg -->
+        <figure class="reveal" data-placeholder="PLACEHOLDER-house-05.jpg">
+          <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=70&auto=format&fit=crop" alt="Clean, ordinary bathroom with a sink, toilet and window" width="1200" height="900" loading="lazy">
+          <span class="img-label" aria-hidden="true">PLACEHOLDER-house-05.jpg</span>
+          <figcaption>Bathroom: clean and ordinary.</figcaption>
+        </figure>
+        <!-- PLACEHOLDER-house-06.jpg -->
+        <figure class="reveal" data-placeholder="PLACEHOLDER-house-06.jpg">
+          <img src="https://images.unsplash.com/photo-1560184897-ae75f418493e?w=1200&q=70&auto=format&fit=crop" alt="Covered porch with a wicker chair and plants, trees beyond" width="1200" height="900" loading="lazy">
+          <span class="img-label" aria-hidden="true">PLACEHOLDER-house-06.jpg</span>
+          <figcaption>Porch with seating.</figcaption>
+        </figure>
+        <!-- PLACEHOLDER-house-07.jpg -->
+        <figure class="reveal" data-placeholder="PLACEHOLDER-house-07.jpg">
+          <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=1200&q=70&auto=format&fit=crop" alt="Laundry area with a washing machine, shelves and baskets" width="1200" height="900" loading="lazy">
+          <span class="img-label" aria-hidden="true">PLACEHOLDER-house-07.jpg</span>
+          <figcaption>Laundry area.</figcaption>
+        </figure>
+        <!-- PLACEHOLDER-house-08.jpg -->
+        <figure class="reveal" data-placeholder="PLACEHOLDER-house-08.jpg">
+          <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?w=1200&q=70&auto=format&fit=crop" alt="Quiet residential street with mature trees and morning light" width="1200" height="900" loading="lazy">
+          <span class="img-label" aria-hidden="true">PLACEHOLDER-house-08.jpg</span>
+          <figcaption>A quiet residential street.</figcaption>
+        </figure>
+      </div>
+
+      <div class="notice">
+        <p><strong>Mockup note:</strong> these are stock photographs standing in for the real house, which is not open yet. The photo shoot of the finished house is a deliverable, and it is the most valuable one.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 7. HOUSE RULES — published in full ================= -->
+  <section class="band band--greige" id="house-rules" aria-labelledby="rules-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">House rules</span>
+        <h2 id="rules-title">The rules, in full.</h2>
+        <p>Every resident agrees to these before moving in. Read them now and decide honestly whether they work for you.</p>
+      </div>
+      <div class="rules">
+        <div class="rule-item reveal"><h3>Substance-free</h3><p>No alcohol or drugs in the house or on the property. <span class="confirm">[CONFIRM exact wording]</span></p></div>
+        <div class="rule-item reveal"><h3>Curfew</h3><p><span class="confirm">[CONFIRM curfew times, weekdays and weekends]</span></p></div>
+        <div class="rule-item reveal"><h3>Drug and alcohol testing</h3><p><span class="confirm">[CONFIRM testing policy &mdash; how often, random or scheduled, who pays]</span></p></div>
+        <div class="rule-item reveal"><h3>Meetings</h3><p><span class="confirm">[CONFIRM meeting requirements &mdash; how many, what kind; state plainly whether any faith-based requirement exists]</span></p></div>
+        <div class="rule-item reveal"><h3>Work or a structured day</h3><p><span class="confirm">[CONFIRM employment / volunteering / school expectations]</span></p></div>
+        <div class="rule-item reveal"><h3>Guests</h3><p><span class="confirm">[CONFIRM guest and visiting policy]</span></p></div>
+        <div class="rule-item reveal"><h3>Chores</h3><p><span class="confirm">[CONFIRM chore rota and shared-space expectations]</span></p></div>
+        <div class="rule-item reveal"><h3>Quiet hours</h3><p><span class="confirm">[CONFIRM quiet hours]</span></p></div>
+        <div class="rule-item reveal"><h3>Length of stay</h3><p><span class="confirm">[CONFIRM minimum / typical / maximum stay expectations]</span></p></div>
+        <div class="rule-item reveal"><h3>What leads to discharge</h3><p><span class="confirm">[CONFIRM discharge policy &mdash; what ends a stay, and what notice is given]</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 8. WHAT'S INCLUDED / WHAT IT COSTS ================= -->
+  <section class="band band--oatmeal" id="costs" aria-labelledby="costs-title">
+    <div class="container narrow">
+      <div class="section-head reveal">
+        <span class="eyebrow">Costs</span>
+        <h2 id="costs-title">What it costs, and what that covers.</h2>
+        <p>No figure below is set yet. Each will be filled in before launch.</p>
+      </div>
+      <div class="table-wrap reveal">
+        <table>
+          <caption class="visually-hidden">Fees and what is included</caption>
+          <tbody>
+            <tr><th scope="row">Fee</th><td><span class="confirm">[CONFIRM weekly or monthly fee]</span></td></tr>
+            <tr><th scope="row">Deposit</th><td><span class="confirm">[CONFIRM deposit, and whether refundable]</span></td></tr>
+            <tr><th scope="row">Included</th><td><span class="confirm">[CONFIRM &mdash; e.g. utilities, wifi, furnishings, household supplies]</span></td></tr>
+            <tr><th scope="row">Not included</th><td><span class="confirm">[CONFIRM &mdash; e.g. food, phone, transport, testing costs]</span></td></tr>
+            <tr><th scope="row">Payment methods</th><td><span class="confirm">[CONFIRM accepted payment methods]</span></td></tr>
+            <tr><th scope="row">Funding sources</th><td><span class="confirm">[CONFIRM whether any funding source is accepted]</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 9. FOR REFERRING PROFESSIONALS (summary → /professionals/) ================= -->
+  <section class="band band--white" id="professionals" aria-labelledby="pro-title">
+    <div class="container path">
+      <div class="reveal">
+        <span class="eyebrow">For referring professionals</span>
+        <h2 id="pro-title">Placing someone today?</h2>
+        <p>Everything a discharge planner, case manager or probation officer needs, on one page.</p>
+        <ul class="checklist">
+          <li>Bed availability and gender of house</li>
+          <li>Intake criteria, exclusions and turnaround</li>
+          <li>MAT policy and accepted payment</li>
+          <li>Exact location and a direct person to call</li>
+          <li>A one-page referral sheet to keep on file</li>
+        </ul>
+        <a class="btn btn--primary" href="professionals/">Referral information</a>
+      </div>
+      <div class="path__img reveal" data-placeholder="PLACEHOLDER-professionals-desk.jpg">
+        <!-- PLACEHOLDER-professionals-desk.jpg -->
+        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&q=70&auto=format&fit=crop" alt="A desk with an open notebook, a phone and a cup of coffee" width="1200" height="675" loading="lazy">
+        <span class="img-label" aria-hidden="true">PLACEHOLDER-professionals-desk.jpg</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 10 + 11. FAMILY / YOURSELF (summaries) ================= -->
+  <section class="band band--greige" aria-label="Paths for family members and for prospective residents">
+    <div class="container grid-2">
+      <div class="card card--hover reveal" id="family">
+        <span class="eyebrow">For a family member</span>
+        <h2>If you are looking for someone you love.</h2>
+        <p>What a recovery residence is and isn&rsquo;t, what you will and won&rsquo;t be told, how visiting and payment work, and what to do if things are urgent tonight.</p>
+        <a class="btn btn--ghost" href="family/">Read the family page</a>
+      </div>
+      <div class="card card--hover reveal" id="yourself">
+        <span class="eyebrow">For yourself</span>
+        <h2>If you are thinking of living here.</h2>
+        <p>What the house is like, what a day looks like, what is expected, what to bring, and how long it takes to hear back.</p>
+        <a class="btn btn--ghost" href="residents/">Read the resident page</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 12. HOW INTAKE WORKS ================= -->
+  <section class="band band--oatmeal" id="intake" aria-labelledby="intake-title">
+    <div class="container narrow">
+      <div class="section-head reveal">
+        <span class="eyebrow">Intake</span>
+        <h2 id="intake-title">How moving in works.</h2>
+      </div>
+      <ol class="steps">
+        <li class="reveal">
+          <h3>Enquiry</h3>
+          <p>You call or send the form. You, a family member or a professional can start it.</p>
+          <p class="time">Timeframe: <span class="confirm">[CONFIRM response time]</span></p>
+        </li>
+        <li class="reveal">
+          <h3>Conversation</h3>
+          <p>A short call or meeting to talk about the house and check it is a fit. <span class="confirm">[CONFIRM who conducts it, documentation needed, exclusion criteria]</span></p>
+          <p class="time">Timeframe: <span class="confirm">[CONFIRM]</span></p>
+        </li>
+        <li class="reveal">
+          <h3>House rules review and agreement</h3>
+          <p>You read the rules together, ask questions, and sign the residence agreement.</p>
+          <p class="time">Timeframe: <span class="confirm">[CONFIRM]</span></p>
+        </li>
+        <li class="reveal">
+          <h3>Move-in</h3>
+          <p>You arrive, get your room and meet the house. <span class="confirm">[CONFIRM what to bring and move-in steps]</span></p>
+          <p class="time">Typical time from enquiry to move-in: <span class="confirm">[CONFIRM]</span></p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= 13. ABOUT ================= -->
+  <section class="band band--greige" id="about" aria-labelledby="about-title">
+    <div class="container about">
+      <!-- OPERATOR PHOTO: EMPTY placeholder. No stock person stands in for Chemaye. -->
+      <div class="portrait-slot reveal" data-placeholder="PLACEHOLDER-operator-portrait.jpg" role="img" aria-label="Empty placeholder for the operator's portrait">
+        <div>
+          <strong>[OPERATOR PHOTO &mdash; Alex will supply]</strong>
+          <span>Professional portrait &middot; 4:5 &middot; warm natural light &middot; neutral background<br>PLACEHOLDER-operator-portrait.jpg</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">About</span>
+        <h2 id="about-title">Who runs the house.</h2>
+        <p class="lede">The house is operated by Chemaye Nickens-Smith.</p>
+        <p><span class="confirm">[CONFIRM &mdash; why she is opening this house, in her own words]</span></p>
+        <p><span class="confirm">[CONFIRM she agrees &mdash; one optional sentence about her background in property, e.g. acquiring and preparing homes]</span></p>
+        <p><span class="confirm">[CONFIRM whether she has a personal connection to this work she wishes to share &mdash; entirely her decision; leave out if not]</span></p>
+        <p><span class="confirm">[CONFIRM business entity, insurance, and whether the property is owned or leased]</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 14. LOCATION ================= -->
+  <section class="band band--oatmeal" id="location" aria-labelledby="loc-title">
+    <div class="container path">
+      <div class="reveal">
+        <span class="eyebrow">Location</span>
+        <h2 id="loc-title">Bowie, Maryland.</h2>
+        <p>A residential neighbourhood in Prince George&rsquo;s County. <span class="confirm">[CONFIRM neighbourhood description]</span></p>
+        <dl class="dl">
+          <div><dt>Address</dt><dd><span class="confirm">[CONFIRM exact address &mdash; or neighbourhood / cross-streets only until intake]</span></dd></div>
+          <div><dt>Bus and transit</dt><dd><span class="confirm">[CONFIRM nearest bus routes and stops]</span></dd></div>
+          <div><dt>Work</dt><dd><span class="confirm">[CONFIRM nearby employment areas and distance]</span></dd></div>
+          <div><dt>Meetings</dt><dd><span class="confirm">[CONFIRM which meetings are nearby]</span></dd></div>
+          <div><dt>Services</dt><dd><span class="confirm">[CONFIRM grocery, pharmacy, library, etc.]</span></dd></div>
+        </dl>
+      </div>
+      <div class="map-wrap reveal">
+        <!-- Neighbourhood-level map. Swap the query for the exact address if she chooses to publish it — no layout change. -->
+        <iframe title="Map of Bowie, Maryland" src="https://www.google.com/maps?q=Bowie,+MD&amp;z=12&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <span class="img-label" aria-hidden="true">Map: city-level view [CONFIRM address decision]</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 15. FAQ ================= -->
+  <section class="band band--greige" id="faq" aria-labelledby="faq-title">
+    <div class="container narrow">
+      <div class="section-head reveal">
+        <span class="eyebrow">Questions</span>
+        <h2 id="faq-title">Plain questions, plain answers.</h2>
+      </div>
+      <div class="faq">
+        <details class="reveal"><summary>Is this treatment?</summary><div class="faq__a"><p>No. This is housing: a substance-free home with house rules. There is no detox, clinical care, therapy, medical supervision or medication management at the house. <span class="confirm">[CONFIRM licensure]</span></p></div></details>
+        <details class="reveal"><summary>Who can live here?</summary><div class="faq__a"><p>Adults in recovery who agree to the house rules. <span class="confirm">[CONFIRM eligibility and exclusion criteria]</span></p></div></details>
+        <details class="reveal"><summary>Is it a men&rsquo;s or women&rsquo;s house?</summary><div class="faq__a"><p><span class="confirm">[CONFIRM gender of house]</span></p></div></details>
+        <details class="reveal"><summary>How much does it cost?</summary><div class="faq__a"><p><span class="confirm">[CONFIRM fee, deposit and what is included]</span> See <a href="#costs">costs</a>.</p></div></details>
+        <details class="reveal"><summary>Is MAT allowed?</summary><div class="faq__a"><p><span class="confirm">[CONFIRM MAT policy &mdash; answer directly, yes or no, and any conditions]</span></p></div></details>
+        <details class="reveal"><summary>How long can someone stay?</summary><div class="faq__a"><p><span class="confirm">[CONFIRM length-of-stay expectations]</span></p></div></details>
+        <details class="reveal"><summary>Are visitors allowed?</summary><div class="faq__a"><p><span class="confirm">[CONFIRM guest and visiting policy]</span></p></div></details>
+        <details class="reveal"><summary>What happens if someone relapses?</summary><div class="faq__a"><p><span class="confirm">[CONFIRM her relapse policy &mdash; answer it honestly and specifically]</span></p></div></details>
+        <details class="reveal"><summary>Is the house certified?</summary><div class="faq__a"><p><span class="confirm">[CONFIRM certification status &mdash; Maryland Certification of Recovery Residences / NARR affiliate. If not certified, remove this question entirely. Never publish a number we have not been given.]</span></p></div></details>
+        <details class="reveal"><summary>What is the intake process?</summary><div class="faq__a"><p>Enquiry, a conversation, a house rules review and agreement, then move-in. See <a href="#intake">how intake works</a>.</p></div></details>
+        <details class="reveal"><summary>How fast can someone move in?</summary><div class="faq__a"><p><span class="confirm">[CONFIRM typical time from enquiry to move-in]</span></p></div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 16. CONTACT + AVAILABILITY (2 of 2) ================= -->
+  <section class="band band--forest on-dark" id="contact" aria-labelledby="contact-title">
+    <div class="container avail">
+      <div class="avail__intro">
+        <span class="eyebrow">Contact</span>
+        <h2 id="contact-title">Call, or send a note.</h2>
+        <p>Call the intake line, or send a short note and a person will get back to you.</p>
+        <p class="status__label" style="color:#C7D3C9">Intake line</p>
+        <a class="intake-line" href="#contact" style="color:#F2D9BF"><span class="confirm">[CONFIRM intake line]</span></a>
+        <p>Email: <span class="confirm">[CONFIRM house email at new domain &mdash; not the realtor Gmail]</span></p>
+        <p>Calls answered: <span class="confirm">[CONFIRM hours]</span></p>
+        <p>Current status: <strong>Not yet open &mdash; taking enquiries</strong><br>Last updated: <span class="confirm">[CONFIRM date]</span></p>
+      </div>
+      <div class="panel">
+        <h3>Send an enquiry</h3>
+        <form class="form" data-mock-form action="#" method="post">
+          <fieldset>
+            <legend>Who is enquiring?</legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="who2" value="self"><span>Myself</span></label>
+              <label class="choice"><input type="radio" name="who2" value="family"><span>A family member</span></label>
+              <label class="choice"><input type="radio" name="who2" value="professional"><span>A referring professional</span></label>
+            </div>
+          </fieldset>
+          <div class="form-row">
+            <div><label for="b-name">Name</label><input id="b-name" name="name" type="text" autocomplete="name"></div>
+            <div><label for="b-phone">Phone</label><input id="b-phone" name="phone" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="form-row">
+            <div><label for="b-email">Email</label><input id="b-email" name="email" type="email" autocomplete="email"></div>
+            <div>
+              <label for="b-pref">Best way to reach you</label>
+              <select id="b-pref" name="contact_pref"><option>Phone call</option><option>Text message</option><option>Email</option></select>
+            </div>
+          </div>
+          <div><label for="b-date">Earliest date a bed is needed</label><input id="b-date" name="date_needed" type="date"></div>
+          <div><label for="b-msg">Anything else <span class="hint">(optional)</span></label><textarea id="b-msg" name="message"></textarea></div>
+          <p class="form-note">Please don&rsquo;t include medical, diagnosis, substance or insurance details. <strong>What happens next:</strong> a person replies within <span class="confirm">[CONFIRM turnaround]</span>.</p>
+          <div><button class="btn btn--clay" type="submit">Send enquiry</button></div>
+          <p class="form-status" tabindex="-1" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Crisis resources (repeated in footer) -->
+  <section class="band band--greige" aria-labelledby="crisis-title">
+    <div class="container">
+      <div class="crisis">
+        <h2 id="crisis-title">If it is urgent right now</h2>
+        <p><strong>If someone is in immediate danger, call 911.</strong></p>
+        <div class="crisis__lines">
+          <div class="crisis__line"><a href="tel:911">911</a><span>Immediate danger</span></div>
+          <div class="crisis__line"><a href="tel:988">988</a><span>Suicide &amp; Crisis Lifeline &mdash; call or text</span></div>
+          <div class="crisis__line"><a href="tel:18006624357">1-800-662-HELP</a><span>SAMHSA National Helpline (4357)</span></div>
+        </div>
+        <p><span class="confirm">[CONFIRM current numbers before publishing]</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mockup notes — internal, for the pitch. Remove before launch. -->
+  <section class="band band--oatmeal" id="mockup-notes" aria-labelledby="notes-title">
+    <div class="container narrow">
+      <div class="notes">
+        <span class="eyebrow">Mockup notes &mdash; remove before launch</span>
+        <h2 id="notes-title">Open questions before anything goes live</h2>
+        <ul>
+          <li><strong>Category conflict:</strong> her notes say both &ldquo;sober living home&rdquo; and &ldquo;assisted living homes&rdquo;. These are different regulated categories in Maryland. This mockup assumes sober living. <span class="confirm">[CONFIRM WHICH SHE ACTUALLY MEANS]</span></li>
+          <li><strong>Photographs:</strong> every image is stock standing in for a house that is not open yet. None may be presented as her house. The real shoot is a deliverable.</li>
+          <li><strong>Name and brand:</strong> &ldquo;[House Name]&rdquo; is a working placeholder, not a name. Naming and identity may be in scope.</li>
+          <li><strong>Lead routing (EKRA / patient brokering):</strong> no referral fees, affiliate links, or per-lead / per-call vendors &mdash; including form and call-tracking tools. <span class="confirm">[CONFIRM her existing or planned referral arrangements]</span></li>
+          <li><strong>Paid search:</strong> Google Ads needs LegitScript certification for this category. <span class="confirm">[CONFIRM whether paid search is planned]</span></li>
+          <li><strong>Health information:</strong> the form deliberately collects contact details only. <span class="confirm">[CONFIRM HIPAA posture]</span></li>
+          <li><strong>Availability status:</strong> only worth publishing if she will update it. <span class="confirm">[CONFIRM operational commitment]</span></li>
+          <li><strong>Contact details:</strong> three phone numbers across her sources; the realtor Gmail is wrong for this. New intake line, email and domain needed.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= 17. FOOTER ================= -->
+<footer class="site-footer on-dark">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2 style="font-size:1.5rem;margin-bottom:.2rem">[House Name]</h2>
+        <p><span class="confirm">[CONFIRM house name]</span><br>Recovery residence &middot; Bowie, Maryland</p>
+        <p><span class="confirm">[CONFIRM address or neighbourhood only]</span></p>
+        <p>Intake: <span class="confirm">[CONFIRM intake line]</span><br>Email: <span class="confirm">[CONFIRM house email]</span></p>
+      </div>
+      <div>
+        <h3>Pages</h3>
+        <ul class="footer-nav">
+          <li><a href="#the-house">The House</a></li>
+          <li><a href="#house-rules">House Rules</a></li>
+          <li><a href="#costs">Costs</a></li>
+          <li><a href="#intake">Intake</a></li>
+          <li><a href="professionals/">For Professionals</a></li>
+          <li><a href="family/">For a Family Member</a></li>
+          <li><a href="residents/">For Yourself</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>If it is urgent</h3>
+        <p>Immediate danger: <a href="tel:911">911</a><br>Suicide &amp; Crisis Lifeline: <a href="tel:988">988</a><br>SAMHSA Helpline: <a href="tel:18006624357">1-800-662-4357</a></p>
+        <p><span class="confirm">[CONFIRM current numbers]</span></p>
+      </div>
+    </div>
+
+    <div class="footer-legal">
+      <div class="eho">
+        <!-- Equal Housing Opportunity mark (simple inline rendering; swap for official artwork before launch) -->
+        <svg viewBox="0 0 64 64" role="img" aria-label="Equal Housing Opportunity">
+          <path d="M32 6 4 28h8v28h40V28h8L32 6z" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"/>
+          <rect x="21" y="33" width="22" height="4" fill="#FFFFFF"/>
+          <rect x="21" y="42" width="22" height="4" fill="#FFFFFF"/>
+        </svg>
+        <p><strong>Equal Housing Opportunity.</strong> We do not discriminate on the basis of race, colour, religion, sex, disability, familial status, national origin, or any other characteristic protected by federal, state or local law. <span class="confirm">[CONFIRM gender-specific house statement and any meeting requirement are stated as facts of the residence]</span></p>
+      </div>
+      <p><strong>Certification:</strong> Maryland Certification of Recovery Residences &mdash; <span class="confirm">[CONFIRM certification status; do not publish a number we have not been given. If not certified, remove this line entirely.]</span></p>
+      <p><strong>Housing, not treatment.</strong> This residence provides substance-free housing with house rules. It does not provide detox, clinical care, therapy or medical services.</p>
+      <p><strong>Confidentiality.</strong> We do not share whether someone lives here, or anything about them, without their written permission. <a href="#contact">Privacy policy</a> <span class="confirm">[CONFIRM privacy policy page]</span></p>
+      <p class="footer-copy">&copy; <span data-year>2026</span> <span class="confirm">[CONFIRM business entity]</span>. Spec mockup &mdash; not a live site.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky mobile call bar: every page, never animated, never a pop-up -->
+<div class="mobilebar" role="region" aria-label="Quick contact">
+  <a class="btn btn--ghost" href="#contact">Call <span class="confirm">[CONFIRM intake line]</span></a>
+  <a class="btn btn--primary" href="#availability">Check Availability</a>
+</div>
+
+</body>
+</html>
