@@ -1,0 +1,402 @@
+{
+  "slug": "concrete-choir",
+  "title": "CONCRETE CHOIR",
+  "title_lines": [
+    [
+      "CONCRETE",
+      "w"
+    ],
+    [
+      "CHOIR",
+      "c"
+    ]
+  ],
+  "type": "Single + visual",
+  "year": "2026",
+  "kicker": "NEW SINGLE + VISUAL · OUT NOW · 06.03.26",
+  "date_iso": "2026-06-03",
+  "runtime": "3:41",
+  "duration_iso": "PT3M41S",
+  "explicit": true,
+  "city": "SAN DIEGO, CALIFORNIA",
+  "meta_description": "CONCRETE CHOIR by B3 GLIZZY: the video, full lyrics, credits, streaming links and the capsule. Concept preview by ThinkFirst Studios.",
+  "og_image": "og.png",
+  "publisher_name": "Second Shift Songs (ASCAP), administered independently",
+  "video": {
+    "title": "CONCRETE CHOIR",
+    "director": "Rome Aguilar",
+    "duration_iso": "PT3M41S",
+    "still": "images/hero-still.jpg",
+    "still_alt": "A lone adult walks away from camera down a wet road at night under orange street light, beside a concrete wall and a guardrail",
+    "still_credit": "Still: Marquis Odom",
+    "stock_credit": "Demo stand-in image: Nascimento Vieira / Pexels",
+    "crew": [
+      [
+        "Directed by",
+        "Rome Aguilar"
+      ],
+      [
+        "DP",
+        "Tavo Reyes"
+      ],
+      [
+        "Edit",
+        "Sawyer Pike"
+      ],
+      [
+        "Colour",
+        "June Nakamura"
+      ],
+      [
+        "Production",
+        "Eastbound Pictures"
+      ],
+      [
+        "Location",
+        "East End, Houston, TX"
+      ]
+    ],
+    "spoken": [
+      {
+        "who": "Sound, 0:00",
+        "text": "[Freeway hum. A train horn, distant. Footsteps on wet asphalt.]"
+      },
+      {
+        "who": "B3 GLIZZY, 3:05, spoken",
+        "text": "Everybody out here is singing something. You just got to roll the window down."
+      }
+    ]
+  },
+  "stream": {
+    "links": [
+      [
+        "SPOTIFY",
+        "https://open.spotify.demo/b3glizzy/concrete-choir"
+      ],
+      [
+        "APPLE MUSIC",
+        "https://music.apple.demo/b3glizzy/concrete-choir"
+      ],
+      [
+        "YOUTUBE",
+        "https://youtube.com/@b3glizzy.demo"
+      ],
+      [
+        "BANDCAMP",
+        "https://b3glizzy.bandcamp.demo/concrete-choir"
+      ],
+      [
+        "TIDAL",
+        "https://tidal.demo/b3glizzy/concrete-choir"
+      ],
+      [
+        "AMAZON MUSIC",
+        "https://music.amazon.demo/b3glizzy/concrete-choir"
+      ],
+      [
+        "SOUNDCLOUD",
+        "https://soundcloud.demo/b3glizzy/concrete-choir"
+      ]
+    ]
+  },
+  "lyrics": [
+    {
+      "tag": "VERSE 1",
+      "lines": [
+        "Five-fifteen and the sky's the colour of a bruise on a peach,",
+        "I-10 humming like a hymn nobody bothered to teach,",
+        "Mama had the radio on the gospel station low,",
+        "I had the window cracked to hear the trains on Navigation go.",
+        "Warehouse wall on Harrisburg, somebody painted STILL HERE,",
+        "same two words in the same spot for the last eleven years,",
+        "I clock in with a thermos and a head full of lines,",
+        "foreman think I'm counting pallets, I'm just counting the rhymes."
+      ]
+    },
+    {
+      "tag": "HOOK",
+      "lines": [
+        "Concrete choir, singing on the feeder road,",
+        "every horn a harmony, every siren holding notes,",
+        "nobody asked us but we sing it anyway,",
+        "concrete choir, holding the city up all day."
+      ]
+    },
+    {
+      "tag": "VERSE 2",
+      "lines": [
+        "Dispatch in my ear, said swing it by the port,",
+        "forty minutes out to Baytown if the traffic keeps it short,",
+        "I know every pothole on the loop like I know my brother's laugh,",
+        "know the truck on Wayside sells out of barbacoa by half past.",
+        "Uncle used to say a city's just a choir with no conductor,",
+        "everybody's got a part and everybody's out of tune together,",
+        "so I sing mine low, keep it in the cab, keep it on the clock,",
+        "and when the shift ends, shit, I'm still humming in the parking lot."
+      ]
+    },
+    {
+      "tag": "HOOK",
+      "lines": [
+        "Concrete choir, singing on the feeder road,",
+        "every horn a harmony, every siren holding notes,",
+        "nobody asked us but we sing it anyway,",
+        "concrete choir, holding the city up all day."
+      ]
+    },
+    {
+      "tag": "BRIDGE, SPOKEN",
+      "lines": [
+        "Everybody out here is singing something.",
+        "You just got to roll the window down."
+      ]
+    },
+    {
+      "tag": "HOOK",
+      "lines": [
+        "Concrete choir, singing on the feeder road,",
+        "every horn a harmony, every siren holding notes,",
+        "nobody asked us but we sing it anyway,",
+        "concrete choir, holding the city up all day."
+      ]
+    }
+  ],
+  "publishing": "Words by B3 GLIZZY. © 2026 Second Shift Songs (ASCAP), administered independently. Explicit and clean versions available. Published here by the writer.",
+  "credits": [
+    [
+      "Written by",
+      "B3 GLIZZY"
+    ],
+    [
+      "Produced by",
+      "Dre Villanueva and Lyle Banks"
+    ],
+    [
+      "Additional production",
+      "Kemi Adebayo"
+    ],
+    [
+      "Live bass",
+      "Lyle Banks"
+    ],
+    [
+      "Live keys",
+      "Nadia Fontenot"
+    ],
+    [
+      "Live drums",
+      "Theo Castille"
+    ],
+    [
+      "Live guitar",
+      "Ruben Salas"
+    ],
+    [
+      "Recorded at",
+      "a warehouse off Navigation Blvd, Houston, TX"
+    ],
+    [
+      "Mixed by",
+      "Ari Delacroix"
+    ],
+    [
+      "Mastered by",
+      "Simone Park"
+    ],
+    [
+      "Artwork by",
+      "Dessa Villareal"
+    ],
+    [
+      "Published by",
+      "Second Shift Songs (ASCAP), administered independently"
+    ]
+  ],
+  "capsule": {
+    "heading": [
+      [
+        "THE CONCRETE",
+        "c"
+      ],
+      [
+        "CHOIR",
+        "w"
+      ],
+      [
+        "CAPSULE.",
+        "c"
+      ]
+    ],
+    "sub": "SHIPS FROM HOUSTON · 5–7 BUSINESS DAYS · CAPSULE CLOSES WHEN IT SELLS THROUGH",
+    "status": "open",
+    "store": "https://shop.b3glizzy.demo/products/",
+    "items": [
+      {
+        "name": "CONCRETE CHOIR heavyweight tee, bone with ink front print",
+        "short": "HEAVYWEIGHT TEE",
+        "price": "$38",
+        "sizes": [
+          [
+            "S",
+            false
+          ],
+          [
+            "M",
+            true
+          ],
+          [
+            "L",
+            true
+          ],
+          [
+            "XL",
+            true
+          ],
+          [
+            "2XL",
+            true
+          ],
+          [
+            "3XL",
+            true
+          ]
+        ],
+        "slug": "concrete-choir-tee"
+      },
+      {
+        "name": "CONCRETE CHOIR long sleeve, oxblood, back print",
+        "short": "LONG SLEEVE",
+        "price": "$48",
+        "sizes": [
+          [
+            "S",
+            true
+          ],
+          [
+            "M",
+            true
+          ],
+          [
+            "L",
+            true
+          ],
+          [
+            "XL",
+            true
+          ],
+          [
+            "2XL",
+            true
+          ],
+          [
+            "3XL",
+            false
+          ]
+        ],
+        "slug": "concrete-choir-long-sleeve"
+      },
+      {
+        "name": "CONCRETE CHOIR hoodie, ink, embroidered chest mark",
+        "short": "HOODIE",
+        "price": "$78",
+        "sizes": [
+          [
+            "S",
+            true
+          ],
+          [
+            "M",
+            false
+          ],
+          [
+            "L",
+            false
+          ],
+          [
+            "XL",
+            true
+          ],
+          [
+            "2XL",
+            true
+          ],
+          [
+            "3XL",
+            true
+          ]
+        ],
+        "slug": "concrete-choir-hoodie"
+      },
+      {
+        "name": "Riso-printed 18x24 poster, numbered edition of 250",
+        "short": "RISO POSTER",
+        "price": "$25",
+        "sizes": null,
+        "slug": "concrete-choir-poster"
+      },
+      {
+        "name": "CONCRETE CHOIR cassette, hand-stamped shell",
+        "short": "CASSETTE",
+        "price": "$15",
+        "sizes": null,
+        "slug": "concrete-choir-cassette",
+        "soldout": true
+      },
+      {
+        "name": "Capsule bundle: tee + poster + digital download",
+        "short": "BUNDLE",
+        "price": "$55",
+        "sizes": [
+          [
+            "S",
+            false
+          ],
+          [
+            "M",
+            true
+          ],
+          [
+            "L",
+            true
+          ],
+          [
+            "XL",
+            true
+          ],
+          [
+            "2XL",
+            true
+          ],
+          [
+            "3XL",
+            true
+          ]
+        ],
+        "slug": "concrete-choir-bundle"
+      }
+    ]
+  },
+  "more": [
+    {
+      "slug": "night-shift-on-harrisburg",
+      "title": "NIGHT SHIFT ON HARRISBURG",
+      "type": "Single + visual",
+      "year": "2026"
+    },
+    {
+      "slug": "cold-coffee",
+      "title": "COLD COFFEE",
+      "type": "Single + visual",
+      "year": "2026"
+    },
+    {
+      "slug": "baytown-blue",
+      "title": "BAYTOWN BLUE",
+      "type": "Single + visual",
+      "year": "2025"
+    }
+  ],
+  "embeds": {
+    "spotify": "https://open.spotify.com/embed/album/0VQRkZXHBlitY17NKkOgYo?utm_source=generator"
+  }
+}
