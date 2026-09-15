@@ -485,3 +485,8 @@ table.spec th { font-size: 11px; letter-spacing: .06em; text-transform: uppercas
 .drop-hero .slot-bar button { background: var(--flare); border-color: var(--flare); color: var(--ink); min-height: 56px; padding: 0 22px; font-size: 14px; }
 .drop-hero .slot-bar button:hover { background: var(--bone); border-color: var(--bone); }
 .drop-hero .slot-bar span { color: #C9C2B6; }
+
+
+/* Condensed header keeps the same reserved space, so the hero never jumps at the scroll threshold */
+.site-header.is-cut { margin-bottom: -54px; }
+.page-plain .site-header, .page-plain .site-header.is-cut { margin-bottom: 0; height: 64px; }
