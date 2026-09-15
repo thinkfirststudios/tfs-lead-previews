@@ -53,6 +53,16 @@
     });
   });
   var watched = document.querySelectorAll("[data-reveal], [data-pop], .doors__rule, .steps");
+  function revealAll() { watched.forEach(function (el) { el.classList.add("is-in"); }); }
+  /* Fail-safe: previews, embeds, link thumbnails and screenshot tools never scroll,
+     so hidden-until-scrolled content would render as blank white space. Show everything there. */
+  var inFrame = false;
+  try { inFrame = window.self !== window.top; } catch (e) { inFrame = true; }
+  if (inFrame || navigator.webdriver) { reduce = true; }
+  var userScrolled = false;
+  window.addEventListener("scroll", function () { userScrolled = true; }, { passive: true, once: true });
+  setTimeout(function () { if (!userScrolled) revealAll(); }, 2500);
+  window.addEventListener("beforeprint", revealAll);
   if ("IntersectionObserver" in window && !reduce) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {

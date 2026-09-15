@@ -154,3 +154,21 @@
   var yr = document.querySelectorAll("[data-year]");
   yr.forEach(function (el) { el.textContent = new Date().getFullYear(); });
 })();
+
+/* ---- Reveal fail-safe ----
+   Previews, embeds, link thumbnails and screenshot tools never scroll, so content that
+   waits for scroll would render as blank white space. Show everything in those cases. */
+(function () {
+  var SEL = ".reveal", CLS = "is-in";
+  function revealAll() { document.querySelectorAll(SEL).forEach(function (el) { el.classList.add(CLS); }); }
+  function start() {
+    var inFrame = false;
+    try { inFrame = window.self !== window.top; } catch (e) { inFrame = true; }
+    if (inFrame || navigator.webdriver) { revealAll(); return; }
+    var scrolled = false;
+    window.addEventListener("scroll", function () { scrolled = true; }, { passive: true, once: true });
+    setTimeout(function () { if (!scrolled) revealAll(); }, 2500);
+    window.addEventListener("beforeprint", revealAll);
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start); else start();
+})();
