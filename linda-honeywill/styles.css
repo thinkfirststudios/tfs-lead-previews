@@ -419,6 +419,19 @@ mark.confirm {
 }
 .portrait:hover { transform: translateY(-6px); box-shadow: 0 30px 50px -22px rgba(0,0,0,.8); border-color: var(--bronze-light); }
 .portrait:hover::after { opacity: .6; }
+/* Name-only roster cards (single team photo used instead of individual portraits) */
+.team-grid:has(.portrait--text) .team-intro { order: -1; }
+@media (min-width: 1024px) {
+  .team-grid:has(.portrait--text) { grid-template-columns: 1fr 1fr; gap: 64px; }
+  .team-grid:has(.portrait--text) .roster { grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  .team-grid:has(.portrait--text) .portrait--text { min-height: 150px; }
+}
+.portrait--text { aspect-ratio: auto; min-height: 132px; border-style: solid; border-color: rgba(210,165,125,.35); }
+.portrait--text::after { display: none; }
+.portrait--text .portrait-meta { left: 16px; right: 16px; bottom: 16px; }
+.portrait--text .portrait-meta strong { font-family: var(--serif); font-size: 19px; font-weight: 500; }
+.team-photo { margin: 0 0 24px; max-width: 320px; border-radius: var(--r-md); overflow: hidden; border: 1px solid rgba(210,165,125,.45); box-shadow: 0 24px 44px -24px rgba(0,0,0,.85); }
+.team-photo img { display: block; width: 100%; height: auto; }
 .portrait-empty {
   position: absolute; inset: 0 0 30% 0;
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;
