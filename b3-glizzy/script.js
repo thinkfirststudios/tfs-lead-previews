@@ -23,7 +23,7 @@
 
   var EMBEDS = {};   // optional real player URLs from drop.json "embeds": { "youtube": ..., "spotify": ... }
   function slotHTML(kind, label, title, meta, comment, links, still) {
-    var src = kind.indexOf("youtube") === 0 ? (EMBEDS.youtube || "") : kind.indexOf("spotify") === 0 ? (EMBEDS.spotify || "") : "";
+    var src = kind.indexOf("youtube") === 0 ? (EMBEDS.youtube || "") : kind.indexOf("spotify") === 0 ? (EMBEDS.spotify || "") : kind.indexOf("apple") === 0 ? (EMBEDS.apple_music || "") : "";
     var fb = '<div class="fallback"><b>' + esc(title) + "</b>" + esc(meta) + "<ul>" + links.map(function (l) { return '<li><a href="' + esc(l[1]) + '" rel="noopener">' + esc(l[0]) + "</a></li>"; }).join("") + "</ul></div>";
     var facade = still
       ? '<div class="duo duo--scrim"><img src="' + esc(still.src) + '" alt="' + esc(still.alt) + '" width="1920" height="1080" loading="lazy"></div><button class="facade-btn" type="button" data-load><span class="sq">' + PLAY + '</span><span class="lbl">' + esc(label) + "</span></button>"
@@ -47,13 +47,20 @@
       '<h1 id="drop-title" class="drop-hero__title">' + titleLines(x.title_lines) + "</h1>" +
       '<div class="drop-hero__grid">' +
       '<div class="cover" data-tilt><div class="frame" role="img" aria-label="Cover art placeholder, ' + esc(x.title) + '">COVER ART — PLACEHOLDER<b>' + esc(x.title) + "</b></div></div>" +
-      '<div><figure class="embed still"><figcaption class="visually-hidden">' + esc(x.title) + " — official video</figcaption>" +
+      (x.hero_player === "apple"
+        ? '<div><figure class="embed"><figcaption class="visually-hidden">' + esc(x.title) + ' on Apple Music</figcaption>' +
+          slotHTML("apple-album", "Play " + x.title + " on Apple Music", x.title, x.hero_strip || "",
+            '<iframe allow="encrypted-media *; fullscreen *" height="450" style="width:100%" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" src="' + esc(EMBEDS.apple_music || "") + '"></iframe>',
+            [["Apple Music", x.apple_url || "#"]], null) +
+          '<p class="still-strip">' + esc(x.hero_strip || "") + '</p></figure>' +
+          '<div class="ctas"><a class="btn btn--drop" href="' + esc(x.apple_url || "#") + '" target="_blank" rel="noopener">Listen on Apple Music</a><a class="btn btn--bone" href="' + cap + '">The capsule</a></div>'
+        :       '<div><figure class="embed still"><figcaption class="visually-hidden">' + esc(x.title) + " — official video</figcaption>" +
       slotHTML("youtube", "Play the " + x.title + " video on YouTube", x.title + " (official video)", "Dir. " + v.director + " · " + x.runtime,
         '<iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID?rel=0&amp;cc_load_policy=1" title="' + esc(x.title) + ' — B3 GLIZZY (official video)" allow="encrypted-media; picture-in-picture; fullscreen" loading="lazy"></iframe>',
         [["YouTube", "https://youtube.com/@b3glizzy.demo"], ["Spotify", "https://open.spotify.demo/b3glizzy"], ["Apple Music", "https://music.apple.demo/b3glizzy"], ["Bandcamp", "https://b3glizzy.bandcamp.demo"]], still) +
       '<p class="still-strip">DIR. ' + esc(v.director).toUpperCase() + " · " + esc(x.runtime) + " · SHOT IN " + esc(x.city) + "</p>" +
       '<span class="credit">' + esc(v.still_credit) + '<span class="stock">' + esc(v.stock_credit) + "</span></span></figure>" +
-      '<div class="ctas"><a class="btn btn--drop" href="' + watch + '">Watch the video</a><a class="btn btn--bone" href="' + stream + '">Stream it</a><a class="btn btn--bone" href="' + cap + '">The capsule</a></div>' +
+      '<div class="ctas"><a class="btn btn--drop" href="' + watch + '">Watch the video</a><a class="btn btn--bone" href="' + stream + '">Stream it</a><a class="btn btn--bone" href="' + cap + '">The capsule</a></div>') +
       "</div></div></div>" +
       '<div class="drop-hero__wipe" aria-hidden="true"></div></section>';
   }
@@ -91,7 +98,7 @@
     var v = x.video;
     var s = x.stream;
     var html = heroHTML(x, base, false) + '<div class="wrap">';
-    html += '<section id="video" class="drop-sec" aria-labelledby="h-video"><h2 id="h-video" class="block block--sm"><span class="ln w">THE</span><span class="ln c">VIDEO</span></h2>' +
+    if (!x.no_video) html += '<section id="video" class="drop-sec" aria-labelledby="h-video"><h2 id="h-video" class="block block--sm"><span class="ln w">THE</span><span class="ln c">VIDEO</span></h2>' +
       '<figure class="embed"><figcaption>' + esc(v.title) + " — dir. " + esc(v.director) + " — " + esc(x.runtime) + "</figcaption>" +
       slotHTML("youtube", "Play the " + v.title + " video on YouTube", v.title, "Dir. " + v.director + " · " + x.runtime,
         '<iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID?rel=0&amp;cc_load_policy=1" title="' + esc(v.title) + ' — B3 GLIZZY" allow="encrypted-media; picture-in-picture; fullscreen" loading="lazy"></iframe>',
@@ -102,13 +109,13 @@
 
     html += '<section id="stream" class="drop-sec" aria-labelledby="h-stream"><h2 id="h-stream" class="block block--sm"><span class="ln c">STREAM</span><span class="ln w">IT</span></h2>' +
       '<figure class="embed" style="max-width:720px"><figcaption>' + esc(x.title) + " — B3 GLIZZY" + (x.explicit ? ' <span class="explicit">EXPLICIT</span>' : "") + "</figcaption>" +
-      slotHTML(x.tracks ? "spotify-album" : "spotify-track", "Play " + x.title + " on Spotify", x.title, x.runtime || "",
+      slotHTML(x.hero_player === "apple" ? "apple-album" : x.tracks ? "spotify-album" : "spotify-track", "Play " + x.title + (x.hero_player === "apple" ? " on Apple Music" : " on Spotify"), x.title, x.runtime || "",
         '<iframe title="' + esc(x.title) + ' on Spotify" src="https://open.spotify.com/embed/' + (x.tracks ? "album" : "track") + '/SPOTIFY_ID" width="100%" height="' + (x.tracks ? 352 : 152) + '" frameborder="0" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
         s.links.slice(0, 4)) + "</figure>" +
       '<ul class="platforms" aria-label="' + esc(x.title) + ' on every platform">' + s.links.map(function (l) { return '<li><a href="' + esc(l[1]) + '" rel="noopener">' + esc(l[0]) + "</a></li>"; }).join("") + "</ul>" +
-      '<p class="tiny" style="margin-top:10px">If you want to own it rather than rent it, it is on Bandcamp.</p></section>';
+      (x.hero_player === "apple" ? "" : '<p class="tiny" style="margin-top:10px">If you want to own it rather than rent it, it is on Bandcamp.</p>') + "</section>";
 
-    html += '<section id="lyrics" class="drop-sec" aria-labelledby="h-lyrics"><h2 id="h-lyrics" class="block block--sm"><span class="ln w">THE</span><span class="ln c">LYRICS</span></h2>';
+    if (x.tracks || x.lyrics) html += '<section id="lyrics" class="drop-sec" aria-labelledby="h-lyrics"><h2 id="h-lyrics" class="block block--sm"><span class="ln w">THE</span><span class="ln c">LYRICS</span></h2>';
     if (x.tracks) {
       html += x.tracks.map(function (t) {
         return '<div id="lyrics-' + slugify(t.title) + '" style="margin-bottom:34px"><h3 class="block" style="font-size:1.8rem;margin-bottom:10px"><span class="ln c">' + String(t.n).padStart(2, "0") + " · " + esc(t.title) + "</span></h3>" +
@@ -118,7 +125,7 @@
     } else if (x.lyrics) {
       html += lyricsHTML(x.lyrics);
     }
-    html += '<p class="tiny">' + esc(x.publishing) + "</p></section>";
+    if (x.tracks || x.lyrics) html += '<p class="tiny">' + esc(x.publishing) + "</p></section>";
 
     html += '<section id="credits" class="drop-sec" aria-labelledby="h-credits"><h2 id="h-credits" class="block block--sm"><span class="ln c">CREDITS</span></h2><dl class="rec-credits">' +
       x.credits.map(function (c) { return "<dt>" + esc(c[0]) + "</dt><dd>" + esc(c[1]) + "</dd>"; }).join("") + "</dl></section>";

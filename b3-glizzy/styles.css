@@ -478,3 +478,10 @@ table.spec th { font-size: 11px; letter-spacing: .06em; text-transform: uppercas
 .drop-hero__artist { margin: 0 0 6px; font: 900 clamp(1.4rem, 3vw, 2.2rem)/1 var(--display); font-variation-settings: "wdth" 100; letter-spacing: .01em; text-transform: uppercase; color: var(--bone); }
 .drop-hero__title { font-size: clamp(3rem, 14vw, 12.5rem); margin-left: -.03em; margin-right: 0; white-space: normal; }
 .drop-hero__title span { white-space: nowrap; }
+
+/* B3 Glizzy: Apple Music player facade sits on the dark hero */
+.drop-hero .embed-slot[data-kind="apple-album"] { background: radial-gradient(ellipse 60% 70% at 30% 40%, rgba(255, 74, 20, .18), transparent 70%), #140B0A; border: 2px solid var(--bone); }
+.drop-hero .slot-bar { border: 0; justify-content: center; flex-direction: column; }
+.drop-hero .slot-bar button { background: var(--flare); border-color: var(--flare); color: var(--ink); min-height: 56px; padding: 0 22px; font-size: 14px; }
+.drop-hero .slot-bar button:hover { background: var(--bone); border-color: var(--bone); }
+.drop-hero .slot-bar span { color: #C9C2B6; }
