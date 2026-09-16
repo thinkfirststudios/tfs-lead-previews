@@ -490,3 +490,21 @@ table.spec th { font-size: 11px; letter-spacing: .06em; text-transform: uppercas
 /* Condensed header keeps the same reserved space, so the hero never jumps at the scroll threshold */
 .site-header.is-cut { margin-bottom: -54px; }
 .page-plain .site-header, .page-plain .site-header.is-cut { margin-bottom: 0; height: 64px; }
+
+
+/* Hero portrait: a real photo of the artist, beside the video */
+.hero-portrait { margin: 0; width: min(280px, 72vw); }
+.hero-portrait img { width: 100%; height: auto; display: block; border: 1px solid var(--bone); }
+.hero-portrait figcaption { margin-top: 8px; }
+
+/* Hero video: show the real frame rather than the heavy duotone used on the sample cards */
+.drop-hero .duo img { filter: contrast(1.04) saturate(1.02); }
+.drop-hero .duo::after { display: none; }
+.drop-hero .duo--scrim::before { background: linear-gradient(180deg, rgba(12,11,10,.34) 0%, rgba(12,11,10,.28) 55%, rgba(12,11,10,.72) 100%); }
+
+/* Home hero: size it to its content so the photo, the video and the buttons all land on the first screen */
+main[data-mode="home"] .drop-hero { min-height: 0; padding: 104px 0 56px; justify-content: flex-start; }
+main[data-mode="home"] .drop-hero__title { font-size: clamp(2.6rem, 9.4vw, 7.6rem); margin-bottom: 22px; }
+@media (min-width: 900px) {
+  main[data-mode="home"] .drop-hero__grid { grid-template-columns: 240px 1fr; align-items: end; gap: 36px; }
+}

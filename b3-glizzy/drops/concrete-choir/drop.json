@@ -1,255 +1,288 @@
 {
-  "slug": "concrete-choir",
+ "slug": "concrete-choir",
+ "title": "PRESS PLAY",
+ "title_lines": [
+  [
+   "PRESS",
+   "w"
+  ],
+  [
+   "PLAY",
+   "c"
+  ]
+ ],
+ "type": "Album",
+ "year": "2026",
+ "kicker": "NEW ALBUM · OUT NOW · 06.10.26",
+ "date_iso": "2026-06-10",
+ "runtime": "30 min",
+ "duration_iso": "PT30M",
+ "explicit": false,
+ "city": "SAN DIEGO, CALIFORNIA",
+ "meta_description": "PRESS PLAY, the 2026 album by B3 GLIZZY on Ghetto Rockstar Records. Concept preview by ThinkFirst Studios.",
+ "og_image": "og.png",
+ "publisher_name": "Second Shift Songs (ASCAP), administered independently",
+ "video": {
   "title": "PRESS PLAY",
-  "title_lines": [
-    [
-      "PRESS",
-      "w"
-    ],
-    [
-      "PLAY",
-      "c"
-    ]
+  "director": "",
+  "duration_iso": "PT3M41S",
+  "still": "images/hero-still.jpg",
+  "still_alt": "A lone adult walks away from camera down a wet road at night under orange street light, beside a concrete wall and a guardrail",
+  "still_credit": "",
+  "stock_credit": "Demo stand-in image: Nascimento Vieira / Pexels",
+  "crew": [],
+  "spoken": []
+ },
+ "stream": {
+  "links": [
+   [
+    "APPLE MUSIC",
+    "https://music.apple.com/us/album/press-play/6777859756"
+   ]
+  ]
+ },
+ "lyrics": null,
+ "publishing": "",
+ "credits": [
+  [
+   "Artist",
+   "B3 Glizzy"
   ],
-  "type": "Album",
-  "year": "2026",
-  "kicker": "NEW ALBUM · OUT NOW · 06.10.26",
-  "date_iso": "2026-06-10",
-  "runtime": "30 min",
-  "duration_iso": "PT30M",
-  "explicit": false,
-  "city": "SAN DIEGO, CALIFORNIA",
-  "meta_description": "PRESS PLAY, the 2026 album by B3 GLIZZY on Ghetto Rockstar Records. Concept preview by ThinkFirst Studios.",
-  "og_image": "og.png",
-  "publisher_name": "Second Shift Songs (ASCAP), administered independently",
-  "video": {
-    "title": "PRESS PLAY",
-    "director": "",
-    "duration_iso": "PT3M41S",
-    "still": "images/hero-still.jpg",
-    "still_alt": "A lone adult walks away from camera down a wet road at night under orange street light, beside a concrete wall and a guardrail",
-    "still_credit": "",
-    "stock_credit": "Demo stand-in image: Nascimento Vieira / Pexels",
-    "crew": [],
-    "spoken": []
-  },
-  "stream": {
-    "links": [
-      [
-        "APPLE MUSIC",
-        "https://music.apple.com/us/album/press-play/6777859756"
-      ]
-    ]
-  },
-  "lyrics": null,
-  "publishing": "",
-  "credits": [
-    [
-      "Artist",
-      "B3 Glizzy"
-    ],
-    [
-      "Released",
-      "June 10, 2026"
-    ],
-    [
-      "Label",
-      "Ghetto Rockstar Records"
-    ],
-    [
-      "Length",
-      "11 songs, 30 minutes"
-    ]
+  [
+   "Released",
+   "June 10, 2026"
   ],
-  "capsule": {
-    "heading": [
-      [
-        "THE PRESS",
-        "c"
-      ],
-      [
-        "PLAY",
-        "w"
-      ],
-      [
-        "CAPSULE.",
-        "c"
-      ]
-    ],
-    "sub": "SHIPS FROM HOUSTON · 5–7 BUSINESS DAYS · CAPSULE CLOSES WHEN IT SELLS THROUGH",
-    "status": "open",
-    "store": "https://shop.b3glizzy.demo/products/",
-    "items": [
-      {
-        "name": "PRESS PLAY heavyweight tee, bone with ink front print",
-        "short": "HEAVYWEIGHT TEE",
-        "price": "$38",
-        "sizes": [
-          [
-            "S",
-            false
-          ],
-          [
-            "M",
-            true
-          ],
-          [
-            "L",
-            true
-          ],
-          [
-            "XL",
-            true
-          ],
-          [
-            "2XL",
-            true
-          ],
-          [
-            "3XL",
-            true
-          ]
-        ],
-        "slug": "concrete-choir-tee"
-      },
-      {
-        "name": "PRESS PLAY long sleeve, oxblood, back print",
-        "short": "LONG SLEEVE",
-        "price": "$48",
-        "sizes": [
-          [
-            "S",
-            true
-          ],
-          [
-            "M",
-            true
-          ],
-          [
-            "L",
-            true
-          ],
-          [
-            "XL",
-            true
-          ],
-          [
-            "2XL",
-            true
-          ],
-          [
-            "3XL",
-            false
-          ]
-        ],
-        "slug": "concrete-choir-long-sleeve"
-      },
-      {
-        "name": "PRESS PLAY hoodie, ink, embroidered chest mark",
-        "short": "HOODIE",
-        "price": "$78",
-        "sizes": [
-          [
-            "S",
-            true
-          ],
-          [
-            "M",
-            false
-          ],
-          [
-            "L",
-            false
-          ],
-          [
-            "XL",
-            true
-          ],
-          [
-            "2XL",
-            true
-          ],
-          [
-            "3XL",
-            true
-          ]
-        ],
-        "slug": "concrete-choir-hoodie"
-      },
-      {
-        "name": "Riso-printed 18x24 poster, numbered edition of 250",
-        "short": "RISO POSTER",
-        "price": "$25",
-        "sizes": null,
-        "slug": "concrete-choir-poster"
-      },
-      {
-        "name": "PRESS PLAY cassette, hand-stamped shell",
-        "short": "CASSETTE",
-        "price": "$15",
-        "sizes": null,
-        "slug": "concrete-choir-cassette",
-        "soldout": true
-      },
-      {
-        "name": "Capsule bundle: tee + poster + digital download",
-        "short": "BUNDLE",
-        "price": "$55",
-        "sizes": [
-          [
-            "S",
-            false
-          ],
-          [
-            "M",
-            true
-          ],
-          [
-            "L",
-            true
-          ],
-          [
-            "XL",
-            true
-          ],
-          [
-            "2XL",
-            true
-          ],
-          [
-            "3XL",
-            true
-          ]
-        ],
-        "slug": "concrete-choir-bundle"
-      }
-    ]
-  },
-  "more": [
-    {
-      "slug": "night-shift-on-harrisburg",
-      "title": "NIGHT SHIFT ON HARRISBURG",
-      "type": "Single + visual",
-      "year": "2026"
-    },
-    {
-      "slug": "cold-coffee",
-      "title": "COLD COFFEE",
-      "type": "Single + visual",
-      "year": "2026"
-    },
-    {
-      "slug": "baytown-blue",
-      "title": "BAYTOWN BLUE",
-      "type": "Single + visual",
-      "year": "2025"
-    }
+  [
+   "Label",
+   "Ghetto Rockstar Records"
   ],
-  "embeds": {
-    "apple_music": "https://embed.music.apple.com/us/album/press-play/6777859756"
+  [
+   "Length",
+   "11 songs, 30 minutes"
+  ]
+ ],
+ "capsule": {
+  "heading": [
+   [
+    "THE PRESS",
+    "c"
+   ],
+   [
+    "PLAY",
+    "w"
+   ],
+   [
+    "CAPSULE.",
+    "c"
+   ]
+  ],
+  "sub": "SHIPS FROM HOUSTON · 5–7 BUSINESS DAYS · CAPSULE CLOSES WHEN IT SELLS THROUGH",
+  "status": "open",
+  "store": "https://shop.b3glizzy.demo/products/",
+  "items": [
+   {
+    "name": "PRESS PLAY heavyweight tee, bone with ink front print",
+    "short": "HEAVYWEIGHT TEE",
+    "price": "$38",
+    "sizes": [
+     [
+      "S",
+      false
+     ],
+     [
+      "M",
+      true
+     ],
+     [
+      "L",
+      true
+     ],
+     [
+      "XL",
+      true
+     ],
+     [
+      "2XL",
+      true
+     ],
+     [
+      "3XL",
+      true
+     ]
+    ],
+    "slug": "concrete-choir-tee"
+   },
+   {
+    "name": "PRESS PLAY long sleeve, oxblood, back print",
+    "short": "LONG SLEEVE",
+    "price": "$48",
+    "sizes": [
+     [
+      "S",
+      true
+     ],
+     [
+      "M",
+      true
+     ],
+     [
+      "L",
+      true
+     ],
+     [
+      "XL",
+      true
+     ],
+     [
+      "2XL",
+      true
+     ],
+     [
+      "3XL",
+      false
+     ]
+    ],
+    "slug": "concrete-choir-long-sleeve"
+   },
+   {
+    "name": "PRESS PLAY hoodie, ink, embroidered chest mark",
+    "short": "HOODIE",
+    "price": "$78",
+    "sizes": [
+     [
+      "S",
+      true
+     ],
+     [
+      "M",
+      false
+     ],
+     [
+      "L",
+      false
+     ],
+     [
+      "XL",
+      true
+     ],
+     [
+      "2XL",
+      true
+     ],
+     [
+      "3XL",
+      true
+     ]
+    ],
+    "slug": "concrete-choir-hoodie"
+   },
+   {
+    "name": "Riso-printed 18x24 poster, numbered edition of 250",
+    "short": "RISO POSTER",
+    "price": "$25",
+    "sizes": null,
+    "slug": "concrete-choir-poster"
+   },
+   {
+    "name": "PRESS PLAY cassette, hand-stamped shell",
+    "short": "CASSETTE",
+    "price": "$15",
+    "sizes": null,
+    "slug": "concrete-choir-cassette",
+    "soldout": true
+   },
+   {
+    "name": "Capsule bundle: tee + poster + digital download",
+    "short": "BUNDLE",
+    "price": "$55",
+    "sizes": [
+     [
+      "S",
+      false
+     ],
+     [
+      "M",
+      true
+     ],
+     [
+      "L",
+      true
+     ],
+     [
+      "XL",
+      true
+     ],
+     [
+      "2XL",
+      true
+     ],
+     [
+      "3XL",
+      true
+     ]
+    ],
+    "slug": "concrete-choir-bundle"
+   }
+  ]
+ },
+ "more": [
+  {
+   "slug": "night-shift-on-harrisburg",
+   "title": "NIGHT SHIFT ON HARRISBURG",
+   "type": "Single + visual",
+   "year": "2026"
   },
-  "hero_player": "apple",
-  "hero_strip": "11 SONGS · 30 MIN · GHETTO ROCKSTAR RECORDS",
-  "apple_url": "https://music.apple.com/us/album/press-play/6777859756",
-  "no_video": true
+  {
+   "slug": "cold-coffee",
+   "title": "COLD COFFEE",
+   "type": "Single + visual",
+   "year": "2026"
+  },
+  {
+   "slug": "baytown-blue",
+   "title": "BAYTOWN BLUE",
+   "type": "Single + visual",
+   "year": "2025"
+  }
+ ],
+ "embeds": {
+  "apple_music": "https://embed.music.apple.com/us/album/press-play/6777859756",
+  "youtube": "https://www.youtube-nocookie.com/embed/ngia2usjtkA?rel=0&cc_load_policy=1"
+ },
+ "hero_player": "apple",
+ "hero_strip": "11 SONGS · 30 MIN · GHETTO ROCKSTAR RECORDS",
+ "apple_url": "https://music.apple.com/us/album/press-play/6777859756",
+ "no_video": true,
+ "hero_video": {
+  "id": "ngia2usjtkA",
+  "title": "3 DEEP",
+  "embed": "https://www.youtube-nocookie.com/embed/ngia2usjtkA?rel=0&cc_load_policy=1",
+  "watch": "https://www.youtube.com/watch?v=ngia2usjtkA",
+  "still": "images/video-3-deep.jpg",
+  "still_alt": "Still from the 3 DEEP official music video.",
+  "strip": "3 DEEP (FT. LIL WEIRDO & SETHII SHMACTT) · OFFICIAL MUSIC VIDEO",
+  "meta": "Official music video",
+  "credit": "Video still: from the official 3 DEEP music video",
+  "links": [
+   [
+    "Watch on YouTube",
+    "https://www.youtube.com/watch?v=ngia2usjtkA"
+   ],
+   [
+    "Apple Music",
+    "https://music.apple.com/us/artist/b3-glizzy/1506833582"
+   ],
+   [
+    "Spotify",
+    "https://open.spotify.com/album/0VQRkZXHBlitY17NKkOgYo"
+   ]
+  ]
+ },
+ "hero_photo": {
+  "src": "images/image-2.jpg",
+  "alt": "B3 Glizzy standing outside under palm trees in a white tee and black trousers.",
+  "width": 387,
+  "height": 516,
+  "credit": "Photo: supplied by the artist"
+ }
 }

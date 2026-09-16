@@ -40,6 +40,32 @@
     var stream = home ? base + "drops/" + x.slug + "/index.html#stream" : "#stream";
     var cap = home ? "#capsule" : "#capsule";
     var still = { src: base + v.still, alt: v.still_alt };
+
+    // Home page: lead with the real music video and a real photo. The drop page keeps its album player.
+    if (home && x.hero_video) {
+      var hv = x.hero_video, hp = x.hero_photo || {};
+      return '<section class="drop-hero" aria-labelledby="drop-title" data-hero>' +
+        '<div class="wrap">' +
+        '<p class="drop-hero__artist">B3 GLIZZY</p>' +
+        '<p class="drop-hero__kicker">' + esc(x.kicker) + "</p>" +
+        '<h1 id="drop-title" class="drop-hero__title">' + titleLines(x.title_lines) + "</h1>" +
+        '<div class="drop-hero__grid">' +
+        (hp.src
+          ? '<figure class="hero-portrait"><img src="' + esc(base + hp.src) + '" alt="' + esc(hp.alt) +
+            '" width="' + esc(hp.width) + '" height="' + esc(hp.height) + '"><figcaption><span class="credit">' +
+            esc(hp.credit) + "</span></figcaption></figure>"
+          : "") +
+        '<div><figure class="embed still"><figcaption class="visually-hidden">' + esc(hv.title) + " \u2014 official music video</figcaption>" +
+        slotHTML("youtube", "Play the " + hv.title + " music video on YouTube", hv.title + " (official music video)", hv.meta || "",
+          '<iframe src="' + esc(hv.embed || "") + '" title="' + esc(hv.title) + ' \u2014 B3 GLIZZY (official music video)" allow="encrypted-media; picture-in-picture; fullscreen" loading="lazy"></iframe>',
+          hv.links || [], { src: base + hv.still, alt: hv.still_alt }) +
+        '<p class="still-strip">' + esc(hv.strip || "") + "</p>" +
+        '<span class="credit">' + esc(hv.credit || "") + "</span></figure>" +
+        '<div class="ctas"><a class="btn btn--drop" href="' + esc(hv.watch || "#") + '" target="_blank" rel="noopener">Watch on YouTube</a>' +
+        '<a class="btn btn--bone" href="' + esc(x.apple_url || "#") + '" target="_blank" rel="noopener">Listen on Apple Music</a></div>' +
+        "</div></div></div>" +
+        '<div class="drop-hero__wipe" aria-hidden="true"></div></section>';
+    }
     return '<section class="drop-hero" aria-labelledby="drop-title" data-hero>' +
       '<div class="wrap">' +
       '<p class="drop-hero__artist">B3 GLIZZY</p>' +
