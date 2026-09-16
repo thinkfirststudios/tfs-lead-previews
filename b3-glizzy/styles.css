@@ -508,3 +508,8 @@ main[data-mode="home"] .drop-hero__title { font-size: clamp(2.6rem, 9.4vw, 7.6re
 @media (min-width: 900px) {
   main[data-mode="home"] .drop-hero__grid { grid-template-columns: 260px minmax(0, 1fr); align-items: end; gap: 56px; }
 }
+
+/* Wide screens: give the video and its copy more air away from the portrait */
+@media (min-width: 1200px) {
+  main[data-mode="home"] .drop-hero__grid { grid-template-columns: 260px minmax(0, 1fr); gap: 76px; }
+}
