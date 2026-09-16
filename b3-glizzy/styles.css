@@ -493,7 +493,7 @@ table.spec th { font-size: 11px; letter-spacing: .06em; text-transform: uppercas
 
 
 /* Hero portrait: a real photo of the artist, beside the video */
-.hero-portrait { margin: 0; width: min(280px, 72vw); }
+.hero-portrait { margin: 0; width: 100%; max-width: min(280px, 72vw); }
 .hero-portrait img { width: 100%; height: auto; display: block; border: 1px solid var(--bone); }
 .hero-portrait figcaption { margin-top: 8px; }
 
@@ -506,5 +506,5 @@ table.spec th { font-size: 11px; letter-spacing: .06em; text-transform: uppercas
 main[data-mode="home"] .drop-hero { min-height: 0; padding: 104px 0 56px; justify-content: flex-start; }
 main[data-mode="home"] .drop-hero__title { font-size: clamp(2.6rem, 9.4vw, 7.6rem); margin-bottom: 22px; }
 @media (min-width: 900px) {
-  main[data-mode="home"] .drop-hero__grid { grid-template-columns: 240px 1fr; align-items: end; gap: 36px; }
+  main[data-mode="home"] .drop-hero__grid { grid-template-columns: 260px minmax(0, 1fr); align-items: end; gap: 56px; }
 }
